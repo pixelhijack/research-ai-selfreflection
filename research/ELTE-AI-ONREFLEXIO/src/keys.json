@@ -3,20 +3,19 @@
   "Q1a": "Igen, szeretnék részt venni a kutatásban",
   
   "gender": "Milyen nemű vagy?",
-  "Q2a": "Nő",
-  "Q2b": "Férfi",
-  "Q2c": "Nem akarom megadni",
+  "gender_female": "Nő",
+  "gender_male": "Férfi",
+  "gender_other": "Nem akarom megadni",
   
   "age": "Hány éves vagy?",
-  "age_1": "18 - 24",
-  "age_2": "25 - 34",
-  "age_3": "35 - 44",
-  "age_4": "45 - 54",
-  "age_5": "55 - 64",
-  "age_6": "65 -",
+  "age_18_24": "18 - 24",
+  "age_25_34": "25 - 34",
+  "age_35_44": "35 - 44",
+  "age_45_54": "45 - 54",
+  "age_55_64": "55 - 64",
+  "age_65_": "65 -",
   
   "is_professional": "Jelenleg olyan munkakörben dolgozol, amely pszichológiai támogatást, mentálhigiénés ellátást vagy tanácsadást foglal magában? (pl. terapeuta, pszichológus, coach, segítő vagy) - Opcionális",
-  "is_professional_1": "Igen",
   
   "nd_status": "Mi jellemző rád az alábbiak közül?",
   "nd_status_diagnosed": "Diagnosztizált neurodivergens vagyok",
@@ -41,7 +40,7 @@
   "used_ai_psych": "Használtál-e már valaha AI-t pszichológiai témában, személyes dolgaid megbeszélésére, a saját működésed / szociális helyzetek megértésére, vagy akár terapeutaként?",
   
   "tool_goal": "Milyen problémával fordultál az AI-hoz? (Jelöld mindet, ami szóba jöhet)",
-  "tool_goal_understanding": "A gondolatáim, érzéseim jobb megértésében",
+  "tool_goal_understanding": "A gondolataim, érzéseim jobb megértésében",
   "tool_goal_decision": "Döntések meghozásában",
   "tool_goal_organization": "Teendők, hétköznapi élet megszervezésére",
   "tool_goal_self": "Önmagam, mintázataim megértésére",
