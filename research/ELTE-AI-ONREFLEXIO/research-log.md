@@ -196,3 +196,54 @@ This gives you clean separation for:
 Quantitative analysis → use standard answers
 Qualitative analysis → use open answers
 Mixed responses → preserved with both parts
+
+===
+
+## 7. Data cleanup
+
+```
+const allowedValues = Object.keys(keys);
+let qualitative = [];
+let filteredData = Object.entries(data).filter((entry, i) => {
+    const [k, v] = entry;
+    console.log("entry ", entry);
+    const values = Object.values(v);
+    const fields = Object.entries(v);
+    let keep = true;
+
+    fields.forEach(([fieldKey, value]) => {
+        //console.log("fieldKey, value: ", fieldKey, value);
+        if(Array.isArray(value)){
+            const freeText = value.filter(text => {
+                const has = allowedValues.includes(text);
+                if(!has){
+                    //console.log(text, has);
+                    keep = false;
+                    qualitative.push({fieldKey, text, id: v.id});
+                    return true; 
+                }
+                return false;
+            });
+        } else if (typeof value === "string" && value !== 'Nem' && value !== 'Igen' && value !== "" && !value.includes("2026/") && !value.includes("@") && !value.includes("Q2c")){
+            const has = allowedValues.includes(value);
+            if(!has){
+                console.log(value, has);
+                qualitative.push({fieldKey, value, id: v.id});
+                keep = false; 
+            }
+
+        }
+    });
+
+    if(i === 0) {
+        console.log("0 ", values);
+    }
+
+    return keep; 
+
+});
+console.log(filteredData);
+JSON.stringify(qualitative);
+
+
+```

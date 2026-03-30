@@ -162,7 +162,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_uncomfortable",
     "ai_feedback_loop": "ai_feedback_loop_challenged",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -270,7 +270,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_dependency",
       "ai_concerns_connection"
@@ -314,7 +314,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "bizonyos aspektusaiban hasonló, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_similar",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -371,7 +371,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "bizonyos aspektusaiban hasonló, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_similar",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation"
@@ -405,7 +405,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -980,7 +980,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -1087,7 +1087,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_privacy"
@@ -1197,7 +1197,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -1292,7 +1292,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": [
       "ai_concerns_connection",
       "ai_concerns_privacy"
@@ -1343,7 +1343,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": "Ez lehet butaság, de egy időben kifejezetten kerültem, hogy adatot adjak meg magamról, illetve a hangomat sem rögzítettem vele. Idővel előfordulhat ilyen jellegű visszaélés akár a személyiséggel is. Jelenleg ugye adathalászat többféle formája működik. Ha túl sokat használtam, felmerült hogy nem döntök addig, míg át nem beszéltem vele. Ez már káros. Túl sok idő el tud menni mélyebb fejtegetésekkel. Előfordul hogy csak azt dobja vissza javaslatnak, amit már írtam, így ki tud esni perspektíva.",
     "user_additional": "",
     "user_followup": "zida90@gmail.com",
@@ -1465,7 +1465,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_uncomfortable",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -1506,7 +1506,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_dependency",
@@ -1617,7 +1617,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_integrated",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": "Az hogy bizonyos dolgokban emberek korlátozzák pl gyógyszer adagolása tanácsok vagy egyéb anyagok adagolása terén",
     "user_additional": "Jobban megért mint akármelyik emberi lény egész életemben .\nÉs több tudást adott át mint ha még  10 szer elvégeztem volna a középiskolat.\nNagyon hasznos !",
     "user_followup": "aadominik@gmail.com",
@@ -1846,7 +1846,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "átlagolás, nehezen tud értelmezni specifikus helyzeteket"
@@ -1899,7 +1899,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -2064,7 +2064,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -2201,7 +2201,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -2818,7 +2818,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_context",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_connection"
@@ -2996,7 +2996,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_dependency",
       "ai_concerns_connection"
@@ -3106,7 +3106,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": "ai_concerns_connection",
     "user_additional": "",
     "user_followup": "",
@@ -3179,7 +3179,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_connection"
@@ -3227,7 +3227,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_dependency"
@@ -3310,7 +3310,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_context",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_privacy"
@@ -3341,7 +3341,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_ignored",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": "ai_concerns_misinformation",
     "user_additional": "",
     "user_followup": "",
@@ -3490,7 +3490,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": "ai_concerns_misinformation",
     "user_additional": "Egzakt és jól strukturált pszihológia/önismereti kérdésekre határozottabb és használhatóbb választ ad, mint egy segítő (pszihologus, dilidoki, segito, coach, terapeuta, tanacsadó, stb), de már a picit mélyebb, elvontabb, összetettebb gondolatokkal nem tud mit kezdeni, hiába promptolod nagyon. Nem kérdez vissza pl mint egy pszihológus, ha valamit nem ért, hanem nyomja neki, hátha bejön.",
     "user_followup": "",
@@ -3532,7 +3532,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_dependency",
@@ -3580,7 +3580,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_context",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -3759,7 +3759,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -3865,7 +3865,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -3929,7 +3929,7 @@
       "ai_feedback_response_context"
     ],
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": "ai_concerns_privacy",
     "user_additional": "",
     "user_followup": "",
@@ -4073,7 +4073,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -4279,7 +4279,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_challenged",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -4320,7 +4320,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_reinforced",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation"
@@ -4379,7 +4379,7 @@
       "ai_feedback_response_context"
     ],
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "bizonyos aspektusaiban hasonló, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_similar",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -4430,7 +4430,7 @@
       "ai_feedback_response_uncomfortable"
     ],
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "bizonyos aspektusaiban hasonló, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_similar",
     "ai_concerns": "ai_concerns_misinformation",
     "user_additional": "",
     "user_followup": "nanicsak@gmail.com",
@@ -4480,7 +4480,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "bizonyos aspektusaiban hasonló, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_similar",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -4643,7 +4643,7 @@
       "ai_feedback_response_context"
     ],
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
@@ -4748,7 +4748,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation"
@@ -4822,7 +4822,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation"
@@ -5075,7 +5075,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_unsure",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_misinformation",
       "ai_concerns_none"
@@ -5124,7 +5124,7 @@
       "ai_feedback_response_integrated"
     ],
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": "ai_concerns_none",
     "user_additional": "igazából semmi, sokat segít, viszont nem mindenki jár/ járt terápiára az egyik kérdésnél, tehát nem tudom milyen egy terápia",
     "user_followup": "",
@@ -5280,7 +5280,7 @@
     "ai_feedback_reaction": "Igen",
     "ai_feedback_response": "ai_feedback_response_thought",
     "ai_feedback_loop": "ai_feedback_loop_both",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": "Csak az én szemszögemet ismeri egy konfliktus kapcsán, és emiatt egy kicsit részrehajló, nem kérdőjelezi meg az én megélésemet… egyelőre",
     "user_additional": "Az AI folyamatosan fejlesztés alatt van. Figyelembe kéne venni azt is, hogy az ingyenes verzióktól nem várható, hogy mindent megoldjanak a pszichoterápia helyett, de már ez is nagy segítség olyanoknak, aki nem engedhetnek meg maguknak rendszeres terápiát. Ha lesz olyan verzió, amit kifejezetten erre fejlesztettek, akkor az hatékonyabb lehet, mint egy pszichológussal folytatott 1-2 óra beszélgetés. Ha az AI hibázik, az leginkább abból adódik, hogy nincs elegendő információja (másik oldal megélése, előzmények, stb.)",
     "user_followup": "mokazasra@gmail.com",
@@ -5480,7 +5480,7 @@
     "ai_feedback_reaction": "ai_feedback_reaction_unsure",
     "ai_feedback_response": "ai_feedback_response_context",
     "ai_feedback_loop": "ai_feedback_loop_challenged",
-    "ai_vs_therapy": "egészen hasonló vagy jobb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_better",
     "ai_concerns": "ai_concerns_none",
     "user_additional": "",
     "user_followup": "",
@@ -5601,7 +5601,7 @@
     "ai_feedback_reaction": "Nem",
     "ai_feedback_response": "",
     "ai_feedback_loop": "ai_feedback_loop_neither",
-    "ai_vs_therapy": "gyengébb, mint a terápia",
+    "ai_vs_therapy": "ai_vs_therapy_weaker",
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",

@@ -1,0 +1,2363 @@
+[
+    {
+        "dateTime": "2026/01/26 10:01:34 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_18_24",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_understanding",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 2
+    },
+    {
+        "dateTime": "2026/01/26 11:10:38 de. CET",
+        "consent": "Q1a",
+        "gender": "",
+        "age": "age_18_24",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_professional",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_uncomfortable",
+        "ai_feedback_loop": "ai_feedback_loop_challenged",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 4
+    },
+    {
+        "dateTime": "2026/01/26 12:12:52 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Igen",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_secondary_opinion",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": "ai_trust_matching",
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_similar",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 7
+    },
+    {
+        "dateTime": "2026/01/26 2:04:53 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_18_24",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_self"
+        ],
+        "tool_motivation": "tool_motivation_curiosity",
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_contradict",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 10
+    },
+    {
+        "dateTime": "2026/01/26 7:10:00 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_self",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_professional",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_follow",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_new_perspective"
+        ],
+        "ai_distrust": "ai_distrust_generic",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_integrated",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_none",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 12
+    },
+    {
+        "dateTime": "2026/01/26 9:50:50 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 13
+    },
+    {
+        "dateTime": "2026/01/27 7:02:39 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_rarely",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 14
+    },
+    {
+        "dateTime": "2026/01/27 7:23:25 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_tried",
+        "ai_model": "",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 15
+    },
+    {
+        "dateTime": "2026/01/27 1:45:23 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_rarely",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 17
+    },
+    {
+        "dateTime": "2026/01/27 1:45:44 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_anonymous",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 18
+    },
+    {
+        "dateTime": "2026/01/27 1:55:37 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 21
+    },
+    {
+        "dateTime": "2026/01/27 2:00:19 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_organization",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_emotion"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": "ai_trust_matching",
+        "ai_distrust": [
+            "ai_distrust_contradict",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 23
+    },
+    {
+        "dateTime": "2026/01/27 2:38:18 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": "tool_usage_emotional_support",
+        "tool_experience": "tool_experience_follow",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_new_perspective"
+        ],
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_1",
+        "ai_self_awareness_change": "ai_self_awareness_change_improved",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_better",
+        "ai_concerns": [
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 30
+    },
+    {
+        "dateTime": "2026/01/27 4:16:03 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_18_24",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_learning",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_problem_solving",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_uncomfortable",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 34
+    },
+    {
+        "dateTime": "2026/01/27 4:38:44 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_decision",
+        "tool_motivation": "tool_motivation_structure",
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 35
+    },
+    {
+        "dateTime": "2026/01/27 5:39:58 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 38
+    },
+    {
+        "dateTime": "2026/01/27 6:16:08 du. CET",
+        "consent": "Q1a",
+        "gender": "Q2c",
+        "age": "age_55_64",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self"
+        ],
+        "tool_motivation": "tool_motivation_stuck",
+        "tool_usage": "tool_usage_problem_solving",
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": "ai_distrust_contradict",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 39
+    },
+    {
+        "dateTime": "2026/01/27 6:48:46 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 40
+    },
+    {
+        "dateTime": "2026/01/27 8:58:26 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "ai_feedback_reaction_unsure",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 45
+    },
+    {
+        "dateTime": "2026/01/27 9:55:24 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_self",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_structure",
+            "tool_motivation_emotion",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_guidance",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": [
+            "ai_feedback_response_thought",
+            "ai_feedback_response_uncomfortable",
+            "ai_feedback_response_context"
+        ],
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 47
+    },
+    {
+        "dateTime": "2026/01/27 10:02:38 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_secondary_opinion",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_unknown",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 48
+    },
+    {
+        "dateTime": "2026/01/28 7:25:48 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_decision",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_contradict"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_misinformation",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 50
+    },
+    {
+        "dateTime": "2026/01/28 8:56:54 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Igen",
+        "nd_status": "nd_status_decline",
+        "ai_frequency": "ai_frequency_tried",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 52
+    },
+    {
+        "dateTime": "2026/01/28 9:02:16 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_self"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_emotion"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "nagyhelgi@gmail.com",
+        "id": 53
+    },
+    {
+        "dateTime": "2026/01/28 9:03:31 de. CET",
+        "consent": "Q1a",
+        "gender": "Q2c",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_tried",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 54
+    },
+    {
+        "dateTime": "2026/01/28 9:04:24 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": [
+            "ai_feedback_response_thought",
+            "ai_feedback_response_integrated",
+            "ai_feedback_response_context"
+        ],
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 55
+    },
+    {
+        "dateTime": "2026/01/28 9:46:24 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_self"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck"
+        ],
+        "tool_usage": [
+            "tool_usage_secondary_opinion",
+            "tool_usage_problem_solving",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_new_perspective",
+            "ai_trust_options"
+        ],
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_ignored",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_misinformation",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 58
+    },
+    {
+        "dateTime": "2026/01/28 10:05:26 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "",
+        "ai_self_awareness": "",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": "",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 60
+    },
+    {
+        "dateTime": "2026/01/28 10:24:41 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_improved",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": [
+            "ai_feedback_response_thought",
+            "ai_feedback_response_uncomfortable"
+        ],
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_none",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 62
+    },
+    {
+        "dateTime": "2026/01/28 10:49:23 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_18_24",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_new_perspective"
+        ],
+        "ai_distrust": [
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_2",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "csernyika13@gmail.com",
+        "id": 63
+    },
+    {
+        "dateTime": "2026/01/28 10:51:35 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_diagnosed",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_emotion",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_improved",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 64
+    },
+    {
+        "dateTime": "2026/01/28 7:28:50 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "",
+        "tool_motivation": "",
+        "tool_usage": "",
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "",
+        "ai_distrust": "",
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "",
+        "ai_feedback_reaction": "",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 68
+    },
+    {
+        "dateTime": "2026/01/28 7:38:00 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_self"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_problem_solving",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_contradict",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 69
+    },
+    {
+        "dateTime": "2026/01/28 7:40:34 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_rarely",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "tool_goal_decision",
+        "tool_motivation": "tool_motivation_structure",
+        "tool_usage": "tool_usage_brainstorming",
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 70
+    },
+    {
+        "dateTime": "2026/01/28 7:42:55 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini",
+            "ai_model_claude"
+        ],
+        "used_ai_psych": "Nem",
+        "tool_goal": [
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": "tool_motivation_emotion",
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_structured",
+            "ai_trust_no"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": "ai_concerns_connection",
+        "user_additional": "",
+        "user_followup": "martar1994@gmail.com",
+        "id": 71
+    },
+    {
+        "dateTime": "2026/01/28 8:20:22 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_learning",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_emotion"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 74
+    },
+    {
+        "dateTime": "2026/01/28 8:47:25 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini",
+            "ai_model_claude"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": "tool_motivation_structure",
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 75
+    },
+    {
+        "dateTime": "2026/01/30 9:43:52 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_claude"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_self",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_emotion"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_guidance",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_improved",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": [
+            "ai_feedback_response_thought",
+            "ai_feedback_response_integrated",
+            "ai_feedback_response_context"
+        ],
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": "ai_concerns_privacy",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 90
+    },
+    {
+        "dateTime": "2026/01/30 9:53:14 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_guidance",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": [
+            "ai_feedback_response_thought",
+            "ai_feedback_response_uncomfortable"
+        ],
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 91
+    },
+    {
+        "dateTime": "2026/01/30 10:31:24 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Nem",
+        "tool_goal": "tool_goal_learning",
+        "tool_motivation": "tool_motivation_time",
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_no",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "ai_feedback_reaction_unsure",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 93
+    },
+    {
+        "dateTime": "2026/01/30 12:19:17 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_follow",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_similar",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 101
+    },
+    {
+        "dateTime": "2026/01/30 12:27:25 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Nem",
+        "tool_goal": "tool_goal_organization",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": [
+            "ai_distrust_contradict",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_no",
+        "ai_self_awareness": "ai_self_awareness_2",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": [
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 102
+    },
+    {
+        "dateTime": "2026/01/30 12:31:13 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_matching",
+            "ai_trust_no"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_no",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": "ai_concerns_overreliance",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 103
+    },
+    {
+        "dateTime": "2026/01/30 12:53:59 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Igen",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": "tool_usage_brainstorming",
+        "tool_experience": "tool_experience_clarify",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_confident",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_integrated",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 105
+    },
+    {
+        "dateTime": "2026/01/30 1:09:31 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_organization",
+            "tool_goal_self",
+            "tool_goal_conversation",
+            "tool_goal_learning"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_structure"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 106
+    },
+    {
+        "dateTime": "2026/01/30 1:25:00 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_tried",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Nem",
+        "tool_goal": "tool_goal_organization",
+        "tool_motivation": "tool_motivation_curiosity",
+        "tool_usage": "tool_usage_brainstorming",
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_no",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 107
+    },
+    {
+        "dateTime": "2026/01/30 8:35:09 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Nem",
+        "tool_goal": "tool_goal_decision",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_follow",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_options"
+        ],
+        "ai_distrust": [
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_unsure",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": "ai_concerns_none",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 111
+    },
+    {
+        "dateTime": "2026/01/31 3:18:45 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini",
+            "ai_model_claude"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": [
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Igen",
+        "ai_feedback_response": "ai_feedback_response_context",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_overreliance",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 115
+    },
+    {
+        "dateTime": "2026/02/02 2:41:13 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_tried",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_anonymous"
+        ],
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_learning",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_professional",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_yes",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 119
+    },
+    {
+        "dateTime": "2026/02/03 7:30:33 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_other",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization",
+            "tool_goal_self"
+        ],
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_structure",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion",
+            "tool_usage_problem_solving",
+            "tool_usage_guidance",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_follow",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured",
+            "ai_trust_confident"
+        ],
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_1",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "ai_feedback_reaction_unsure",
+        "ai_feedback_response": "ai_feedback_response_context",
+        "ai_feedback_loop": "ai_feedback_loop_challenged",
+        "ai_vs_therapy": "ai_vs_therapy_better",
+        "ai_concerns": "ai_concerns_none",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 121
+    },
+    {
+        "dateTime": "2026/02/03 12:14:07 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_organization"
+        ],
+        "tool_motivation": [
+            "tool_motivation_stuck",
+            "tool_motivation_emotion",
+            "tool_motivation_professional"
+        ],
+        "tool_usage": [
+            "tool_usage_feedback",
+            "tool_usage_emotional_support"
+        ],
+        "tool_experience": "tool_experience_context",
+        "ai_trust": "ai_trust_structured",
+        "ai_distrust": [
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_no",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": "ai_concerns_connection",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 122
+    },
+    {
+        "dateTime": "2026/02/03 3:10:49 du. CET",
+        "consent": "Q1a",
+        "gender": "gender_male",
+        "age": "age_35_44",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_daily",
+        "ai_model": "ai_model_gemini",
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_learning",
+        "tool_motivation": [
+            "tool_motivation_curiosity",
+            "tool_motivation_stuck",
+            "tool_motivation_time"
+        ],
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_secondary_opinion"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_structured",
+            "ai_trust_no"
+        ],
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify",
+            "ai_distrust_intuition"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_4",
+        "ai_self_awareness_change": "ai_self_awareness_change_same",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_reinforced",
+        "ai_vs_therapy": "ai_vs_therapy_unsure",
+        "ai_concerns": "ai_concerns_none",
+        "user_additional": "",
+        "user_followup": "",
+        "id": 123
+    },
+    {
+        "dateTime": "2026/02/08 1:19:38 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_25_34",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_rarely",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": [
+            "tool_goal_understanding",
+            "tool_goal_decision",
+            "tool_goal_conversation"
+        ],
+        "tool_motivation": "tool_motivation_stuck",
+        "tool_usage": [
+            "tool_usage_brainstorming",
+            "tool_usage_guidance"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": "ai_trust_no",
+        "ai_distrust": [
+            "ai_distrust_generic",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_3",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "ai_feedback_loop_neither",
+        "ai_vs_therapy": "ai_vs_therapy_weaker",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 124
+    },
+    {
+        "dateTime": "2026/02/11 3:56:49 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_none",
+        "ai_frequency": "ai_frequency_sometimes",
+        "ai_model": [
+            "ai_model_chatgpt",
+            "ai_model_gemini"
+        ],
+        "used_ai_psych": "Nem",
+        "tool_goal": [
+            "tool_goal_decision",
+            "tool_goal_organization"
+        ],
+        "tool_motivation": "tool_motivation_structure",
+        "tool_usage": [
+            "tool_usage_secondary_opinion",
+            "tool_usage_problem_solving"
+        ],
+        "tool_experience": "tool_experience_suggestion",
+        "ai_trust": [
+            "ai_trust_new_perspective",
+            "ai_trust_structured"
+        ],
+        "ai_distrust": [
+            "ai_distrust_confident",
+            "ai_distrust_contradict",
+            "ai_distrust_simplify"
+        ],
+        "ai_personal_rules": "ai_personal_rules_somewhat",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "",
+        "ai_feedback_loop": "",
+        "ai_vs_therapy": "",
+        "ai_concerns": [
+            "ai_concerns_overreliance",
+            "ai_concerns_misinformation",
+            "ai_concerns_dependency",
+            "ai_concerns_connection",
+            "ai_concerns_privacy"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 125
+    },
+    {
+        "dateTime": "2026/02/16 6:03:31 de. CET",
+        "consent": "Q1a",
+        "gender": "gender_female",
+        "age": "age_45_54",
+        "is_professional": "Nem",
+        "nd_status": "nd_status_suspected",
+        "ai_frequency": "ai_frequency_weekly",
+        "ai_model": "ai_model_chatgpt",
+        "used_ai_psych": "Igen",
+        "tool_goal": "tool_goal_self",
+        "tool_motivation": "tool_motivation_structure",
+        "tool_usage": "tool_usage_brainstorming",
+        "tool_experience": "tool_experience_context",
+        "ai_trust": "ai_trust_new_perspective",
+        "ai_distrust": "ai_distrust_intuition",
+        "ai_personal_rules": "Nem",
+        "ai_self_awareness": "ai_self_awareness_5",
+        "ai_self_awareness_change": "ai_self_awareness_change_cleared",
+        "ai_feedback_reaction": "Nem",
+        "ai_feedback_response": "ai_feedback_response_thought",
+        "ai_feedback_loop": "ai_feedback_loop_both",
+        "ai_vs_therapy": "ai_vs_therapy_complementary",
+        "ai_concerns": [
+            "ai_concerns_misinformation",
+            "ai_concerns_none"
+        ],
+        "user_additional": "",
+        "user_followup": "",
+        "id": 126
+    }
+]
