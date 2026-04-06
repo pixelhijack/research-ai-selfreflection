@@ -1,3 +1,13 @@
+# 1. Human–AI interaction
+
+- [Unveiling trust in AI: the interplay of antecedents, consequences, and cultural dynamics](https://link.springer.com/article/10.1007/s00146-025-02477-6)
+
+# 2. Self-disclosure online
+
+# 3. Cognitive offloading
+
+# 4. Digital mental health tools
+
 # USER QUESTION
 
 Suggest literature anchors.
