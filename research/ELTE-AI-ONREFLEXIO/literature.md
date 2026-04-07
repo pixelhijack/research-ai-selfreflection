@@ -13,14 +13,14 @@
 Suggest literature anchors.
 These 4 pillars were a good structure:
 
-- Human–AI interaction
+- Human–AI interaction (HAI)
 - Self-disclosure online
 - Cognitive offloading
 - Digital mental health tools
 
 Do not recitate as we cannot trust it is accurate, but do outline what these are about, what are the results, what is the common direction, what they are missing, where can i find these and how they fit onto my topics / hypotheses
 
-# CHATGPT ANSWER
+# CHATGPT ANSWER: PILLARS
 
 Good — this is the right move. You don’t want random citations. You want **conceptual anchors**: fields, typical findings, tensions, and open gaps you can position yourself into.
 
@@ -403,8 +403,67 @@ That builds a clean argument arc.
 
 ---
 
-If you want, next we can:
+# EXPAND PILLARS [Gemini](https://gemini.google.com/app/cf571b33ed18c4f7?hl=hu)
 
-- Turn this into a 2–3 page literature review skeleton
-- Or map each hypothesis to a literature paragraph
-- Or identify potential theoretical tensions you can leverage as originality points
+Navigating the sea of AI research can feel like trying to drink from a firehose. For a Cognitive Neuroscience application, you need to move past "General AI" papers and find the **theoretical anchors** that ELTE faculty will recognize.
+
+Here is how to filter the noise and the specific "Heavy Hitter" concepts/papers you should look for to ground your 15-page paper.
+
+---
+
+## 1. Human–AI Interaction: The "CASA" Paradigm
+
+To distinguish relevant research, look for the **CASA (Computers Are Social Actors)** paradigm. It is the gold standard for explaining why we treat AI like people.
+
+- **The Classic Anchor:** **Nass & Moon (2000)**, "Machines and Mindlessness." It argues we use social rules for computers automatically.
+- **The Modern Update:** Look for **Lombard & Xu (2021)** and their **MASA (Media Are Social Actors)** framework. They argue that modern AI (like LLMs) has moved beyond the "mindless" response to something more relational.
+- **Strategic Tip:** In your paper, argue that LLMs represent a "Third Paradigm" (Nielsen, 2023) where the interface is no longer a tool you command, but a **collaborator** you negotiate with.
+
+---
+
+## 2. Self-Disclosure: The "Online Disinhibition Effect"
+
+You aren't just looking for "AI chat"; you are looking for **Computer-Mediated Communication (CMC)**.
+
+- **The Classic Anchor:** **Suler (2004)**, "The Online Disinhibition Effect." This explains the "invisible" feeling that leads to deep disclosure.
+- **The AI Twist:** Search for **"The Bot Privacy Paradox"** or **"Self-disclosure to Conversational Agents."** \* **Key Finding to Cite:** Recent studies (e.g., **Lucas et al., 2014**) show people are more willing to disclose "taboo" information (like PTSD symptoms) to a virtual agent than to a human because the agent is perceived as **non-judgmental**.
+
+---
+
+## 3. Cognitive Offloading: The "Extended Mind"
+
+This is your most "neuro" pillar. Avoid tech blogs; look for **Cognitive Psychology** journals.
+
+- **The Philosophical Foundation:** **Clark & Chalmers (1998)**, "The Extended Mind." This is the "Bible" for the idea that our mind doesn't stop at our skull.
+- **The Cognitive Mechanism:** Search for **"Intention Offloading"** and the work of **Sam Gilbert (2023/2024)**. He is the leading researcher on how setting digital reminders (and now using AI) changes our biological memory patterns.
+- **The "Metacognitive" Angle:** Look for **"Metacognitive Calibration."** People offload tasks to AI because they _believe_ their own brain will fail (even if it wouldn't). Your survey results likely show people using AI to "structure" thoughts they feel too overwhelmed to organize internally.
+
+---
+
+## 4. Digital Mental Health: "Therapeutic Alliance"
+
+ELTE will care about the _quality_ of the bond.
+
+- **Key Concept:** **"Digital Therapeutic Alliance" (DTA).** Can you feel a "bond" with code?
+- **Relevant Research:** Look for papers on **Wysa** or **Woebot** (e.g., **Fitzpatrick et al., 2017**). They found that users form a bond with chatbots remarkably quickly—sometimes within five days.
+- **The ND Angle:** Search for **"AI for Neurodivergent Emotional Regulation."** Emerging 2024–2025 research suggests AI acts as a "Social Buffer," reducing the "Double Empathy Problem" (Milton, 2012) for autistic individuals by providing a predictable, low-stakes interaction partner.
+
+---
+
+## How to Filter Search Results Strategically
+
+When you open Google Scholar, don't just look at the first page. Use these "Pro Filters":
+
+| To find...             | Use these keywords +                            | Search in these Journals                                 |
+| :--------------------- | :---------------------------------------------- | :------------------------------------------------------- |
+| **Established Theory** | "Review", "Meta-analysis", "Framework"          | _Computers in Human Behavior_, _Psychological Bulletin_  |
+| **Neuro Evidence**     | "fMRI", "Neural correlates", "Cognitive Load"   | _Nature Human Behaviour_, _Trends in Cognitive Sciences_ |
+| **The "Gaps"**         | "Limitations", "Future Research", "Qualitative" | _CHI Conference (ACM)_, _Cyberpsychology_                |
+
+### A "Better Source" Strategy
+
+I can provide specific summaries, but for a 15-page academic paper, you need the **primary sources**.
+
+**Your next step:** Pick the pillar you feel is your weakest (perhaps the "Offloading" one?) and I can give you a "Starter Pack" of 3-5 specific, highly-cited papers from the last 3 years that would look excellent in an ELTE bibliography.
+
+Which pillar should we deep-dive into first for specific citations?
