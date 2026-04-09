@@ -4,10 +4,6 @@
 
 In this seminal philosophical paper, **Andy Clark and David Chalmers** propose the theory of **active externalism**, which suggests that the human mind is not confined to the physical boundaries of the skull. They argue that when individuals use **external tools**—such as notebooks, calculators, or computers—to perform tasks they would otherwise do mentally, those objects become functional parts of their **cognitive processes**. By comparing a woman using her biological memory to a man using a notebook to recall information, the authors demonstrate that both systems achieve the same **epistemic ends**. This perspective shifts the definition of **cognition** from an internal, private occurrence to a **coupled system** that interacts directly with the environment. Ultimately, the source suggests that our **personal identity** and mental states are distributed across the world through the technology and language we utilize.
 
-### USER PROMPT
-
-what are the key findings of the research? what terms do they introduce, what are the short explanations for those? what relevant citations can be quoted for my research about "AI usage and self-reflection"?
-
 ### NOTEBOOKLM ANSWER
 
 The research presented in the sources argues that **cognitive processes are not confined within the boundaries of the "skin and skull"** but instead extend into the environment. The key finding is that when an external object is coupled with a human in a way that drives cognitive processes, that object becomes an **active part of the cognitive system**. The authors conclude that if we remove these external components, the system’s behavioral competence drops just as it would if part of the brain were removed. Consequently, they argue that **mental states like beliefs and the "self" itself can be extended into the world**.

@@ -6,6 +6,12 @@ This academic text introduces the **Media Are Social Actors (MASA) paradigm**, a
 
 ---
 
+### USER PROMPT
+
+what are the key findings of the research? what terms do they introduce, what are the short explanations for those? what relevant citations can be quoted for my research about "AI usage and self-reflection"?
+
+---
+
 The research primarily focuses on the transition from the **Computers Are Social Actors (CASA)** paradigm to the **Media Are Social Actors (MASA)** paradigm, providing empirical evidence for how humans interact with modern AI-driven technologies.
 
 ### Key Findings of the Research
