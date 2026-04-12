@@ -1,5 +1,18 @@
 # HIPOTÉZISEK
 
+---
+
+# plusz nyomozniiii
+
+False coherence problem
+AI-generated profiles feel too true
+People will:
+over-trust them
+reorganize identity around them
+That’s not just Barnum effect—it’s narrative lock-in
+
+---
+
 ## H1: AI for personal use
 
 - nagyon sokan használják pszichológiai témákra az AI-t, de nagyon tabu, kevesen merik bevallani (ezért az anonim, és ezért nem mernék elkérni mindenféle pontos demográfiai adatot)
