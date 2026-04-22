@@ -174,3 +174,107 @@ Testable — you have a question on concerns (what worries you most), so you can
 | Feedback loop / rethinking             | Partially                            | H4            | Fold into H4, note iterative aspect as future research  |
 | AI vs therapy importance               | Partially                            | H2            | Fold into H2 as perception sub-question                 |
 | Hallucinations > dependence as concern | Yes                                  | None          | Keep as standalone                                      |
+
+# CHATGPT HYPOTHESES
+
+## H1 — Self-Disclosure Hypothesis
+
+Individuals will report **greater emotional self-disclosure toward AI than toward humans in comparable contexts**, due to:
+
+- reduced fear of judgment
+- perceived anonymity
+- absence of social cost
+
+Grounded in:
+
+- Online disinhibition effect (Suler, 2004)
+- Self-disclosure research
+- CASA paradigm (Computers Are Social Actors – Reeves & Nass)
+
+---
+
+## H2 — Neurodivergence Modulation Hypothesis
+
+Neurodivergent individuals (especially ADHD/autistic traits) will report:
+
+- higher frequency of AI use for self-reflection
+- greater perceived usefulness
+
+Possible mechanisms:
+
+- Reduced social cognitive load
+- Asynchronous interaction
+- Lower rejection sensitivity activation
+- Externalization of executive function
+
+This connects to:
+
+- Social fatigue literature
+- Executive scaffolding
+- Compensatory tool usage research
+
+---
+
+## H3 — Cognitive Offloading Hypothesis
+
+Users will describe AI as helping with:
+
+- structuring thoughts
+- organizing emotions
+- perspective shifting
+
+This aligns with:
+
+- Extended mind theory (Clark & Chalmers)
+- Cognitive offloading literature
+- Metacognitive scaffolding research
+
+---
+
+## H4 — Pseudo-Therapeutic Substitution Hypothesis
+
+A subset of users will report using AI as:
+
+- therapy alternative
+- interim support
+- preparation tool for therapy
+
+But:  
+Perceived emotional support will correlate with anthropomorphic framing of AI.
+
+Grounded in:
+
+- Therapeutic alliance theory
+- Parasocial interaction research
+- Anthropomorphism in AI studies
+
+---
+
+## H5 — Risk Perception Split Hypothesis
+
+Users will cluster into two profiles:
+
+- AI-as-tool (instrumental framing)
+- AI-as-agent (relational framing)
+
+These groups will differ in:
+
+- trust level
+- dependency risk
+- emotional reliance
+
+---
+
+## H6 — Reflection Amplification Hypothesis
+
+AI use will correlate with:
+
+- increased self-questioning
+- reframing ability
+- narrative coherence
+
+But not necessarily with:
+
+- emotional resolution
+
+This distinction is important.
