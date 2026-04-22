@@ -44,6 +44,8 @@ For the ease of overview on the topics AI usage for self-reflection covers, four
 ###  3.1 Human–AI Interaction (HAI)
 
 #### Common findings
+
+
 #### Classic / recent literature
 #### Internal debates
 #### What is missing / How this research contributes
