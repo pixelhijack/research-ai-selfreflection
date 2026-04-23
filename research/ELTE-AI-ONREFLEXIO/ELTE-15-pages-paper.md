@@ -45,8 +45,12 @@ For the ease of overview on the topics AI usage for self-reflection covers, four
 
 #### Common findings
 
-
-#### Classic / recent literature
+- Human-AI Interaction (HAI) is a field which studies how people perceive, anthropomorphise and emotionally respond to AI systems, bridging the gap between computer science and cognitive neuroscience.
+- The classical paradigm is represented by the Computers Are Social Actors (CASA) model which is handled as the gold standard for explaining why we treat machines socially as people even when we know they are machines. 
+- A newer update and extension of this is the Media Are Social Actors (MASA), a theoretical framework by Lombard & Xu (2021), where authors suggest that humans continue to apply social norms and scripts to a wide range of modern technologies, including social robots and smartphones, treating them as social actors rather than mere tools. As AI becomes more human-like, human moral reasoning shifts from seeing machines as property to considering **"quasi-animal rights"** and broader societal responsibilities, particularly when witnessing "abuse" toward robots. 
+- In a 2023 study, Nielsen argues that LLMs represent a "Third Paradigm", where the interface is no longer a tool you command, but a collaborator we negotiate with (Nielsen, 2023). 
+- In "Anthropomorphism and Trust in Human-Large Language Model Interactions" (2026, [arXiv:2604.15316](https://arxiv.org/abs/2604.15316#:~:text=Subjects%3A,arXiv%2Dissued%20DOI%20via%20DataCite)) is a large-scale study (2000+ interactions), which suggests that if the AI shows cognitive empathy (explaining *why* it understands you), users move from seeing it as a "tool" to a "relational partner," lowering the barrier for disclosure.
+- The paper "HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns" (2026, [arXiv:2601.10198](https://arxiv.org/abs/2604.15316#:~:text=Subjects%3A,arXiv%2Dissued%20DOI%20via%20DataCite)) explores how LLMs are used as "Role-Playing Language Agents" (RPLAs, assigned historical / fictional personas) that simulate human behavior, applied as emotional companions, interactive video game characters, digital clones and virtual asistents, but often suffering from "personality drift." (https://arxiv.org/abs/2502.09082, https://arxiv.org/html/2506.23107v1)
 #### Internal debates
 #### What is missing / How this research contributes
 ### 3.2 Self-Disclosure Online
