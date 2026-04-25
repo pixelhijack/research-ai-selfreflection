@@ -159,8 +159,7 @@ For frequent users, AI does not act only as a "chat partner", but easily transit
 #### H1 – Self-disclosure hypothesis
 Individuals will report greater emotional self-disclosure toward AI than toward humans in comparable contexts.
 
-Rationale: AI comes with reduced fear of judgment, perceived anonymity and absence of social cost and provides immediate structural breakdown and feedback () compared to classical human-based therapy which is expensive, harder to access and needs much slower self-reflective labour and investment. 
-
+Rationale: AI comes with reduced fear of judgment, perceived anonymity and absence of social cost and provides immediate structural breakdown and feedback compared to classical human-based therapy which is expensive, harder to access and needs much slower self-reflective labour and investment. 
 #### H2 – Neurodivergence usage emphasis hypothesis
 Neurodivergent individuals will report higher frequency of AI use for self-reflection and greater perceived usefulness. Neurodivergent users will also less likely to set explicit usage boundaries/rules for AI, despite reporting higher engagement.
 
@@ -172,20 +171,15 @@ Users who have received challenging or dissonant AI feedback (i.e., feedback tha
 
 Rationale: Cognitive dissonance theory and assimilation/accommodation models (Piaget, schema theory) suggest that self-concept change requires encountering contradictory information, not reinforcement.
 
-#### H4 – Pseudo-therapeutic substitution hypothesis
+#### H4 – Therapeutic substitution hypothesis
 A subset of users will report using AI as therapy alternative / interim support / preparation tool for therapy. 
 
 Rationale: the primary motivation for psychological AI use is accessibility, not preference - people turn to AI because professional help is unavailable or expensive, not because they perceive AI as superior. If they do prefer AI over therapy, the question is whether it is because of the potential for a direct, honest response which might consist of more direct actionable steps than a therapy or maybe because of the underlying shame (“doesn’t dare to ask the therapist”).
 
-#### H5 – AI as tool (instrumential) / as agent (relational) framing hypothesis
-Users will cluster into two profiles:
-- AI-as-tool (instrumental framing)
-- AI-as-agent (relational framing)
+#### H5 – AI as tool (instrumential) vs. as agent (relational) framing hypothesis
+Users of AI usually cluster into two profiles: 1. AI-as-tool (instrumental framing) vs 2. AI-as-agent (relational framing). These groups will differ in trust level, dependency risk and emotional reliance. 
 
-These groups will differ in:
-- trust level
-- dependency risk
-- emotional reliance
+Rationale: what is haven't widely discussed yet is the *role* of AI chatbots fills in a user's life based on how / for what reason it is used. AI usage can cover a wide range from being a mere tool (for developers in a data pipeline for example, or recognising plants / bird calls, asking for wifi setting support), through used as a Delphoi Oracle (asking for life advice) through used as a complete presidential consultancy team.
 
 #### H6 – Reflection amplification hypothesis
 Higher prior self-awareness predicts more critical (less naive) engagement with AI feedback. AI use will correlate with increased self-questioning, reframing ability, narrative coherence.
@@ -197,13 +191,27 @@ Trust in AI responses is primarily heuristic-based (a “gut feeling” based on
 
 Rationale: This follows dual-process theory — users evaluate AI outputs with System 1 cues (does it look coherent, does it feel right?) rather than System 2 verification. This would replicate known patterns in how people evaluate online health information.
 
+#### H8 - Dependence hypothesis
+Hallucinations are more of a turn-off than dependence. 
+
+Rationale: a descriptive hypothesis that challenges that for 2026, users become much more epistemically cautious with AI based on widespread AI fatigue and AI skepticism, however self-reinforcing confirmation bias / narrative overfitting loops create a stronge dependency and might be much more dangerous than unchecked hallucinations / invalid facts (even though model sycophancy is already recognised and flagged, see OpenAI GPT-4o scandals).
+
 ## 5. Methods
-   
-###  5.1 Design
-###  5.2 Participants
-###  5.3 Materials
-### 5.4 Procedure
-###  5.5 Data Analysis
+
+###  5.1 Design, participants, materials, procedure
+
+Because of the many-direction branching rich nature of the questions arised during the design of this research, it is used a mixed-method approach on a cross-sectional survey. The survey was anonymous (with optional email address field for expressing interest in potentional follow-ups), consisted of 23 questions. 
+
+The sample is not representative for the general population, the survey is meant for showcase purposes and can be repeated on better-fit sample for more structured and nuanced results. The survey was posted on multiple channels to gather data: personal Facebook wall, various Facebook groups (Adult A(u)DHD, Neurodivergency groups, AI technical news group), and hungarian subreddit forums (r/psychology) and resulted in 126 participants filling in it during a 2 weeks period. 
+
+###  5.2 Limitations
+
+**It is important to flag limitations explicitly:** 
+
+- Personal AI usage is still it is early phase at the time of this survey and its social view is controversial and quite a taboo. Also, neurodivergency is getting more widely known and even accepted, but stereotypes about ADHD and especially Autism are still extremely strong. Therefore the vulnerability of neurodivergent populations is strong, neurodivergent community by itself will hold a selection bias and are commonly more motivated in self-discovery, AI usage and filling in questionnaires in AI / psychology / neurodivergency topics. 
+- Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context. 
+
+###  5.3 Data Analysis
    Quantitative
    Qualitative
 
@@ -219,18 +227,9 @@ Rationale: This follows dual-process theory — users evaluate AI outputs with S
 ### 7.3 Theoretical Contribution
 ### 7.4 Risks / Alternative Interpretations
 
-## 8. Limitations
-
-For ethical positioning of this study trying to bridge technology, psychology and society, some limitations need to be explicitly acknowledged. 
-
-- Self-selection bias and sampling: the questionnaire was shared in neurodivergent Facebook groups, psychology-topic sub-Reddits and AI-focused Facebook groups, therefore it is prone to selection-bias and the sampling is definitely not representative for the wider population
-- Confirmation / interpretive bias: as most studies which based on somewhat lived experience and motivated by personal drives, this one is also prone to post hoc rationalisation and narrative overfitting, which the author tried to avoid all along the process (by explicitly setting *system-level prompts* against these pitfalls, handled everything as hypotheses and continuously questioned every conceptual statement).
-- Vulnerability of neurodivergent populations: neurodivergent community by itself will hold a selection bias and are commonly more motivated in self-discovery, AI usage and filling in questionnaires in AI / psychology / neurodivergency topics. 
-- Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context. 
-
-## 9. Conclusion
-## 10. References (not counted in page limit usually)
-## 11. Appendices / Associated Data (Outside 15 pages)
+## 8. Conclusion
+## 9. References (not counted in page limit usually)
+## 10. Appendices / Associated Data (Outside 15 pages)
 
 ---
 
