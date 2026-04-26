@@ -232,23 +232,48 @@ The participants are primarily in the early-to-mid-adult stages of life, with th
 
 | Age Group       | Number of Participants | Percentage |
 | --------------- | ---------------------- | ---------- |
-| **18 - 24**     | 11                     | **~8.7%**  |
-| **25 - 34**     | 42                     | **~33.3%** |
-| **35 - 44**     | 42                     | **~33.3%** |
-| **45 - 54**     | 28                     | **~22.2%** |
+| **18 - 24**     | 11                     | **~9%**    |
+| **25 - 34**     | 42                     | **~33%**   |
+| **35 - 44**     | 42                     | **~33%**   |
+| **45 - 54**     | 28                     | **~22%**   |
 | **55 - 64**     | 2                      | **~1.5%**  |
 | **65 or older** | 1                      | **~0.8%**  |
 #####  Neurodivergence status distribution
 
+| Neurodivergency Status              | Number of Participants | Percentage |
+| ----------------------------------- | ---------------------- | ---------- |
+| Neurotypical                        | 42                     | **~33%**   |
+| Diagnosed neurodivergent            | 37                     | **~29%**   |
+| Suspected neurodivergent            | 32                     | **~25%**   |
+| Diagnosed with some other condition | 9                      | **~7%**    |
+Based on the dataset, 120 participants answered on the question asking about neurodivergency status, excluded the 6 declined / skipped. Diagnosed neurodivergents represent a significant portion of the dataset, with respondents frequently citing that AI tools like ChatGPT or Gemini help with executive functions and organizing daily life. A large group of users suspect they may be neurodivergent, often using AI to better understand their internal patterns or social interactions. 
 
-#####  Professional status distribution
+The sum of suspected and diagnosed neurodivergents are 54%, and while real diagnosed prevalence rates are considered between 5-20%, this outcome quite overlaps with multiple recent studies: ZenBusiness study found 53% of british Gen Z identifies themselves with neurodivergence, Deloitte Global Gen Z and Millennial Survey (2023) found 53% in a global survey, while Understood.org & Harris Poll (2024) found 51%. True prevalence and discussing the implications are out of scope for this study, but it is interesting to imagine a world where neurodivergence is not considered a small minority anymore. ([link](https://www.understood.org/en/research-and-surveys/understood-org-genz-survey), [link](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/), [link](https://www.greaterbirminghamchambers.com/resource/what-hr-is-being-told-about-neurodiversity-is-wrong-and-it-s-costing-you.html))
+##### Professional status distribution
 
+8 out of the 126 participants answered he/she is working as a mental health professional (therapist, psychologist, coach, social worker).
 #####  AI usage frequency distribution
+
+54 participants (~42%) admitted to use AI on a daily basis, 42 weekly (~33%), 16 sometimes (~12%), 5 rarely (~4%), and 9 tried but almost never really using it (~7%).  
 
 #####  Used AI for psychological goals distribution
 
+As a split variable, question "Have you ever used AI in psychology area, discussing your personal things, your internal workflows, social situations, or as a therapist?" which early terminated the questionnaire if answered "no", resulted in 89 participants, 70% of the total, out of which is 66 participants, so ~74% of those who used AI for psychological goals are women. 
+
 ##### Limitations
 To flag limitations here: the sample was self-selected, Hungarian-speaking, digitally engaged, likely overrepresenting neurodivergents (surveys about AI self-reflection circulate in neurodivergent communities, and this was also re-posted in other, even more niche Facebook Groups).
+
+##### Hypothesis testing — H1
+
+This hypothesis is a posteriori, sadly there wasn't an explicit question like "do you disclose more to AI than to humans in comparable contexts" so we don't have comparative measure, so unfortunately the hypothesis overclaims and only partially testable. What we can test here is only a proxy: whether people report using AI for emotional disclosure at all, and whether accessibility barriers are cited as drivers.
+##### Hypothesis testing — H2
+##### Hypothesis testing — H3
+##### Hypothesis testing — H4
+##### Hypothesis testing — H5
+##### Hypothesis testing — H6
+##### Hypothesis testing — H7
+##### Hypothesis testing — H8
+
 
 ###  6.2 Qualitative Results
 
