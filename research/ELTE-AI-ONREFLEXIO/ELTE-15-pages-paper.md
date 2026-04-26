@@ -33,6 +33,8 @@ I was curious how AI is trusted and used by
 
 The study is intentionally exploratory and multi-perspective where epistemic level was pre-committed, but which sub-group comparison will be emphasised and how prominent each theme will become finally were not. 
 
+(For simplicity, neurodivergents abbreviated at some points as ND, neurotypicals as NT)
+
 ### 2.5 Main research question
 
 This mixed-method study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes.
@@ -266,6 +268,26 @@ To flag limitations here: the sample was self-selected, Hungarian-speaking, digi
 ##### Hypothesis testing — H1
 
 This hypothesis is a posteriori, sadly there wasn't an explicit question like "do you disclose more to AI than to humans in comparable contexts" so we don't have comparative measure, so unfortunately the hypothesis overclaims and only partially testable. What we can test here is only a proxy: whether people report using AI for emotional disclosure at all, and whether accessibility barriers are cited as drivers.
+
+For this, I used derived composite variables (`emotional_use` and `accessibility_barrier`), getting descriptive: what % of respondents show emotional use:
+71 person, ~56% of respondents used AI for emotional OR self-pattern understanding.
+48 person, ~38% cited accessibility as a driver.
+
+To see if ND respondents show emotional use at a different rate than NT respondents, I cross-tabbed `emotional_use` × `nd_status`:
+
+| Neurodivergency Status              | No  | Emotional use | X% of diagnosed ND respondents used AI for emotional purposes vs % of NT respondents |
+| ----------------------------------- | --- | ------------- | ------------------------------------------------------------------------------------ |
+| Neurotypical                        | 42  | 22            | ~52%                                                                                 |
+| Diagnosed neurodivergent            | 37  | 22            | ~59%                                                                                 |
+| Suspected neurodivergent            | 32  | 19            | ~59%                                                                                 |
+| Diagnosed with some other condition | 9   | 6             | ~66%                                                                                 |
+**Result: emotional use in diagnosed, suspected neurodivergents and other diagnosed are somewhat / significantly higher than in neurotypicals.**
+
+Cross-tab: emotional use × is_professional. 
+Result:
+Out of 8 professionals, 50% used AI for emotional purposes.
+Out of 118 non-professionals, 56.77% used AI for emotional purposes.
+
 ##### Hypothesis testing — H2
 ##### Hypothesis testing — H3
 ##### Hypothesis testing — H4
