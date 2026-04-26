@@ -218,6 +218,38 @@ The sample is not representative for the general population, the survey is meant
 ## 6. Results
    
 ###  6.1 Quantitative Results
+
+#### Preliminary: sample description
+
+##### Gender and age distribution
+
+Out of the 126 participants, 123 filled in the gender:
+- male: 31 (~25.2%)
+- female: 88 (~71.5%)
+- didn't want to disclose: 4 participants
+
+The participants are primarily in the early-to-mid-adult stages of life, with the **25–34** and **35–44** age groups being equally represented and together accounting for two-thirds of the total sample. The distribution is heavily skewed toward female participants and individuals between the ages of 25 and 44.
+
+| Age Group       | Number of Participants | Percentage |
+| --------------- | ---------------------- | ---------- |
+| **18 - 24**     | 11                     | **~8.7%**  |
+| **25 - 34**     | 42                     | **~33.3%** |
+| **35 - 44**     | 42                     | **~33.3%** |
+| **45 - 54**     | 28                     | **~22.2%** |
+| **55 - 64**     | 2                      | **~1.5%**  |
+| **65 or older** | 1                      | **~0.8%**  |
+#####  Neurodivergence status distribution
+
+
+#####  Professional status distribution
+
+#####  AI usage frequency distribution
+
+#####  Used AI for psychological goals distribution
+
+##### Limitations
+To flag limitations here: the sample was self-selected, Hungarian-speaking, digitally engaged, likely overrepresenting neurodivergents (surveys about AI self-reflection circulate in neurodivergent communities, and this was also re-posted in other, even more niche Facebook Groups).
+
 ###  6.2 Qualitative Results
 
 ## 7. Discussion
