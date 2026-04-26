@@ -213,13 +213,9 @@ The sample is not representative for the general population, the survey is meant
 - Personal AI usage is still it is early phase at the time of this survey and its social view is controversial and quite a taboo. Also, neurodivergency is getting more widely known and even accepted, but stereotypes about ADHD and especially Autism are still extremely strong. Therefore the vulnerability of neurodivergent populations is strong, neurodivergent community by itself will hold a selection bias and are commonly more motivated in self-discovery, AI usage and filling in questionnaires in AI / psychology / neurodivergency topics. 
 - Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context. 
 
-###  5.3 Data Analysis
-   Quantitative
-   Qualitative
-
-## 6. Results
+## 6. Data analysis & results
    
-###  6.1 Quantitative Results
+###  6.1 Quantitative results
 
 #### Preliminary: sample description
 
@@ -267,6 +263,9 @@ To flag limitations here: the sample was self-selected, Hungarian-speaking, digi
 
 ##### Hypothesis testing — H1
 
+56% of respondents used AI for emotional disclosure purposes. This rate was higher among diagnosed ND respondents (59%) than neurotypicals (52%), and higher among non-professionals than professionals (56.77% vs 50%). Accessibility barriers (not enough time / option to seek professional psychologist) were cited by 38% of all respondents. These patterns are consistent with H1's prediction that AI serves as a low-barrier alternative for emotional disclosure, though no direct comparison to human-disclosure contexts was available in this dataset.
+
+TO NOTES -> 
 This hypothesis is a posteriori, sadly there wasn't an explicit question like "do you disclose more to AI than to humans in comparable contexts" so we don't have comparative measure, so unfortunately the hypothesis overclaims and only partially testable. What we can test here is only a proxy: whether people report using AI for emotional disclosure at all, and whether accessibility barriers are cited as drivers.
 
 For this, I used derived composite variables (`emotional_use` and `accessibility_barrier`), getting descriptive: what % of respondents show emotional use:
@@ -287,6 +286,8 @@ Cross-tab: emotional use × is_professional.
 Result:
 Out of 8 professionals, 50% used AI for emotional purposes.
 Out of 118 non-professionals, 56.77% used AI for emotional purposes.
+
+<- TO NOTES 
 
 ##### Hypothesis testing — H2
 ##### Hypothesis testing — H3
