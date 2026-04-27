@@ -152,9 +152,9 @@ For frequent users, AI does not act only as a "chat partner", but easily transit
 ## 4. Research Questions & Hypotheses
    
 ### 4.1 Research Questions
-   RQ1
-   RQ2
-
+   RQ1 – Does AI lead to better self-awareness for neurodivergents (or any other / neurotypical) as a supplement or even alternative to modern therapy
+   RQ2 – AI addiction
+   RQ3 – AI psychosis / narcissism
 
 ### 4.2 Hypotheses
 
@@ -290,6 +290,8 @@ Out of 118 non-professionals, 56.77% used AI for emotional purposes.
 <- TO NOTES 
 
 ##### Hypothesis testing — H2
+
+
 ##### Hypothesis testing — H3
 ##### Hypothesis testing — H4
 ##### Hypothesis testing — H5
