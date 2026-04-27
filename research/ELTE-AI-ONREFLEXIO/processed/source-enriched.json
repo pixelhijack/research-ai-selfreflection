@@ -36,7 +36,7 @@
             "ai_distrust_generic",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -822,7 +822,7 @@
         "tool_experience": "tool_experience_context",
         "ai_trust": "ai_trust_no",
         "ai_distrust": "ai_distrust_contradict",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_2",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -1171,7 +1171,7 @@
             "ai_distrust_confident",
             "ai_distrust_simplify"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Igen",
@@ -1717,7 +1717,7 @@
             "ai_concerns_misinformation",
             "ai_concerns_dependency",
             "ai_concerns_connection",
-            "Az AI, ha nem jó promptot fogalmazol meg, akkor úgyis azt mondja, amit hallani szeretnél: mindig igazat ad neked, mindig validál stb. Ez egy ponton már lehet káros is, ugyanis nem elég ha folyamatosan \\"nyaliznak\\" meg babusgatnak, hanem igenis ki kell mondani sokszor a nyers igazságot"
+            "Az AI, ha nem jó promptot fogalmazol meg, akkor úgyis azt mondja, amit hallani szeretnél: mindig igazat ad neked, mindig validál stb. Ez egy ponton már lehet káros is, ugyanis nem elég ha folyamatosan nyaliznak meg babusgatnak, hanem igenis ki kell mondani sokszor a nyers igazságot"
         ],
         "user_additional": "",
         "user_followup": "",
@@ -2170,7 +2170,7 @@
             "ai_distrust_contradict",
             "ai_distrust_simplify"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Igen",
@@ -2336,7 +2336,7 @@
             "ai_distrust_generic",
             "ai_distrust_contradict"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_3",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -2644,7 +2644,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_5",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -2878,7 +2878,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_3",
         "ai_self_awareness_change": "ai_self_awareness_change_improved",
         "ai_feedback_reaction": "Igen",
@@ -2936,7 +2936,7 @@
             "ai_distrust_contradict",
             "ai_distrust_simplify"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_2",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Igen",
@@ -3053,7 +3053,7 @@
             "ai_distrust_contradict",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Nem",
@@ -3158,7 +3158,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Igen",
@@ -3169,7 +3169,7 @@
             "ai_concerns_none",
             "Azt gondolom, hogy mivel tudom, hogy másodrangú információként, plusz eszközként használom, egész tudatosan kezelem. Néha észreveszem, hogy túl általános vagy fáraszt a válasza.."
         ],
-        "user_additional": "Mint minden témában, itt is fontos, hogy tudjunk jól kérdezni. Az AI elsősorban \\"pleasing\\"-el és azt fogja mondani, amit hallani akarsz vagy legalább is mindig pozitív, megerősít. Hacsak nem kéred kifejezetten, hogy tegyen próbára.",
+        "user_additional": "Mint minden témában, itt is fontos, hogy tudjunk jól kérdezni. Az AI elsősorban pleasingel és azt fogja mondani, amit hallani akarsz vagy legalább is mindig pozitív, megerősít. Hacsak nem kéred kifejezetten, hogy tegyen próbára.",
         "user_followup": "juditpalinkasms@gmail.com",
         "id": 67,
         "emotional_use": true,
@@ -3195,7 +3195,7 @@
         "tool_experience": "tool_experience_suggestion",
         "ai_trust": "",
         "ai_distrust": "",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "",
         "ai_feedback_reaction": "",
@@ -3255,7 +3255,7 @@
             "ai_distrust_contradict",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Nem",
@@ -3383,7 +3383,7 @@
         "tool_experience": "tool_experience_suggestion",
         "ai_trust": "ai_trust_matching",
         "ai_distrust": "ai_distrust_contradict",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_3",
         "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
         "ai_feedback_reaction": "Nem",
@@ -3482,7 +3482,7 @@
             "ai_distrust_generic",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -3526,7 +3526,7 @@
             "ai_distrust_contradict",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_2",
         "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
         "ai_feedback_reaction": "ai_feedback_reaction_unsure",
@@ -3577,7 +3577,7 @@
             "ai_distrust_simplify",
             "ai_distrust_rare"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_2",
         "ai_self_awareness_change": "ai_self_awareness_change_confused",
         "ai_feedback_reaction": "Nem",
@@ -3994,7 +3994,7 @@
         "tool_experience": "tool_experience_suggestion",
         "ai_trust": "ai_trust_structured",
         "ai_distrust": "ai_distrust_contradict",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "ai_feedback_reaction_unsure",
@@ -4289,7 +4289,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_3",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Igen",
@@ -4460,7 +4460,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Igen",
@@ -4559,7 +4559,7 @@
         "tool_usage": [
             "tool_usage_problem_solving",
             "tool_usage_guidance",
-            "Sok egyéb más. Pl. tudományos cikkel \\"beszélgetés\\""
+            "Sok egyéb más. Pl. tudományos cikkel beszélgetés"
         ],
         "tool_experience": "tool_experience_context",
         "ai_trust": [
@@ -4572,7 +4572,7 @@
             "ai_distrust_intuition",
             "ai_distrust_rare"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
         "ai_feedback_reaction": "Nem",
@@ -4582,7 +4582,7 @@
         "ai_concerns": [
             "ai_concerns_connection",
             "ai_concerns_privacy",
-            "Elbutulás, \\"smart\\" funkciók outsourcolása"
+            "Elbutulás, smart funkciók outsourcolása"
         ],
         "user_additional": "",
         "user_followup": "kristof.szekeres@gmail.com",
@@ -4634,9 +4634,9 @@
         "ai_concerns": [
             "ai_concerns_overreliance",
             "ai_concerns_misinformation",
-            "Nem igazán lehet kikapcsolni benne a \\"felszopó\\" üzemmódot."
+            "Nem igazán lehet kikapcsolni benne a felszopó üzemmódot."
         ],
-        "user_additional": "Ha nem lenne sok saját önismereti tapasztalatom, szerintem könnyen félrevinne bizonyos kérdésekben. Különösen a nárcisztikus jellemvonásokat rezegteti meg a konstans validálásával, ami szerintem kifejezetten veszélyes. Saját részre csak olyan dolgokról beszélek vele, amiket egyedül nehezebb átgondolnom, de más élő emberrel nem akarom. Kicsit mint egy interaktív napló. Viszont rettentő fárasztó, hogy mindig meg kell kérdőjeleznem és vissza kell kérdeznem, hátha \\"hazudik\\".",
+        "user_additional": "Ha nem lenne sok saját önismereti tapasztalatom, szerintem könnyen félrevinne bizonyos kérdésekben. Különösen a nárcisztikus jellemvonásokat rezegteti meg a konstans validálásával, ami szerintem kifejezetten veszélyes. Saját részre csak olyan dolgokról beszélek vele, amiket egyedül nehezebb átgondolnom, de más élő emberrel nem akarom. Kicsit mint egy interaktív napló. Viszont rettentő fárasztó, hogy mindig meg kell kérdőjeleznem és vissza kell kérdeznem, hátha hazudik.",
         "user_followup": "f.liliness+elte@gmail.com",
         "id": 97,
         "emotional_use": true,
@@ -5298,7 +5298,7 @@
             "ai_distrust_contradict",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
         "ai_feedback_reaction": "ai_feedback_reaction_unsure",
@@ -5348,7 +5348,7 @@
             "ai_distrust_simplify",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_5",
         "ai_self_awareness_change": "ai_self_awareness_change_no_effect",
         "ai_feedback_reaction": "Nem",
@@ -5521,7 +5521,7 @@
         "tool_experience": "tool_experience_clarify",
         "ai_trust": "ai_trust_options",
         "ai_distrust": "ai_distrust_intuition",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_1",
         "ai_self_awareness_change": "ai_self_awareness_change_improved",
         "ai_feedback_reaction": "Igen",
@@ -6158,7 +6158,7 @@
         "tool_experience": "tool_experience_context",
         "ai_trust": "ai_trust_new_perspective",
         "ai_distrust": "ai_distrust_intuition",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_5",
         "ai_self_awareness_change": "ai_self_awareness_change_cleared",
         "ai_feedback_reaction": "Nem",
