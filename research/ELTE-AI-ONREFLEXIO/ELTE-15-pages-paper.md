@@ -291,6 +291,9 @@ Out of 118 non-professionals, 56.77% used AI for emotional purposes.
 
 ##### Hypothesis testing — H2
 
+H2 predicted that neurodivergent respondents would show higher AI use frequency, higher rates of psychological AI use, and broader use across problem domains compared to neurotypical respondents. Descriptive analysis did not support this pattern. Diagnosed ND respondents showed marginally higher rates of psychological AI use (75.7% vs 69.0%) and slightly broader problem domain use (M=2.32 vs M=2.17) compared to neurotypicals, but mean AI frequency was in fact slightly lower (4.05 vs 4.17). These differences are negligible and no meaningful group separation was observed. Neurotypical respondents appear equally likely to engage with AI at high frequency and across multiple problem domains. H2 Part A is not supported by this data. 
+
+(Potential explanation of this result: sample is self-selected via a survey about AI and self-reflection — so neurotypical respondents are already people interested enough in this topic to fill out the survey. This likely inflates NT engagement figures and compresses the difference we would expect to see in a general population sample. In other words, H2 might still be true in the real world, just invisible in this particular sample.)
 
 ##### Hypothesis testing — H3
 ##### Hypothesis testing — H4
