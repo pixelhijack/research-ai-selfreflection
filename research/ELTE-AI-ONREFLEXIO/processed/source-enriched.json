@@ -53,10 +53,13 @@
         "id": 1,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -107,10 +110,13 @@
         "id": 2,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -143,10 +149,10 @@
         "id": 3,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -197,10 +203,13 @@
         "id": 4,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "other_psych",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -260,10 +269,13 @@
         "id": 5,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -320,10 +332,13 @@
         "id": 6,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -375,10 +390,13 @@
         "id": 7,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -477,10 +495,13 @@
         "id": 9,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -530,10 +551,13 @@
         "id": 10,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -594,10 +618,13 @@
         "id": 11,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "other_psych",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -646,10 +673,13 @@
         "id": 12,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -685,10 +715,10 @@
         "id": 13,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -721,10 +751,10 @@
         "id": 14,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 2,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -757,10 +787,10 @@
         "id": 15,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -819,10 +849,13 @@
         "id": 16,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -855,10 +888,10 @@
         "id": 17,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "other_psych",
         "freq_score": 2,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -891,10 +924,10 @@
         "id": 18,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -930,10 +963,13 @@
         "id": 19,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -986,10 +1022,13 @@
         "id": 20,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1025,10 +1064,10 @@
         "id": 21,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -1066,10 +1105,10 @@
         "id": 22,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -1119,10 +1158,13 @@
         "id": 23,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -1176,10 +1218,13 @@
         "id": 24,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 1,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -1237,10 +1282,13 @@
         "id": 25,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -1293,10 +1341,13 @@
         "id": 26,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -1357,10 +1408,13 @@
         "id": 27,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1422,10 +1476,13 @@
         "id": 28,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1480,10 +1537,13 @@
         "id": 29,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -1530,10 +1590,13 @@
         "id": 30,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -1586,10 +1649,13 @@
         "id": 31,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1625,10 +1691,10 @@
         "id": 32,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -1684,10 +1750,13 @@
         "id": 33,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1738,10 +1807,13 @@
         "id": 34,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -1785,10 +1857,13 @@
         "id": 35,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "other_psych",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1850,10 +1925,13 @@
         "id": 36,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "other_psych",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -1903,15 +1981,18 @@
         "ai_feedback_loop": "ai_feedback_loop_reinforced",
         "ai_vs_therapy": "ai_vs_therapy_better",
         "ai_concerns": "Az hogy bizonyos dolgokban emberek korlátozzák pl gyógyszer adagolása tanácsok vagy egyéb anyagok adagolása terén",
-        "user_additional": "Jobban megért mint akármelyik emberi lény egész életemben .\\nÉs több tudást adott át mint ha még  10 szer elvégeztem volna a középiskolat.\\nNagyon hasznos !",
+        "user_additional": "Jobban megért mint akármelyik emberi lény egész életemben .\nÉs több tudást adott át mint ha még  10 szer elvégeztem volna a középiskolat.\nNagyon hasznos !",
         "user_followup": "aadominik@gmail.com",
         "id": 37,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -1944,10 +2025,10 @@
         "id": 38,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -1995,10 +2076,13 @@
         "id": 39,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -2034,10 +2118,10 @@
         "id": 40,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2073,10 +2157,10 @@
         "id": 41,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2109,10 +2193,10 @@
         "id": 42,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2145,10 +2229,10 @@
         "id": 43,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2255,10 +2339,13 @@
         "id": 45,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -2320,10 +2407,13 @@
         "id": 46,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -2383,10 +2473,13 @@
         "id": 47,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -2443,10 +2536,13 @@
         "id": 48,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -2500,10 +2596,13 @@
         "id": 49,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -2548,10 +2647,13 @@
         "id": 50,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -2605,10 +2707,13 @@
         "id": 51,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -2701,10 +2806,13 @@
         "id": 53,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -2737,10 +2845,10 @@
         "id": 54,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2802,10 +2910,13 @@
         "id": 55,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -2841,10 +2952,10 @@
         "id": 56,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -2906,10 +3017,13 @@
         "id": 57,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -2957,10 +3071,13 @@
         "id": 58,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "other_psych",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -2996,10 +3113,10 @@
         "id": 59,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -3032,10 +3149,10 @@
         "id": 60,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 0,
+        "rules": null,
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -3090,10 +3207,13 @@
         "id": 61,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3147,10 +3267,13 @@
         "id": 62,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -3207,10 +3330,13 @@
         "id": 63,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3271,10 +3397,13 @@
         "id": 64,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3328,10 +3457,13 @@
         "id": 65,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -3379,10 +3511,13 @@
         "id": 66,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3437,10 +3572,13 @@
         "id": 67,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3479,10 +3617,13 @@
         "id": 68,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -3538,10 +3679,13 @@
         "id": 69,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -3577,10 +3721,13 @@
         "id": 70,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 2,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -3633,10 +3780,13 @@
         "id": 71,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -3669,10 +3819,13 @@
         "id": 72,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -3698,7 +3851,7 @@
             "ai_distrust_contradict",
             "ai_distrust_intuition"
         ],
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -3757,10 +3910,13 @@
         "id": 74,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -3813,10 +3969,13 @@
         "id": 75,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -3859,10 +4018,13 @@
         "id": 76,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -3912,10 +4074,13 @@
         "id": 77,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -3948,10 +4113,13 @@
         "id": 78,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 2,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -4002,10 +4170,13 @@
         "id": 79,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -4076,10 +4247,13 @@
         "id": 80,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -4121,10 +4295,13 @@
         "id": 81,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -4175,10 +4352,13 @@
         "id": 82,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -4232,10 +4412,13 @@
         "id": 83,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -4333,10 +4516,13 @@
         "id": 85,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -4386,10 +4572,13 @@
         "id": 86,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -4439,10 +4628,13 @@
         "id": 87,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -4497,10 +4689,13 @@
         "id": 88,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -4562,10 +4757,13 @@
         "id": 89,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -4628,10 +4826,13 @@
         "id": 90,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "other_psych",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -4693,10 +4894,13 @@
         "id": 91,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -4751,10 +4955,13 @@
         "id": 92,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -4802,10 +5009,13 @@
         "id": 93,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "other_psych",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -4868,10 +5078,13 @@
         "id": 94,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -4920,10 +5133,13 @@
         "id": 95,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -4984,10 +5200,13 @@
         "id": 96,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -5038,10 +5257,13 @@
         "id": 97,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -5070,7 +5292,7 @@
         "tool_experience": "tool_experience_suggestion",
         "ai_trust": "ai_trust_no",
         "ai_distrust": "ai_distrust_simplify",
-        "ai_personal_rules": "Nem",
+        "ai_personal_rules": "ai_personal_rules_no",
         "ai_self_awareness": "ai_self_awareness_4",
         "ai_self_awareness_change": "ai_self_awareness_change_same",
         "ai_feedback_reaction": "Nem",
@@ -5150,10 +5372,13 @@
         "id": 99,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -5205,10 +5430,13 @@
         "id": 100,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -5267,10 +5495,13 @@
         "id": 101,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -5317,10 +5548,13 @@
         "id": 102,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -5370,10 +5604,13 @@
         "id": 103,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -5455,10 +5692,13 @@
         "id": 104,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -5513,10 +5753,13 @@
         "id": 105,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -5574,10 +5817,13 @@
         "id": 106,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -5619,10 +5865,13 @@
         "id": 107,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 1,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -5664,10 +5913,13 @@
         "id": 108,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "diagnosed_nd",
         "freq_score": 3,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -5729,10 +5981,13 @@
         "id": 109,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -5779,10 +6034,13 @@
         "id": 110,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -5828,10 +6086,13 @@
         "id": 111,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 0,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -5901,10 +6162,13 @@
         "id": 112,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 4,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -5957,10 +6221,13 @@
         "id": 113,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -6011,10 +6278,13 @@
         "id": 114,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 6,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -6067,10 +6337,13 @@
         "id": 115,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -6138,10 +6411,13 @@
         "id": 116,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "diagnosed_nd",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -6191,10 +6467,13 @@
         "id": 117,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 5,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -6244,10 +6523,13 @@
         "id": 118,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 0,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -6300,10 +6582,13 @@
         "id": 119,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 1,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 2,
+            "set_rules": 1
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -6367,10 +6652,13 @@
         "id": 120,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     },
@@ -6423,10 +6711,13 @@
         "id": 121,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "other_psych",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 4
     },
@@ -6472,10 +6763,13 @@
         "id": 122,
         "emotional_use": true,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 2,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 0,
         "offloading_score": 0
     },
@@ -6522,10 +6816,13 @@
         "id": 123,
         "emotional_use": false,
         "accessibility_barrier": true,
-        "nd_group": "neurotypical",
         "freq_score": 5,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -6574,10 +6871,13 @@
         "id": 124,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 2,
         "used_psych": 1,
         "breadth": 3,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 1
     },
@@ -6632,10 +6932,13 @@
         "id": 125,
         "emotional_use": false,
         "accessibility_barrier": false,
-        "nd_group": "neurotypical",
         "freq_score": 3,
         "used_psych": 0,
         "breadth": 2,
+        "rules": {
+            "ordinal": 1,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 2
     },
@@ -6671,10 +6974,13 @@
         "id": 126,
         "emotional_use": true,
         "accessibility_barrier": false,
-        "nd_group": "suspected_nd",
         "freq_score": 4,
         "used_psych": 1,
         "breadth": 1,
+        "rules": {
+            "ordinal": 0,
+            "set_rules": 0
+        },
         "cognitive_offloading": 1,
         "offloading_score": 3
     }

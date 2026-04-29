@@ -226,7 +226,7 @@
 
         
         // ==============
-        // ===== H3 =====
+        // ===== H3a =====
         // ==============
         // The four cognitive offloading indicators
         const OFFLOADING_KEYS = [
@@ -257,20 +257,20 @@
             ...r,
             cognitive_offloading: OFFLOADING_KEYS.some(
               (o) =>
-                has(r.tool_motivation, o.key) ||
+                (has(r.tool_motivation, o.key) ||
                 has(r.tool_usage, o.key) ||
-                has(r.tool_goal, o.key),
+                has(r.tool_goal, o.key)),
             )
               ? 1
               : 0,
             offloading_score: OFFLOADING_KEYS.reduce(
               (s, o) =>
                 s +
-                has(r.tool_motivation, o.key) ||
+                (has(r.tool_motivation, o.key) ||
                 has(r.tool_usage, o.key) ||
                 has(r.tool_goal, o.key)
                   ? 1
-                  : 0,
+                  : 0),
               0)
             }
         });
@@ -331,6 +331,140 @@
           }, null, 2));
           console.groupEnd();
         });
+
+        // ==============
+        // ===== H3b ====
+        // ==============
+        // Step 1 — DERIVE: recode both variables to ordinal/categorical
+
+        const h3bData = h3Data.map(r => ({
+          ...r,
+          feedback_received: encodeFeedbackReaction(r),
+          self_change_full: encodeSelfChange(r),
+          self_change_collapsed: collapsedChange(r),
+        })).filter(r => r.self_change_full !== null);
+
+        console.log("H3b sample size:", h3bData.length);
+
+        // Step 2 — COUNT: distribution of each variable independently
+        const FEEDBACK_GROUPS_COLLAPSED = ["yes", "no_or_unsure"];
+        const CHANGE_LEVELS   = ["improved", "somewhat", "unchanged_or_less"];
+
+        // Marginal: feedback received
+        console.group("=== FEEDBACK RECEIVED (IV) ===");
+        FEEDBACK_GROUPS_COLLAPSED.forEach(g => {
+          const n = h3bData.filter(r => r.feedback_received === g).length;
+          console.log({ group: g, n, pct: (n / h3bData.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        // Marginal: self change
+        console.group("\n=== SELF CHANGE (DV) ===");
+        CHANGE_LEVELS.forEach(level => {
+          const n = h3bData.filter(r => r.self_change_collapsed === level).length;
+          console.log(JSON.stringify({ level, n, pct: (n / h3bData.length * 100).toFixed(1) }, null, 2));
+        });
+        console.groupEnd();
+
+        // H3b Step 3 — CROSS-TAB: feedback received × self change
+        console.log("\n=== CROSS-TAB: feedback_received × self_change ===");
+
+        // Build the table: for each IV group, show DV distribution
+        const table = {};
+
+        FEEDBACK_GROUPS_COLLAPSED.forEach(fg => {
+          const members = h3bData.filter(r => r.feedback_received === fg);
+          table[fg] = {};
+
+          CHANGE_LEVELS.forEach(level => {
+            const n = members.filter(r => r.self_change_collapsed === level).length;
+            table[fg][level] = {
+              n,
+              pct: members.length > 0 ? (n / members.length * 100).toFixed(1) : "—"
+            };
+          });
+
+          console.group("H3b Step 3 — CROSS-TAB: feedback received × self change");
+          console.log(JSON.stringify({
+            feedback_received: fg,
+            n_total: members.length,
+            ...Object.fromEntries(
+              CHANGE_LEVELS.map(level => [level, `${table[fg][level].n} (${table[fg][level].pct}%)`])
+            )
+          }, null, 2));
+          console.groupEnd();
+        });
+        // The pattern you're looking for:
+        // "yes" row → highest % in "improved" column
+        // "no" row  → highest % in "unchanged_or_less" column
+        // "unsure"  → should scatter somewhere in between
+
+        // Step 3b — Reaction breakdown (yes group only)
+        const YES_GROUP = h3bData.filter(r => r.feedback_received === "yes");
+        console.log("\n=== REACTION TO DISSONANT FEEDBACK (yes group only, n =", YES_GROUP.length, ") ===");
+
+        const REACTION_KEYS = [
+          { field: "ai_feedback_response", key: "ai_feedback_response_thought",       label: "Reflected on it" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_integrated",     label: "Integrated (at least partially)" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_uncomfortable",  label: "Uncomfortable but curious" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_ignored",        label: "Ignored it" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_context",        label: "Depended on context" },
+        ];
+
+        REACTION_KEYS.forEach(({ field, key, label }) => {
+          const n = YES_GROUP.filter(r => has(r[field], key)).length;
+          console.group("H3b Step 3b — Reaction breakdown (yes group only)");
+          console.log(JSON.stringify({
+            reaction: label,
+            n,
+            pct: (n / YES_GROUP.length * 100).toFixed(1)
+          }, null, 2));
+          console.groupEnd();
+        });
+        // The pattern you're looking for:
+        // "reflected" + "integrated" should dominate over "ignored"
+        // If "uncomfortable but curious" is also high, that's a positive signal —
+        // it means dissonance was tolerated rather than rejected
+
+        // Chi-square for the main cross-tab
+        // Build as array-of-arrays for the chi-square function
+        const chiTable = FEEDBACK_GROUPS_COLLAPSED.map(fg =>
+          CHANGE_LEVELS.map(level => table[fg][level].n)
+        );
+
+        console.log("\nChi-square:", chiSquare(chiTable));  // reuse your function from H2
+        console.log("df = 4 | critical value p<0.05: 9.49 | p<0.01: 13.28");
+
+        const uniqueFeedbackValues = [...new Set(h3bData.map(r => r.ai_feedback_reaction))];
+console.log("Raw ai_feedback_reaction values:", uniqueFeedbackValues);
+
+const uniqueEncoded = [...new Set(h3bData.map(r => r.feedback_received))];
+console.log("Encoded feedback_received values:", uniqueEncoded);
+
+        // Part B — Lower boundary-setting despite higher engagement
+
+
+
+    /*
+        DATA INTEGRITY CHECK
+        expected: 6 diff from h2Data filtering NDs
+    */    
+    const enriched = rawData.map(item => {
+      const h1Match = h1Data.find(h => h.id === item.id) || {};
+      const h2Match = h2Data.find(h => h.id === item.id) || {};
+      const h2bMatch = h2bData.find(h => h.id === item.id) || {};
+      const h3Match = h3Data.find(h => h.id === item.id) || {};
+
+      return {
+        ...item,
+        ...h1Match,
+        ...h2Match,
+        ...h2bMatch,
+        ...h3Match 
+      };
+    });
+    //globalIntegrityCheck(enriched);
+    //console.log("enriched", JSON.stringify(enriched));
 
     // -----------------   END OF UPLOAD  
     };
@@ -419,4 +553,119 @@
       return { ordinal: 0, set_rules: 0 };
     return null;
   }
+
+  // ai_feedback_reaction: did they receive challenging feedback?
+  // Raw values from the schema
+  function encodeFeedbackReaction(r) {
+    const val = r.ai_feedback_reaction;
+    if (!val || val === "") return null;
+    
+    // Adjust these to match whatever uniqueFeedbackValues printed above
+    if (val === "Igen") return "yes";
+    if (val === "Nem")  return "no";
+    // catch anything else as unsure, including the long Hungarian string
+    return "unsure";
+  }
+
+  // ai_self_awareness_change: how did self-understanding change?
+  // Ordinal — assign numbers to preserve order for analysis
+  function encodeSelfChange(r) {
+    const map = {
+      "ai_self_awareness_change_confused":  { label: "confused",   ordinal: -1 },
+      "ai_self_awareness_change_same":      { label: "unchanged",  ordinal: 0 },
+      "ai_self_awareness_change_no_effect": { label: "no_effect",  ordinal: 0 },
+      "ai_self_awareness_change_cleared":   { label: "somewhat",   ordinal: 1 },
+      "ai_self_awareness_change_improved":  { label: "improved",   ordinal: 2 },
+    };
+    return map[r.ai_self_awareness_change] ?? null;
+  }
+
+  // Collapsed version — use this for the cross-tab
+  function collapsedChange(r) {
+    const raw = r.ai_self_awareness_change;
+    if (raw === "ai_self_awareness_change_improved") return "improved";
+    if (raw === "ai_self_awareness_change_cleared")  return "somewhat";
+    // confused, same, no_effect → all "unchanged_or_less"
+    return "unchanged_or_less";
+  }
+
+  function chiSquare(table) {
+    const rowTotals = table.map(row => row.reduce((a, b) => a + b, 0));
+    const colTotals = table[0].map((_, j) => table.reduce((s, row) => s + row[j], 0));
+    const grandTotal = rowTotals.reduce((a, b) => a + b, 0);
+
+    let chiSq = 0;
+    let smallCellCount = 0;
+
+    table.forEach((row, i) => {
+      row.forEach((observed, j) => {
+        const expected = (rowTotals[i] * colTotals[j]) / grandTotal;
+        
+        if (expected === 0) return; // skip — can't divide by zero, cell contributes nothing
+        if (expected < 5) smallCellCount++; // flag but don't skip
+        
+        chiSq += Math.pow(observed - expected, 2) / expected;
+      });
+    });
+
+    console.log(`Small cells (expected < 5): ${smallCellCount} of ${table.flat().length}`);
+    return chiSq;
+  }
+
+  // INTEGRITY CHECK
+
+  function globalIntegrityCheck(respondents) {
+    const GOAL_KEYS = [
+      "tool_goal_understanding", "tool_goal_decision", "tool_goal_organization",
+      "tool_goal_self", "tool_goal_conversation", "tool_goal_learning"
+    ];
+    const OFFLOADING_KEYS = [
+      { field: "tool_motivation", key: "tool_motivation_structure" },
+      { field: "tool_usage",      key: "tool_usage_brainstorming" },
+      { field: "tool_usage",      key: "tool_usage_secondary_opinion" },
+      { field: "tool_goal",       key: "tool_goal_self" },
+    ];
+    const freqMap = {
+      "ai_frequency_daily": 5, "ai_frequency_weekly": 4,
+      "ai_frequency_sometimes": 3, "ai_frequency_rarely": 2, "ai_frequency_tried": 1,
+    };
+
+    const checks = {
+      emotional_use: 0,
+      accessibility_barrier: 0,
+      freq_score: 0,
+      used_psych: 0,
+      breadth: 0,
+      offloading_score: 0,
+    };
+
+    respondents.forEach(r => {
+      if (r.emotional_use !== (has(r.tool_goal, "tool_goal_understanding") || has(r.tool_goal, "tool_goal_self")))
+        checks.emotional_use++;
+
+      if (r.accessibility_barrier !== (has(r.tool_motivation, "tool_motivation_professional") || has(r.tool_motivation, "tool_motivation_time")))
+        checks.accessibility_barrier++;
+
+      if (r.freq_score !== (freqMap[r.ai_frequency] ?? null))
+        checks.freq_score++;
+
+      if (r.used_psych !== (r.used_ai_psych === "Igen" ? 1 : 0))
+        checks.used_psych++;
+
+      const expectedBreadth = GOAL_KEYS.reduce((s, k) => s + (has(r.tool_goal, k) ? 1 : 0), 0);
+      if (r.breadth !== expectedBreadth)
+        checks.breadth++;
+
+      const expectedOffloading = OFFLOADING_KEYS.reduce((s, o) => s + (has(r[o.field], o.key) ? 1 : 0), 0);
+      if (r.offloading_score !== expectedOffloading)
+        checks.offloading_score++;
+    });
+
+    console.log("\n=== GLOBAL MISMATCH COUNT (out of", respondents.length, "respondents) ===");
+    Object.entries(checks).forEach(([field, count]) => {
+      const status = count === 0 ? "✓ clean" : `✗ ${count} mismatches`;
+      console.log(`  ${field.padEnd(25)} ${status}`);
+    });
+  }
+
 </script>
