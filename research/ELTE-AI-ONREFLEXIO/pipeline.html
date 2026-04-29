@@ -220,12 +220,117 @@
           });
           console.groupEnd();
         });
-
         // What to look for:
         // diagnosed_nd → high avg_breadth, low avg_rules → highest ratio (most "at risk" pattern)
         // neurotypical  → lower avg_breadth, higher avg_rules → lower ratio
 
+        
+        // ==============
+        // ===== H3 =====
+        // ==============
+        // The four cognitive offloading indicators
+        const OFFLOADING_KEYS = [
+          {
+            field: "tool_motivation",
+            key: "tool_motivation_structure",
+            label: "Wanted structured overview",
+          },
+          {
+            field: "tool_usage",
+            key: "tool_usage_brainstorming",
+            label: "Used as brainstorming partner",
+          },
+          {
+            field: "tool_usage",
+            key: "tool_usage_secondary_opinion",
+            label: "Used as neutral second opinion",
+          },
+          {
+            field: "tool_goal",
+            key: "tool_goal_self",
+            label: "Understanding own patterns",
+          },
+        ];
 
+        const h3Data = rawData.map((r) => {
+          return {
+            ...r,
+            cognitive_offloading: OFFLOADING_KEYS.some(
+              (o) =>
+                has(r.tool_motivation, o.key) ||
+                has(r.tool_usage, o.key) ||
+                has(r.tool_goal, o.key),
+            )
+              ? 1
+              : 0,
+            offloading_score: OFFLOADING_KEYS.reduce(
+              (s, o) =>
+                s +
+                has(r.tool_motivation, o.key) ||
+                has(r.tool_usage, o.key) ||
+                has(r.tool_goal, o.key)
+                  ? 1
+                  : 0,
+              0)
+            }
+        });
+
+        // Individual item frequencies
+        OFFLOADING_KEYS.forEach(({ key, label }) => {
+          const count = h3Data.filter((r) =>
+            (has(r.tool_motivation, key) || has(r.tool_usage, key) || has(r.tool_goal, key)),
+          ).length;
+          console.group("H3 Individual item frequencies");
+          console.log({
+            item: label,
+            n: count,
+            pct: ((count / total) * 100).toFixed(1),
+          });
+          console.groupEnd();
+        });
+
+        // Overall: what % endorsed at least one offloading behavior?
+        const anyOffloading = h3Data.filter(
+          (r) => r.cognitive_offloading === 1,
+        ).length;
+
+        console.group("H3 Overall: what % endorsed at least one offloading behavior?");
+        console.log({
+          item: "Any cognitive offloading behavior",
+          n: anyOffloading,
+          pct: ((anyOffloading / total) * 100).toFixed(1),
+        });
+        console.groupEnd();
+
+        // Average offloading score across all respondents
+        const avgScore =
+          h3Data.reduce((s, r) => s + r.offloading_score, 0) / total;
+        console.log("Mean offloading score (0–4):", avgScore.toFixed(2));
+
+        // Step 3 — GROUP: cross-tab with nd_status
+        // Per group, per item — endorsement rate
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h3Data.filter((r) => r.nd_status === group);
+
+          const itemRates = OFFLOADING_KEYS.map(({ key, label }) => {
+            const count = members.filter(
+              (r) => (has(r.tool_motivation, key) || has(r.tool_usage, key) || has(r.tool_goal, key))
+            ).length;
+            return { label, pct: ((count / members.length) * 100).toFixed(1) };
+          });
+
+          const avgOffloadingScore =
+            members.reduce((s, r) => s + r.offloading_score, 0) / members.length;
+
+          console.group("H3 Step 3 — GROUP: cross-tab with nd_status");
+          console.log(JSON.stringify({
+            group,
+            n: members.length,
+            avg_offloading_score: avgOffloadingScore.toFixed(2),
+            items: itemRates,
+          }, null, 2));
+          console.groupEnd();
+        });
 
     // -----------------   END OF UPLOAD  
     };
