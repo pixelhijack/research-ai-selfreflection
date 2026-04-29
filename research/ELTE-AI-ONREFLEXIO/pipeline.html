@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<input type="file" id="jsonFile" accept=".json">
+<script>
+  document.getElementById('jsonFile').addEventListener('change', function(e) {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const rawData = JSON.parse(event.target.result);
+      
+      // ===== INITIAL =====
+      console.log("RAW DATA", rawData);
+
+      // ==============
+      // ===== H1 =====
+      // ==============
+      
+      const ANALYSIS_GROUPS = [
+        "nd_status_diagnosed",
+        "nd_status_suspected",
+        "nd_status_none",
+        "nd_status_other"
+      ];
+
+      // Step 1 — Build the composite variables
+
+      const h1Data = rawData.map(item => {
+        return {
+          ...item,
+          emotional_use: getEmotionalUse(item),
+          accessibility_barrier: getAccessibilityBarrier(item)
+        }
+      })
+      console.log("H1 DATA", h1Data);
+
+      // Step 2 — Descriptive: what % of respondents show emotional use?
+
+      const total = rawData.length;
+
+      const emotionalUseCount = h1Data.filter(r => r.emotional_use).length;
+      const emotionalUsePct = (emotionalUseCount / total) * 100;
+      // "X% of respondents used AI for emotional or self-pattern understanding"
+
+      const accessibilityCount = h1Data.filter(r => r.accessibility_barrier).length;
+      const accessibilityPct = (accessibilityCount / total) * 100;
+      // "Y% cited accessibility as a driver"
+
+      console.group("// Step 2 — Descriptive: what % of respondents show emotional use?");
+      console.log({
+        emotionalUseCount,
+        emotionalUsePct,
+        accessibilityCount,
+        accessibilityPct
+      });
+      console.groupEnd();
+
+      // Step 3 — Cross-tab: emotional use × nd_status
+
+      ANALYSIS_GROUPS.forEach((group) => {
+        const groupMembers = h1Data.filter((r) => r.nd_status === group);
+        const withEmotionalUse = groupMembers.filter((r) => r.emotional_use);
+
+        console.group("// Step 3 — Cross-tab: emotional use × nd_status");
+        console.log({
+          group,
+          n: groupMembers.length, // how many in this group
+          emotional_use_n: withEmotionalUse.length, // how many show emotional use
+          emotional_use_pct: (withEmotionalUse.length / groupMembers.length) * 100,
+          // "X% of diagnosed ND respondents used AI for emotional purposes"
+          // vs "Y% of neurotypical respondents"
+        });
+        console.groupEnd();
+      });
+
+      // What you're looking for in the output: is the `emotional_use_pct` meaningfully higher in `diagnosed_nd` and `suspected_nd` than in `neurotypical`? That would be consistent with H1 and H2.
+
+      // Step 4 — Cross-tab: emotional use × is_professional
+
+      ["professional", "non_professional"].forEach((group) => {
+        const members = h1Data.filter((r) => professionalGroup(r) === group);
+        const withUse = members.filter((r) => r.emotional_use);
+        console.group("// Step 4 — Cross-tab: emotional use × is_professional");
+        console.log({
+          group,
+          n: members.length,
+          emotional_use_pct: (withUse.length / members.length) * 100,
+        });
+        console.groupEnd();
+      });
+
+
+      // ==============
+      // ===== H2 =====
+      // ==============
+
+      // Part A — Higher frequency + use intensity
+
+      // Step 1 — DERIVE: recode ordinal and binary variables
+      const h2Data = h1Data
+        .filter((r) => ANALYSIS_GROUPS.includes(r.nd_status)) // we excluded non-disclosed ones 126 participants -> 120
+        .map((r) => ({
+          ...r,
+          freq_score: encodeFrequency(r),
+          used_psych: encodeUsedAiPsych(r),
+          breadth: breadthOfUse(r),
+        }));
+
+        console.log("H2a Step 1 — DERIVE: recode ordinal and binary variables", h2Data);
+
+        // Step 2 — COUNT: descriptives per group
+        // What you're looking for: `diagnosed_nd` and `suspected_nd` should show higher `avg_freq_score`, higher `used_psych_pct`, and higher `avg_breadth` than `neurotypical`. If the descriptives don't show a visible pattern, the statistical test won't magically find one either.
+        
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2Data.filter((r) => r.nd_status === group);
+
+          // Average frequency score (1–5) for this group
+          const freqScores = members.map((r) => r.freq_score).filter((x) => x !== null);
+          const avgFreq = freqScores.reduce((a, b) => a + b, 0) / freqScores.length;
+
+          // % who used AI for psych purposes
+          const usedPsych = members.filter((r) => r.used_psych === 1);
+          const usedPsychPct = (usedPsych.length / members.length) * 100;
+
+          // Average breadth score (0–6)
+          const avgBreadth =
+            members.reduce((a, r) => a + r.breadth, 0) / members.length;
+
+          console.group("H2a Step 2 — COUNT: descriptives per group");
+          console.log({
+            group,
+            n: members.length,
+            avg_freq_score: avgFreq.toFixed(2), // e.g. "4.2 out of 5"
+            used_psych_pct: usedPsychPct.toFixed(1), // e.g. "87%"
+            avg_breadth: avgBreadth.toFixed(2), // e.g. "3.4 out of 6"
+          });
+          console.groupEnd();
+        });
+
+        // Step 3 — TEST: is the group difference real or random noise?
+
+        console.group("H2a Step 3 — TEST: is the group difference real or random noise?");
+        console.log(`
+          Null hypothesis: the medians of all groups are the same
+              pValue: 0.4982
+              statistic: 2.3755
+              df: 3
+          Test Decision: Fail to reject null in favor of alternative at 5% significance level
+
+          Contingency Table
+            [
+                [28, 9]
+                [22, 10]
+                [29, 13]
+                [7, 2]
+            ]
+            Chi-square: 0.7343301871345647
+
+        `);
+        console.groupEnd();
+
+        // Part B — Lower boundary-setting despite higher engagement
+        // Step 1 — DERIVE
+
+        const h2bData = h2Data.map((r) => ({
+          ...r,
+          rules: encodeRules(r),
+        }));
+
+        // Step 2
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2bData.filter(
+            (r) => r.nd_status === group && r.rules !== null,
+          );
+
+          const setRules = members.filter((r) => r.rules.set_rules === 1);
+          const avgRulesOrdinal =
+            members.reduce((s, r) => s + r.rules.ordinal, 0) / members.length;
+
+          console.group("H2b — Lower boundary-setting despite higher engagement");
+          console.log({
+            group,
+            n: members.length,
+            explicitly_set_rules_pct: (
+              (setRules.length / members.length) *
+              100
+            ).toFixed(1),
+            avg_rules_ordinal: avgRulesOrdinal.toFixed(2), // 0–2 scale
+            avg_breadth: (
+              members.reduce((s, r) => s + r.breadth, 0) / members.length
+            ).toFixed(2),
+            // breadth already computed in Part A
+          });
+          console.groupEnd();
+        });
+
+        // PART B Step 3 — The key comparison (the internal contradiction test)
+        // You're not just comparing `set_rules` across groups — you're looking at the _ratio_ of engagement to self-regulation. This is what makes H2 part B interesting.
+        // For each group, compute a simple engagement-to-regulation ratio.
+        // This is descriptive only — not a formal test — but it surfaces the pattern clearly.
+
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2bData.filter(
+            (r) => r.nd_status === group && r.rules !== null,
+          );
+
+          const avgBreadth =
+            members.reduce((s, r) => s + r.breadth, 0) / members.length;
+          const avgRules =
+            members.reduce((s, r) => s + r.rules.ordinal, 0) / members.length;
+
+          // High ratio = high use relative to self-regulation = the vulnerable pattern
+          // Low ratio = either low use, OR use with active boundaries
+          const engagementToRegulation = avgBreadth / (avgRules + 0.1);
+          // +0.1 avoids divide-by-zero if a group has avg rules near 0
+
+          console.group("PART B Step 3 — The key comparison (the internal contradiction test)");
+          console.log({
+            group,
+            avg_breadth: avgBreadth.toFixed(2),
+            avg_rules: avgRules.toFixed(2),
+            engagement_regulation_ratio: engagementToRegulation.toFixed(2),
+          });
+          console.groupEnd();
+        });
+
+        // What to look for:
+        // diagnosed_nd → high avg_breadth, low avg_rules → highest ratio (most "at risk" pattern)
+        // neurotypical  → lower avg_breadth, higher avg_rules → lower ratio
+
+
+
+    // -----------------   END OF UPLOAD  
+    };
+    reader.readAsText(e.target.files[0]);
+  });
+
+
+  function has(fieldValue, targetKey) {
+    if (!fieldValue || fieldValue === "") return false;
+    if (Array.isArray(fieldValue)) return fieldValue.includes(targetKey);
+    return fieldValue === targetKey; // single string case
+  }
+
+  function getEmotionalUse(r){
+    const field = has(r.tool_goal, "tool_goal_understanding") || has(r.tool_goal,  "tool_goal_self");
+    return field;
+  }
+
+  function getAccessibilityBarrier(r){
+    const field = has(r.tool_motivation, "tool_motivation_professional") || has(r.tool_motivation, "tool_motivation_time");
+    return field;
+  }
+
+  
+  function professionalGroup(r) {
+    if(r.is_professional.toLowerCase().includes("igen")){
+      return "professional";
+    }
+    if(r.is_professional.toLowerCase().includes("nem")){
+      return "non_professional";
+    }
+    return "unknown_or_decline";
+  }
+
+  // ai_frequency comes in as a string label.
+  // For any comparison across groups, you need numbers.
+  // This is called "ordinal encoding" — you're preserving the order.
+  function encodeFrequency(r) {
+    const map = {
+      ai_frequency_daily: 5, // daily
+      ai_frequency_weekly: 4, // several times a week
+      ai_frequency_sometimes: 3, // sometimes
+      ai_frequency_rarely: 2, // rarely
+      ai_frequency_tried: 1, // tried but almost never
+    };
+    return map[r.ai_frequency] ?? null; // null = missing, exclude from analysis
+  }
+
+  // used_ai_psych: binary — did they use AI for psychological purposes?
+  // Check your actual string values, but likely something like:
+  function encodeUsedAiPsych(r) {
+    const val = r.used_ai_psych;
+    if (!val) return null;
+    if (val.toLowerCase().includes("igen"))
+      return 1;
+    return 0; // "no" → 0
+  }
+
+  function breadthOfUse(r) {
+    // COMPOSITE: breadth of use — how many different problem types did they bring to AI?
+    // This is just summing the binary tool_goal_* flags.
+    // More flags selected = broader use = higher engagement.
+    const GOAL_KEYS = [
+      "tool_goal_understanding", // emotions/feelings
+      "tool_goal_decision", // decisions
+      "tool_goal_organization", // daily life
+      "tool_goal_self", // self-patterns
+      "tool_goal_conversation", // hard conversations
+      "tool_goal_learning", // learning psych topics
+    ];
+    return GOAL_KEYS.reduce(
+      (sum, key) => sum + (has(r.tool_goal, key) ? 1 : 0),
+      0,
+    );
+    // returns 0–6, higher = broader use
+  }
+
+  function encodeRules(r) {
+    const val = r.ai_personal_rules;
+    if (!val) return null;
+    // Ordinal version (for Kruskal-Wallis or Spearman)
+    if (val === "ai_personal_rules_yes") return { ordinal: 2, set_rules: 1 };
+    if (val === "ai_personal_rules_somewhat")
+      return { ordinal: 1, set_rules: 0 };
+    if (val === "ai_personal_rules_no")
+      return { ordinal: 0, set_rules: 0 };
+    return null;
+  }
+</script>

@@ -1567,7 +1567,7 @@
       "ai_concerns_misinformation",
       "ai_concerns_dependency",
       "ai_concerns_connection",
-      "Az AI, ha nem jó promptot fogalmazol meg, akkor úgyis azt mondja, amit hallani szeretnél: mindig igazat ad neked, mindig validál stb. Ez egy ponton már lehet káros is, ugyanis nem elég ha folyamatosan \"nyaliznak\" meg babusgatnak, hanem igenis ki kell mondani sokszor a nyers igazságot"
+      "Az AI, ha nem jó promptot fogalmazol meg, akkor úgyis azt mondja, amit hallani szeretnél: mindig igazat ad neked, mindig validál stb. Ez egy ponton már lehet káros is, ugyanis nem elég ha folyamatosan nyaliznak meg babusgatnak, hanem igenis ki kell mondani sokszor a nyers igazságot"
     ],
     "user_additional": "",
     "user_followup": "",
@@ -2916,7 +2916,7 @@
       "ai_concerns_none",
       "Azt gondolom, hogy mivel tudom, hogy másodrangú információként, plusz eszközként használom, egész tudatosan kezelem. Néha észreveszem, hogy túl általános vagy fáraszt a válasza.."
     ],
-    "user_additional": "Mint minden témában, itt is fontos, hogy tudjunk jól kérdezni. Az AI elsősorban \"pleasing\"-el és azt fogja mondani, amit hallani akarsz vagy legalább is mindig pozitív, megerősít. Hacsak nem kéred kifejezetten, hogy tegyen próbára.",
+    "user_additional": "Mint minden témában, itt is fontos, hogy tudjunk jól kérdezni. Az AI elsősorban pleasing-el és azt fogja mondani, amit hallani akarsz vagy legalább is mindig pozitív, megerősít. Hacsak nem kéred kifejezetten, hogy tegyen próbára.",
     "user_followup": "juditpalinkasms@gmail.com",
     "id": 67
   },
@@ -4214,7 +4214,7 @@
     "tool_usage": [
       "tool_usage_problem_solving",
       "tool_usage_guidance",
-      "Sok egyéb más. Pl. tudományos cikkel \"beszélgetés\""
+      "Sok egyéb más. Pl. tudományos cikkel beszélgetés"
     ],
     "tool_experience": "tool_experience_context",
     "ai_trust": [
@@ -4237,7 +4237,7 @@
     "ai_concerns": [
       "ai_concerns_connection",
       "ai_concerns_privacy",
-      "Elbutulás, \"smart\" funkciók outsourcolása"
+      "Elbutulás, smart funkciók outsourcolása"
     ],
     "user_additional": "",
     "user_followup": "kristof.szekeres@gmail.com",
@@ -4283,9 +4283,9 @@
     "ai_concerns": [
       "ai_concerns_overreliance",
       "ai_concerns_misinformation",
-      "Nem igazán lehet kikapcsolni benne a \"felszopó\" üzemmódot."
+      "Nem igazán lehet kikapcsolni benne a felszopó üzemmódot."
     ],
-    "user_additional": "Ha nem lenne sok saját önismereti tapasztalatom, szerintem könnyen félrevinne bizonyos kérdésekben. Különösen a nárcisztikus jellemvonásokat rezegteti meg a konstans validálásával, ami szerintem kifejezetten veszélyes. Saját részre csak olyan dolgokról beszélek vele, amiket egyedül nehezebb átgondolnom, de más élő emberrel nem akarom. Kicsit mint egy interaktív napló. Viszont rettentő fárasztó, hogy mindig meg kell kérdőjeleznem és vissza kell kérdeznem, hátha \"hazudik\".",
+    "user_additional": "Ha nem lenne sok saját önismereti tapasztalatom, szerintem könnyen félrevinne bizonyos kérdésekben. Különösen a nárcisztikus jellemvonásokat rezegteti meg a konstans validálásával, ami szerintem kifejezetten veszélyes. Saját részre csak olyan dolgokról beszélek vele, amiket egyedül nehezebb átgondolnom, de más élő emberrel nem akarom. Kicsit mint egy interaktív napló. Viszont rettentő fárasztó, hogy mindig meg kell kérdőjeleznem és vissza kell kérdeznem, hátha hazudik.",
     "user_followup": "f.liliness+elte@gmail.com",
     "id": 97
   },
