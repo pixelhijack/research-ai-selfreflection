@@ -340,7 +340,21 @@ Analysis by neurodivergent status showed that suspected ND respondents cited acc
 
 H4 is partially supported. The accessibility-to-substitution pathway is confirmed and statistically significant. The preference-for-directness competing rationale is ruled out. The overall prevalence of substitute framing remains low (12.5%), consistent with AI functioning as a supplement of last resort for a specific subgroup rather than a broad population-level shift away from therapy. The shame and stigma rationale proposed in the hypothesis rationale cannot be separated from the accessibility explanation using self-report data and remains a theoretical possibility.
 ##### Hypothesis testing — H5
+
+H5 predicted that users would cluster into instrumental framing (AI as tool) versus relational framing (AI as agent/companion), and that these groups would differ in trust patterns, dependency risk awareness, and self-regulatory behavior.
+
+Framing type was operationalized behaviorally to avoid circularity. Relational framing was assigned when a respondent actively sought emotional validation from AI (tool_usage_emotional_support) or reported routinely deferring to AI judgment (tool_experience_follow). Instrumental framing was assigned when a respondent used AI for brainstorming, second opinion, or problem-solving without any relational signal. Respondents meeting neither or mixed criteria were classified as 'mixed.' Concern about emotional dependency was deliberately excluded from the cluster criteria and retained as a dependent variable — its inclusion would have created a tautological test. An alternative psychological-orientation operationalization including dependency concern as a relational criterion was considered and rejected on these grounds, though it produced a near-identical structural pattern on non-circular DVs.
+
+The resulting distribution was: instrumental 57.1% (n=72), relational 23.0% (n=29), mixed 19.8% (n=25). The relational minority framing — nearly one in four respondents — represents a non-trivial subgroup given the tool's ostensibly utilitarian design.
+
+Chi-square analysis across five dependent variables revealed two statistically significant group differences. Concern about over-reliance differed significantly across framing types (χ²=11.73, df=2, p<0.01, no small cells): instrumental users showed the highest over-reliance concern (55.6%), substantially above relational (31.0%) and mixed users (20.0%). Concern about emotional dependency also differed significantly (χ²=13.50, df=2, p<0.01, no small cells), again with instrumental users showing the highest rate (44.4%) versus relational (20.7%) and mixed (8.0%). Both results run counter to the intuitive prediction that relational users would show greater dependency awareness. A plausible interpretation is that instrumental users apply more active metacognitive monitoring precisely because they approach AI deliberately — their concern reflects awareness rather than vulnerability. Relational users may be less likely to conceptualize their AI use as potentially problematic, which itself constitutes a risk signal.
+
+Trust in AI when it confirms existing thinking (trust_agrees_with_me) showed a directional pattern consistent with H5 — relational users scored highest (27.6%) versus instrumental (19.4%) and mixed (4.0%) — but did not reach statistical significance (χ²=5.17, df=2, p=0.075, one small cell). Trust based on confident tone showed significance (χ²=7.09, df=2, p<0.05) with relational users highest at 13.8%, but three of six expected cells fell below 5, making this result unreliable and reported as suggestive only. Rule-setting behavior did not differ significantly across framing types (χ²=4.77, df=2, p>0.05).
+
+H5 is partially supported. The predicted framing-type clusters are identifiable and show meaningful differences on dependency-related outcomes, though the direction of the dependency concern findings was unexpected and warrants cautious interpretation. The absence of significant trust and rule-setting differences suggests that instrumental versus relational orientation may have stronger implications for risk awareness than for epistemic trust calibration or self-regulatory behavior in this sample.
 ##### Hypothesis testing — H6
+
+
 ##### Hypothesis testing — H7
 ##### Hypothesis testing — H8
 

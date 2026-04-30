@@ -591,7 +591,7 @@
         .forEach(group => {
           const members = h4Data.filter(r => r.nd_status === group);
           const noAccessN = members.filter(r => r.has_noaccess).length;
-          debugger
+          
           console.log({
             group,
             n: members.length,
@@ -600,11 +600,111 @@
         });
         console.groupEnd();
 
+        // ==============
+        // ===== H5 ====
+        // ==============
+        console.log(`
 
-    /*
+            === H5 ===
+
+        `);
+
+        const h5Data = rawData.map(r => ({
+          ...r,
+          framing_type: assignFramingTypeV2(r),
+        }));
+
+        // --- DISTRIBUTION CHECK (run this before anything else) ---
+        // If one category dominates heavily (>70%), the comparison loses meaning.
+        // If "mixed" is >50%, your operationalization is too loose.
+        console.group("=== FRAMING TYPE DISTRIBUTION ===");
+        ["instrumental", "relational", "mixed"].forEach(type => {
+          const n = h5Data.filter(r => r.framing_type === type).length;
+          console.log({ type, n, pct: (n / h5Data.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        const onlyDependencyConcern = rawData.filter(r =>
+          has(r.ai_concerns, "ai_concerns_dependency") &&
+          !has(r.tool_usage, "tool_usage_emotional_support") &&
+          r.tool_experience !== "tool_experience_follow"
+        );
+        console.log("Relational ONLY via concern criterion:", onlyDependencyConcern.length);
+
+        // H5 Step 2 — COUNT: DV baselines per framing group
+
+        const DVS = [
+          { field: "ai_trust",     key: "ai_trust_matching",          label: "trust_agrees_with_me" },
+          { field: "ai_trust",     key: "ai_trust_confident",         label: "trust_confident_tone" },
+          { field: "ai_concerns",  key: "ai_concerns_overreliance",   label: "concern_overreliance" },
+          { field: "ai_concerns",  key: "ai_concerns_dependency",     label: "concern_emotional_dependency" },
+        ];
+
+        console.group("\n=== DV RATES BY FRAMING TYPE ===");
+        ["instrumental", "relational", "mixed"].forEach(type => {
+          const members = h5Data.filter(r => r.framing_type === type);
+
+          const dvRates = DVS.map(({ field, key, label }) => {
+            const n = members.filter(r => has(r[field], key)).length;
+            return { label, n, pct: (n / members.length * 100).toFixed(1) };
+          });
+
+          const rulesN = members.filter(r => hasSetRules(r)).length;
+
+          console.log(JSON.stringify({
+            type,
+            n: members.length,
+            set_rules_pct: (rulesN / members.length * 100).toFixed(1),
+            dvs: dvRates
+          }, null, 2));
+        });
+        console.groupEnd();
+
+        // H5 Step 3 — Chi-square per DV
+
+        // For each DV, build a 3×2 contingency table:
+        // rows = framing type (instrumental / relational / mixed)
+        // cols = DV endorsed (yes / no)
+        // df = (3-1)×(2-1) = 2 | critical value p<0.05: 5.99 | p<0.01: 9.21
+
+        const FRAMING_TYPES = ["instrumental", "relational", "mixed"];
+
+        console.group("\n=== CHI-SQUARE PER DV ===");
+        // Binary DVs from multi-select fields
+        DVS.forEach(({ field, key, label }) => {
+          const table = FRAMING_TYPES.map(type => {
+            const members = h5Data.filter(r => r.framing_type === type);
+            const yes = members.filter(r => has(r[field], key)).length;
+            const no  = members.length - yes;
+            return [yes, no];
+          });
+
+          const chi = chiSquare(table);
+          console.log(JSON.stringify({ dv: label, chiSquare: chi.toFixed(3), df: 2,
+            significant_p05: chi > 5.99 ? "YES" : "no",
+            significant_p01: chi > 9.21 ? "YES" : "no",
+            table
+          }, null, 2));
+        });
+
+        // set_rules separately (single-value field)
+        const rulesTable = FRAMING_TYPES.map(type => {
+          const members = h5Data.filter(r => r.framing_type === type);
+          const yes = members.filter(r => hasSetRules(r)).length;
+          return [yes, members.length - yes];
+        });
+        const rulesChi = chiSquare(rulesTable);
+        console.log(JSON.stringify({ dv: "set_rules_explicit", chiSquare: rulesChi.toFixed(3), df: 2,
+          significant_p05: rulesChi > 5.99 ? "YES" : "no",
+          table: rulesTable
+        }, null, 2));
+        console.groupEnd();
+
+
+    /*===========================================
         DATA INTEGRITY CHECK
         expected: 6 diff from h2Data filtering NDs
-    */    
+    =============================================*/    
     const enriched = rawData.map(item => {
       const h1Match = h1Data.find(h => h.id === item.id) || {};
       const h2Match = h2Data.find(h => h.id === item.id) || {};
@@ -799,6 +899,81 @@
     if (val === "nem") return "non_professional";
     if (val === "tartózkodnék a választól" || val === "") return "unknown";
     return "professional"; // any "igen" variant
+  }
+
+  // H5 
+  // RELATIONAL framing criteria — any one of these is sufficient
+  // 1. used AI for emotional validation
+  const isValidationSeeking = (r) => has(r.tool_usage, "tool_usage_emotional_support");
+
+  // 2. experience framing suggests companion/partner mode
+  // From your schema, the "follow AI advice" option is the closest to relational dependency
+  // "tool_experience_follow" = "Gyakran követem az AI tanácsait, ha meggyőzőnek érzem őket"
+  // This signals deference rather than instrumental use
+  const isFollowExperience = (r) => r.tool_experience === "tool_experience_follow";
+
+  // 3. concerned about emotional dependency — aware of relational risk
+  const isEmotionalDependencyConcern = (r) => has(r.ai_concerns, "ai_concerns_dependency");
+
+  // INSTRUMENTAL framing criteria — all conditions must be true
+  // 1. uses AI for at least one of: brainstorm / second opinion / problem solving
+  const isInstrumentalUse = (r) =>
+    has(r.tool_usage, "tool_usage_brainstorming") ||
+    has(r.tool_usage, "tool_usage_secondary_opinion") ||
+    has(r.tool_usage, "tool_usage_problem_solving");
+
+  // 2. NOT seeking emotional validation
+  const isNotValidation = (r) => !has(r.tool_usage, "tool_usage_emotional_support");
+
+  // 3. NOT any relational framing signal
+  const isNotRelational = (r) =>
+    !isValidationSeeking(r) &&
+    !isFollowExperience(r) &&
+    !isEmotionalDependencyConcern(r);
+
+  // REVISED: remove concern_emotional_dependency from relational criteria
+  // Rationale: expressing concern about dependency signals metacognitive awareness,
+  // not relational framing. A cautious instrumental user would score the same as
+  // a genuinely relational user under the old rule, which conflates two different profiles.
+
+  // Keep only the two behaviorally grounded relational signals:
+  function assignFramingTypeV2(r) {
+    const relational =
+      has(r.tool_usage, "tool_usage_emotional_support") || // actively sought validation
+      r.tool_experience === "tool_experience_follow";       // defers to AI judgment
+
+    const instrumental =
+      (has(r.tool_usage, "tool_usage_brainstorming") ||
+      has(r.tool_usage, "tool_usage_secondary_opinion") ||
+      has(r.tool_usage, "tool_usage_problem_solving")) &&
+      !relational; // instrumental only if no relational signal present
+
+    if (relational) return "relational";
+    if (instrumental) return "instrumental";
+    return "mixed";
+  }
+
+  // Original V1
+  function assignFramingType(r) {
+    const relational = isValidationSeeking(r) || isFollowExperience(r) || isEmotionalDependencyConcern(r);
+    const instrumental = isInstrumentalUse(r) && isNotValidation(r) && isNotRelational(r);
+
+    // Note: relational check runs first — if someone meets both,
+    // they get classified as relational. Document this priority rule.
+    if (relational) return "relational";
+    if (instrumental) return "instrumental";
+    return "mixed"; // meets neither cleanly, or meets instrumental but not all conditions
+  }
+  /*
+  Both distributions are workable. The decision is conceptual, not statistical.
+  - Use V2 (current) if you frame H5 as being about behavioral framing — what people actually do with AI. Seeking validation and deferring to AI judgment are active behaviors. This is the cleaner theoretical argument.
+  - Use V1 if you frame H5 as being about psychological orientation toward AI — which includes how people think about their relationship with it, not just what they do. Someone who worries about emotional dependency is signaling that they experience AI in a relational register, even if they don't always act on it.
+  - My recommendation: use V2 but retain the concern variable as a DV rather than an IV criterion. This way you can test whether relational-framing users (defined behaviorally) also show higher emotional dependency concern — which is a more interesting finding than using concern to define the group in the first place. It becomes a validation of the cluster rather than a tautology.
+  */
+
+  // set_rules is single-value — binary: explicitly set vs. didn't
+  function hasSetRules(r) {
+    return r.ai_personal_rules === "ai_personal_rules_yes" ? 1 : 0;
   }
 
   /*_______________
