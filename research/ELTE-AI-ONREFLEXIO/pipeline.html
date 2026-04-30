@@ -813,7 +813,141 @@
           });
 
 
+          // ==============
+          // ===== H7 ====
+          // ==============
+          console.log(`
 
+              === H7 ===
+
+          `);
+
+          // Step 1 — DERIVE
+
+          // H7 needs no complex composites — mostly direct flag reads.
+          // One derived variable: the "pure confirmation heuristic profile"
+          // This is the echo chamber proxy: trusts when agrees AND distrusts when contradicts
+
+          const h7Data = rawData.map(r => ({
+            ...r,
+            // Pure confirmation heuristic: both conditions simultaneously true
+            confirmation_profile:
+              has(r.ai_trust, "ai_trust_matching") &&
+              has(r.ai_distrust, "ai_distrust_contradict"),
+
+            // Professional binary — reuse your encodeProfessional() from H4
+            professional_group: encodeProfessional(r),
+          }));
+
+          console.log("H7 sample size:", h7Data.length);
+
+          // H7 Step 2 — COUNT: trust flag frequencies
+
+          // All trust flags — ranked by frequency, this is your primary finding
+          const TRUST_FLAGS = [
+            { field: "ai_trust", key: "ai_trust_structured",     label: "trust_structured" },
+            { field: "ai_trust", key: "ai_trust_matching",       label: "trust_agrees_with_me" },
+            { field: "ai_trust", key: "ai_trust_new_perspective",label: "trust_new_perspective" },
+            { field: "ai_trust", key: "ai_trust_options",        label: "trust_multiple_options" },
+            { field: "ai_trust", key: "ai_trust_confident",      label: "trust_confident_tone" },
+            { field: "ai_trust", key: "ai_trust_no",             label: "trust_generally_low" },
+          ];
+
+          console.group("=== TRUST FLAG FREQUENCIES (ranked) ===");
+          const trustResults = TRUST_FLAGS.map(({ field, key, label }) => {
+            const n = h7Data.filter(r => has(r[field], key)).length;
+            return { label, n, pct: (n / h7Data.length * 100).toFixed(1) };
+          }).sort((a, b) => b.n - a.n); // sort descending
+          trustResults.forEach(r => console.log(r));
+
+          // The key H7 comparison: System 1 vs System 2 adjacent trust
+          const agreesN = h7Data.filter(r => has(r.ai_trust, "ai_trust_matching")).length;
+          const newPerspN = h7Data.filter(r => has(r.ai_trust, "ai_trust_new_perspective")).length;
+          console.log("\n=== SYSTEM 1 vs SYSTEM 2 TRUST ===");
+          console.log({ trust_agrees_with_me: `${agreesN} (${(agreesN/h7Data.length*100).toFixed(1)}%)` });
+          console.log({ trust_new_perspective: `${newPerspN} (${(newPerspN/h7Data.length*100).toFixed(1)}%)` });
+
+          console.groupEnd();
+
+          // Distrust flags for completeness
+          const DISTRUST_FLAGS = [
+            { field: "ai_distrust", key: "ai_distrust_generic",    label: "distrust_too_general" },
+            { field: "ai_distrust", key: "ai_distrust_confident",  label: "distrust_too_confident" },
+            { field: "ai_distrust", key: "ai_distrust_contradict", label: "distrust_contradicts_me" },
+            { field: "ai_distrust", key: "ai_distrust_simplify",   label: "distrust_oversimplifies" },
+            { field: "ai_distrust", key: "ai_distrust_intuition",  label: "distrust_gut_feeling" },
+            { field: "ai_distrust", key: "ai_distrust_rare",       label: "distrust_rarely" },
+          ];
+
+          console.group("\n=== DISTRUST FLAG FREQUENCIES (ranked) ===");
+          const distrustResults = DISTRUST_FLAGS.map(({ field, key, label }) => {
+            const n = h7Data.filter(r => has(r[field], key)).length;
+            return { label, n, pct: (n / h7Data.length * 100).toFixed(1) };
+          }).sort((a, b) => b.n - a.n);
+          distrustResults.forEach(r => console.log(r));
+
+          // Confirmation profile prevalence
+          const confirmN = h7Data.filter(r => r.confirmation_profile).length;
+          console.log("\n=== CONFIRMATION HEURISTIC PROFILE ===");
+          console.log({ 
+            n: confirmN, pct: (confirmN / h7Data.length * 100).toFixed(1),
+            label: "trust when agrees AND distrust when contradicts" 
+          });
+          console.groupEnd();
+
+          // H7 Step 3 Cross-tabs
+
+          // ── CROSS-TAB 1: confirmation profile × trust_new_perspective ─────────────
+          // If someone has a confirmation profile, do they also endorse new perspective trust?
+          // This tests whether confirmation heuristic users are "closed" or just preferential
+
+          console.group("\n=== CROSS-TAB: confirmation_profile × trust_new_perspective ===");
+          [true, false].forEach(hasProfile => {
+            const members = h7Data.filter(r => r.confirmation_profile === hasProfile);
+            const newPerspN = members.filter(r => has(r.ai_trust, "ai_trust_new_perspective")).length;
+            console.log({
+              confirmation_profile: hasProfile,
+              n: members.length,
+              also_trusts_new_perspective_pct: (newPerspN / members.length * 100).toFixed(1)
+            });
+          });
+          console.groupEnd();
+
+          // ── CROSS-TAB 2: professional × trust heuristics ─────────────────────────
+          // Professionals should show lower heuristic trust (agrees_with_me, confident_tone)
+          // and higher content-based trust (new_perspective, multiple_options)
+          // NOTE: n=7 professionals — report as directional only, same caveat as H4
+
+          console.group("\n=== CROSS-TAB: professional × trust patterns ===");
+          ["professional", "non_professional"].forEach(group => {
+            const members = h7Data.filter(r => r.professional_group === group);
+            const flags = [...TRUST_FLAGS].map(({ field, key, label }) => {
+              const n = members.filter(r => has(r[field], key)).length;
+              return { label, pct: (n / members.length * 100).toFixed(1) };
+            });
+            console.log(JSON.stringify({ group, n: members.length, trust_flags: flags }, null, 2));
+          });
+          console.groupEnd();
+
+          // ── CONCERN COMPARISON: misinformation vs overreliance vs dependency ───────
+          // Standalone hypothesis: hallucinations more of a turn-off than dependency
+
+          console.group("\n=== CONCERN FREQUENCIES: misinformation vs overreliance vs dependency ===");
+          const CONCERN_COMPARISON = [
+            { field: "ai_concerns", key: "ai_concerns_misinformation", label: "concern_misinformation" },
+            { field: "ai_concerns", key: "ai_concerns_overreliance",   label: "concern_overreliance" },
+            { field: "ai_concerns", key: "ai_concerns_dependency",     label: "concern_emotional_dependency" },
+            { field: "ai_concerns", key: "ai_concerns_connection",     label: "concern_human_connection" },
+            { field: "ai_concerns", key: "ai_concerns_privacy",        label: "concern_privacy" },
+            { field: "ai_concerns", key: "ai_concerns_none",           label: "no_concerns" },
+          ];
+
+          const concernResults = CONCERN_COMPARISON.map(({ field, key, label }) => {
+            const n = h7Data.filter(r => has(r[field], key)).length;
+            return { label, n, pct: (n / total * 100).toFixed(1) };
+          }).sort((a, b) => b.n - a.n);
+          concernResults.forEach(r => console.log(r));
+          console.groupEnd();
 
 
     /*===========================================
