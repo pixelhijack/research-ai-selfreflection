@@ -325,6 +325,20 @@ Secondary analysis of the yes group's reactions (n=32) reinforces the finding. T
 
 H3b is strongly supported. This is the most statistically robust finding in the dataset, and the reaction breakdown provides a plausible mechanism: dissonant feedback leads to changed self-understanding because it is processed rather than dismissed. This aligns with Festinger's cognitive dissonance framework and with Swann's self-verification theory — notably, the data suggest that in AI-mediated contexts, accommodation may be more likely than self-verification, possibly because the low-stakes, non-judgmental nature of AI interaction reduces the defensive motivation to reject threatening self-relevant information.
 ##### Hypothesis testing — H4
+
+H4 predicted that a subset of users would report using AI as a therapeutic substitute or interim support, driven primarily by accessibility barriers rather than preference for AI over human therapy.
+
+Overall, 26.9% of respondents (n=28) cited inability to access professional support as a driver of their AI use, establishing a meaningful but minority access-barrier subgroup. The dominant positioning of AI relative to therapy across the full sample was complementary (40.4%), followed by weaker (29.8%), unsure (17.3%), and substitute framing — 'similar to' or 'better than' therapy combined — at 12.5%. This distribution suggests that most users in this sample do not approach AI as a therapy replacement.
+
+However, cross-tabulation of access-barrier citation against substitute framing revealed a statistically significant association (χ²=9.05, df=1, p<0.01, one small expected cell noted). Among users who cited professional inaccessibility as a driver, 28.6% endorsed substitute framing — compared to 6.6% among those who did not cite this driver, a 4.3-fold difference. This confirms H4's core prediction: when accessibility is the driver, users are substantially more likely to frame AI as therapeutically equivalent rather than merely supplementary.
+
+A competing rationale — that substitute framing reflects preference for AI's directness and structured output rather than access barriers — was not supported. Users who cited structure-seeking as a driver showed virtually identical substitute framing rates to those who did not (12.3% vs 12.8%), ruling out preference for directness as an explanation for substitution positioning.
+
+Secondary analysis by professional status was directionally consistent with predictions: professionals showed higher complementary framing (71.4%) compared to non-professionals (38.5%). However, only seven professionals were present in the sample, making this comparison statistically uninformative. It is reported as directional only._
+
+Analysis by neurodivergent status showed that suspected ND respondents cited access barriers most frequently (34.8%), followed by other_psych (37.5%) and neurotypical (28.2%), with diagnosed ND respondents showing the lowest rate (20.7%). The elevated access-barrier rate among suspected ND respondents is notable: without a formal diagnosis, this group may face the greatest barriers to referral pathways and professional support, making AI a more prominent substitute by necessity.
+
+H4 is partially supported. The accessibility-to-substitution pathway is confirmed and statistically significant. The preference-for-directness competing rationale is ruled out. The overall prevalence of substitute framing remains low (12.5%), consistent with AI functioning as a supplement of last resort for a specific subgroup rather than a broad population-level shift away from therapy. The shame and stigma rationale proposed in the hypothesis rationale cannot be separated from the accessibility explanation using self-report data and remains a theoretical possibility.
 ##### Hypothesis testing — H5
 ##### Hypothesis testing — H6
 ##### Hypothesis testing — H7

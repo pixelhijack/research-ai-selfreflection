@@ -1,266 +1,143 @@
-<!doctype html>
-<html>
-  <head>
-    <style>
-      #console-display {
-        background: #1e1e1e;
-        color: #d4d4d4;
-        font-family: monospace;
-        padding: 10px;
-        border-radius: 5px;
-        max-height: 400px;
-        overflow-y: auto;
-      }
+<!DOCTYPE html>
+<input type="file" id="jsonFile" accept=".json">
+<script>
+  document.getElementById('jsonFile').addEventListener('change', function(e) {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const rawData = JSON.parse(event.target.result);
+      
+      // ===== INITIAL =====
+      console.log("RAW DATA", rawData);
 
-      .log-entry {
-        margin-bottom: 5px;
-        border-bottom: 1px solid #333;
-      }
-      .prefix {
-        color: #569cd6;
-        font-weight: bold;
-      }
-      .group-content {
-        margin-left: 20px;
-        border-left: 1px dashed #555;
-        padding-left: 10px;
-      }
-      .group-label {
-        color: #ce9178;
-        font-weight: bold;
-        margin-top: 5px;
-      }
-      pre {
-        background: #2d2d2d;
-        padding: 5px;
-        color: #9cdcfe;
-        margin: 5px 0;
-      }
-    </style>
-    <script>
+      // ==============
+      // ===== H1 =====
+      // ==============
+      
+      const ANALYSIS_GROUPS = [
+        "nd_status_diagnosed",
+        "nd_status_suspected",
+        "nd_status_none",
+        "nd_status_other"
+      ];
 
-      document.addEventListener("DOMContentLoaded", function () {
-        // monkey-patch console outputs to render in html too:
-      (function () {
-        // 1. Eredeti metódusok mentése
-        const original = {
-          log: console.log,
-          group: console.group,
-          groupEnd: console.groupEnd,
-          error: console.error,
-        };
+      // Step 1 — Build the composite variables
 
-        const display = document.getElementById("output");
-        let currentParent = display; // Alapértelmezetten a fő konténerbe írunk
-
-        // Segédfüggvény az értékek HTML-be formázásához
-        function formatArg(arg) {
-          if (typeof arg === "object") {
-            return `<pre>${JSON.stringify(arg, null, 2)}</pre>`;
-          }
-          return `<span>${arg}</span>`;
+      const h1Data = rawData.map(item => {
+        return {
+          ...item,
+          emotional_use: getEmotionalUse(item),
+          accessibility_barrier: getAccessibilityBarrier(item)
         }
+      })
+      console.log("H1 DATA", h1Data);
 
-        // 2. Console.log felülírása
-        console.log = function (...args) {
-          const entry = document.createElement("div");
-          entry.className = "log-entry";
-          entry.innerHTML = `<span class="prefix">></span> ${args.map(formatArg).join(" ")}`;
+      // Step 2 — Descriptive: what % of respondents show emotional use?
 
-          currentParent.appendChild(entry);
+      const total = rawData.length;
 
-          // Eredeti funkció megtartása
-          original.log.apply(console, args);
-        };
+      const emotionalUseCount = h1Data.filter(r => r.emotional_use).length;
+      const emotionalUsePct = (emotionalUseCount / total) * 100;
+      // "X% of respondents used AI for emotional or self-pattern understanding"
 
-        // 3. Console.group felülírása (indentálás létrehozása)
-        console.group = function (label) {
-          const groupWrapper = document.createElement("div");
-          groupWrapper.className = "log-group";
-          groupWrapper.innerHTML = `<div class="group-label">▼ ${label}</div>`;
+      const accessibilityCount = h1Data.filter(r => r.accessibility_barrier).length;
+      const accessibilityPct = (accessibilityCount / total) * 100;
+      // "Y% cited accessibility as a driver"
 
-          const groupContent = document.createElement("div");
-          groupContent.className = "group-content";
-          groupWrapper.appendChild(groupContent);
+      console.group("// Step 2 — Descriptive: what % of respondents show emotional use?");
+      console.log({
+        emotionalUseCount,
+        emotionalUsePct,
+        accessibilityCount,
+        accessibilityPct
+      });
+      console.groupEnd();
 
-          currentParent.appendChild(groupWrapper);
-          currentParent = groupContent; // Az új logok ebbe a belső divbe kerülnek
+      // Step 3 — Cross-tab: emotional use × nd_status
 
-          original.group.apply(console, [label]);
-        };
+      ANALYSIS_GROUPS.forEach((group) => {
+        const groupMembers = h1Data.filter((r) => r.nd_status === group);
+        const withEmotionalUse = groupMembers.filter((r) => r.emotional_use);
 
-        // 4. Console.groupEnd felülírása
-        console.groupEnd = function () {
-          if (currentParent !== display) {
-            currentParent = currentParent.parentElement.parentElement;
-          }
-          original.groupEnd.apply(console);
-        };
-      })();
+        console.group("// Step 3 — Cross-tab: emotional use × nd_status");
+        console.log({
+          group,
+          n: groupMembers.length, // how many in this group
+          emotional_use_n: withEmotionalUse.length, // how many show emotional use
+          emotional_use_pct: (withEmotionalUse.length / groupMembers.length) * 100,
+          // "X% of diagnosed ND respondents used AI for emotional purposes"
+          // vs "Y% of neurotypical respondents"
+        });
+        console.groupEnd();
+      });
 
-        document
-          .getElementById("jsonFile")
-          .addEventListener("change", function (e) {
-            const reader = new FileReader();
-            reader.onload = (event) => {
-              const rawData = JSON.parse(event.target.result);
+      // What you're looking for in the output: is the `emotional_use_pct` meaningfully higher in `diagnosed_nd` and `suspected_nd` than in `neurotypical`? That would be consistent with H1 and H2.
 
-              // ===== INITIAL =====
-              console.log("RAW DATA", rawData.length);
+      // Step 4 — Cross-tab: emotional use × is_professional
 
-              // ==============
-              // ===== H1 =====
-              // ==============
+      ["professional", "non_professional"].forEach((group) => {
+        const members = h1Data.filter((r) => professionalGroup(r) === group);
+        const withUse = members.filter((r) => r.emotional_use);
+        console.group("// Step 4 — Cross-tab: emotional use × is_professional");
+        console.log({
+          group,
+          n: members.length,
+          emotional_use_pct: (withUse.length / members.length) * 100,
+        });
+        console.groupEnd();
+      });
 
-              const ANALYSIS_GROUPS = [
-                "nd_status_diagnosed",
-                "nd_status_suspected",
-                "nd_status_none",
-                "nd_status_other",
-              ];
 
-              // Step 1 — Build the composite variables
+      // ==============
+      // ===== H2 =====
+      // ==============
 
-              const h1Data = rawData.map((item) => {
-                return {
-                  ...item,
-                  emotional_use: getEmotionalUse(item),
-                  accessibility_barrier: getAccessibilityBarrier(item),
-                };
-              });
-              console.log("H1 DATA", h1Data.length);
+      // Part A — Higher frequency + use intensity
 
-              // Step 2 — Descriptive: what % of respondents show emotional use?
+      // Step 1 — DERIVE: recode ordinal and binary variables
+      const h2Data = h1Data
+        .filter((r) => ANALYSIS_GROUPS.includes(r.nd_status)) // we excluded non-disclosed ones 126 participants -> 120
+        .map((r) => ({
+          ...r,
+          freq_score: encodeFrequency(r),
+          used_psych: encodeUsedAiPsych(r),
+          breadth: breadthOfUse(r),
+        }));
 
-              const total = rawData.length;
+        console.log("H2a Step 1 — DERIVE: recode ordinal and binary variables", h2Data);
 
-              const emotionalUseCount = h1Data.filter(
-                (r) => r.emotional_use,
-              ).length;
-              const emotionalUsePct = (emotionalUseCount / total) * 100;
-              // "X% of respondents used AI for emotional or self-pattern understanding"
+        // Step 2 — COUNT: descriptives per group
+        // What you're looking for: `diagnosed_nd` and `suspected_nd` should show higher `avg_freq_score`, higher `used_psych_pct`, and higher `avg_breadth` than `neurotypical`. If the descriptives don't show a visible pattern, the statistical test won't magically find one either.
+        
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2Data.filter((r) => r.nd_status === group);
 
-              const accessibilityCount = h1Data.filter(
-                (r) => r.accessibility_barrier,
-              ).length;
-              const accessibilityPct = (accessibilityCount / total) * 100;
-              // "Y% cited accessibility as a driver"
+          // Average frequency score (1–5) for this group
+          const freqScores = members.map((r) => r.freq_score).filter((x) => x !== null);
+          const avgFreq = freqScores.reduce((a, b) => a + b, 0) / freqScores.length;
 
-              console.group(
-                "// Step 2 — Descriptive: what % of respondents show emotional use?",
-              );
-              console.log({
-                emotionalUseCount,
-                emotionalUsePct,
-                accessibilityCount,
-                accessibilityPct,
-              });
-              console.groupEnd();
+          // % who used AI for psych purposes
+          const usedPsych = members.filter((r) => r.used_psych === 1);
+          const usedPsychPct = (usedPsych.length / members.length) * 100;
 
-              // Step 3 — Cross-tab: emotional use × nd_status
+          // Average breadth score (0–6)
+          const avgBreadth =
+            members.reduce((a, r) => a + r.breadth, 0) / members.length;
 
-              ANALYSIS_GROUPS.forEach((group) => {
-                const groupMembers = h1Data.filter(
-                  (r) => r.nd_status === group,
-                );
-                const withEmotionalUse = groupMembers.filter(
-                  (r) => r.emotional_use,
-                );
+          console.group("H2a Step 2 — COUNT: descriptives per group");
+          console.log({
+            group,
+            n: members.length,
+            avg_freq_score: avgFreq.toFixed(2), // e.g. "4.2 out of 5"
+            used_psych_pct: usedPsychPct.toFixed(1), // e.g. "87%"
+            avg_breadth: avgBreadth.toFixed(2), // e.g. "3.4 out of 6"
+          });
+          console.groupEnd();
+        });
 
-                console.group(
-                  "// Step 3 — Cross-tab: emotional use × nd_status",
-                );
-                console.log({
-                  group,
-                  n: groupMembers.length, // how many in this group
-                  emotional_use_n: withEmotionalUse.length, // how many show emotional use
-                  emotional_use_pct:
-                    (withEmotionalUse.length / groupMembers.length) * 100,
-                  // "X% of diagnosed ND respondents used AI for emotional purposes"
-                  // vs "Y% of neurotypical respondents"
-                });
-                console.groupEnd();
-              });
+        // Step 3 — TEST: is the group difference real or random noise?
 
-              // What you're looking for in the output: is the `emotional_use_pct` meaningfully higher in `diagnosed_nd` and `suspected_nd` than in `neurotypical`? That would be consistent with H1 and H2.
-
-              // Step 4 — Cross-tab: emotional use × is_professional
-
-              ["professional", "non_professional"].forEach((group) => {
-                const members = h1Data.filter(
-                  (r) => professionalGroup(r) === group,
-                );
-                const withUse = members.filter((r) => r.emotional_use);
-                console.group(
-                  "// Step 4 — Cross-tab: emotional use × is_professional",
-                );
-                console.log({
-                  group,
-                  n: members.length,
-                  emotional_use_pct: (withUse.length / members.length) * 100,
-                });
-                console.groupEnd();
-              });
-
-              // ==============
-              // ===== H2 =====
-              // ==============
-
-              // Part A — Higher frequency + use intensity
-
-              // Step 1 — DERIVE: recode ordinal and binary variables
-              const h2Data = h1Data
-                .filter((r) => ANALYSIS_GROUPS.includes(r.nd_status)) // we excluded non-disclosed ones 126 participants -> 120
-                .map((r) => ({
-                  ...r,
-                  freq_score: encodeFrequency(r),
-                  used_psych: encodeUsedAiPsych(r),
-                  breadth: breadthOfUse(r),
-                }));
-
-              console.log(
-                "H2a Step 1 — DERIVE: recode ordinal and binary variables",
-                h2Data.length,
-              );
-
-              // Step 2 — COUNT: descriptives per group
-              // What you're looking for: `diagnosed_nd` and `suspected_nd` should show higher `avg_freq_score`, higher `used_psych_pct`, and higher `avg_breadth` than `neurotypical`. If the descriptives don't show a visible pattern, the statistical test won't magically find one either.
-
-              ANALYSIS_GROUPS.forEach((group) => {
-                const members = h2Data.filter((r) => r.nd_status === group);
-
-                // Average frequency score (1–5) for this group
-                const freqScores = members
-                  .map((r) => r.freq_score)
-                  .filter((x) => x !== null);
-                const avgFreq =
-                  freqScores.reduce((a, b) => a + b, 0) / freqScores.length;
-
-                // % who used AI for psych purposes
-                const usedPsych = members.filter((r) => r.used_psych === 1);
-                const usedPsychPct = (usedPsych.length / members.length) * 100;
-
-                // Average breadth score (0–6)
-                const avgBreadth =
-                  members.reduce((a, r) => a + r.breadth, 0) / members.length;
-
-                console.group("H2a Step 2 — COUNT: descriptives per group");
-                console.log({
-                  group,
-                  n: members.length,
-                  avg_freq_score: avgFreq.toFixed(2), // e.g. "4.2 out of 5"
-                  used_psych_pct: usedPsychPct.toFixed(1), // e.g. "87%"
-                  avg_breadth: avgBreadth.toFixed(2), // e.g. "3.4 out of 6"
-                });
-                console.groupEnd();
-              });
-
-              // Step 3 — TEST: is the group difference real or random noise?
-
-              console.group(
-                "H2a Step 3 — TEST: is the group difference real or random noise?",
-              );
-              console.log(`
+        console.group("H2a Step 3 — TEST: is the group difference real or random noise?");
+        console.log(`
           Null hypothesis: the medians of all groups are the same
               pValue: 0.4982
               statistic: 2.3755
@@ -277,745 +154,711 @@
             Chi-square: 0.7343301871345647
 
         `);
-              console.groupEnd();
+        console.groupEnd();
 
-              // Part B — Lower boundary-setting despite higher engagement
-              // Step 1 — DERIVE
+        // Part B — Lower boundary-setting despite higher engagement
+        // Step 1 — DERIVE
 
-              const h2bData = h2Data.map((r) => ({
-                ...r,
-                rules: encodeRules(r),
-              }));
+        const h2bData = h2Data.map((r) => ({
+          ...r,
+          rules: encodeRules(r),
+        }));
 
-              // Step 2
-              ANALYSIS_GROUPS.forEach((group) => {
-                const members = h2bData.filter(
-                  (r) => r.nd_status === group && r.rules !== null,
-                );
+        // Step 2
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2bData.filter(
+            (r) => r.nd_status === group && r.rules !== null,
+          );
 
-                const setRules = members.filter((r) => r.rules.set_rules === 1);
-                const avgRulesOrdinal =
-                  members.reduce((s, r) => s + r.rules.ordinal, 0) /
-                  members.length;
+          const setRules = members.filter((r) => r.rules.set_rules === 1);
+          const avgRulesOrdinal =
+            members.reduce((s, r) => s + r.rules.ordinal, 0) / members.length;
 
-                console.group(
-                  "H2b — Lower boundary-setting despite higher engagement",
-                );
-                console.log({
-                  group,
-                  n: members.length,
-                  explicitly_set_rules_pct: (
-                    (setRules.length / members.length) *
-                    100
-                  ).toFixed(1),
-                  avg_rules_ordinal: avgRulesOrdinal.toFixed(2), // 0–2 scale
-                  avg_breadth: (
-                    members.reduce((s, r) => s + r.breadth, 0) / members.length
-                  ).toFixed(2),
-                  // breadth already computed in Part A
-                });
-                console.groupEnd();
-              });
+          console.group("H2b — Lower boundary-setting despite higher engagement");
+          console.log({
+            group,
+            n: members.length,
+            explicitly_set_rules_pct: (
+              (setRules.length / members.length) *
+              100
+            ).toFixed(1),
+            avg_rules_ordinal: avgRulesOrdinal.toFixed(2), // 0–2 scale
+            avg_breadth: (
+              members.reduce((s, r) => s + r.breadth, 0) / members.length
+            ).toFixed(2),
+            // breadth already computed in Part A
+          });
+          console.groupEnd();
+        });
 
-              // PART B Step 3 — The key comparison (the internal contradiction test)
-              // You're not just comparing `set_rules` across groups — you're looking at the _ratio_ of engagement to self-regulation. This is what makes H2 part B interesting.
-              // For each group, compute a simple engagement-to-regulation ratio.
-              // This is descriptive only — not a formal test — but it surfaces the pattern clearly.
+        // PART B Step 3 — The key comparison (the internal contradiction test)
+        // You're not just comparing `set_rules` across groups — you're looking at the _ratio_ of engagement to self-regulation. This is what makes H2 part B interesting.
+        // For each group, compute a simple engagement-to-regulation ratio.
+        // This is descriptive only — not a formal test — but it surfaces the pattern clearly.
 
-              ANALYSIS_GROUPS.forEach((group) => {
-                const members = h2bData.filter(
-                  (r) => r.nd_status === group && r.rules !== null,
-                );
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h2bData.filter(
+            (r) => r.nd_status === group && r.rules !== null,
+          );
 
-                const avgBreadth =
-                  members.reduce((s, r) => s + r.breadth, 0) / members.length;
-                const avgRules =
-                  members.reduce((s, r) => s + r.rules.ordinal, 0) /
-                  members.length;
+          const avgBreadth =
+            members.reduce((s, r) => s + r.breadth, 0) / members.length;
+          const avgRules =
+            members.reduce((s, r) => s + r.rules.ordinal, 0) / members.length;
 
-                // High ratio = high use relative to self-regulation = the vulnerable pattern
-                // Low ratio = either low use, OR use with active boundaries
-                const engagementToRegulation = avgBreadth / (avgRules + 0.1);
-                // +0.1 avoids divide-by-zero if a group has avg rules near 0
+          // High ratio = high use relative to self-regulation = the vulnerable pattern
+          // Low ratio = either low use, OR use with active boundaries
+          const engagementToRegulation = avgBreadth / (avgRules + 0.1);
+          // +0.1 avoids divide-by-zero if a group has avg rules near 0
 
-                console.group(
-                  "PART B Step 3 — The key comparison (the internal contradiction test)",
-                );
-                console.log({
-                  group,
-                  avg_breadth: avgBreadth.toFixed(2),
-                  avg_rules: avgRules.toFixed(2),
-                  engagement_regulation_ratio:
-                    engagementToRegulation.toFixed(2),
-                });
-                console.groupEnd();
-              });
-              // What to look for:
-              // diagnosed_nd → high avg_breadth, low avg_rules → highest ratio (most "at risk" pattern)
-              // neurotypical  → lower avg_breadth, higher avg_rules → lower ratio
+          console.group("PART B Step 3 — The key comparison (the internal contradiction test)");
+          console.log({
+            group,
+            avg_breadth: avgBreadth.toFixed(2),
+            avg_rules: avgRules.toFixed(2),
+            engagement_regulation_ratio: engagementToRegulation.toFixed(2),
+          });
+          console.groupEnd();
+        });
+        // What to look for:
+        // diagnosed_nd → high avg_breadth, low avg_rules → highest ratio (most "at risk" pattern)
+        // neurotypical  → lower avg_breadth, higher avg_rules → lower ratio
 
-              // ==============
-              // ===== H3a ====
-              // ==============
-              // The four cognitive offloading indicators
-              const OFFLOADING_KEYS = [
-                {
-                  field: "tool_motivation",
-                  key: "tool_motivation_structure",
-                  label: "Wanted structured overview",
-                },
-                {
-                  field: "tool_usage",
-                  key: "tool_usage_brainstorming",
-                  label: "Used as brainstorming partner",
-                },
-                {
-                  field: "tool_usage",
-                  key: "tool_usage_secondary_opinion",
-                  label: "Used as neutral second opinion",
-                },
-                {
-                  field: "tool_goal",
-                  key: "tool_goal_self",
-                  label: "Understanding own patterns",
-                },
-              ];
+        
+        // ==============
+        // ===== H3a ====
+        // ==============
+        // The four cognitive offloading indicators
+        const OFFLOADING_KEYS = [
+          {
+            field: "tool_motivation",
+            key: "tool_motivation_structure",
+            label: "Wanted structured overview",
+          },
+          {
+            field: "tool_usage",
+            key: "tool_usage_brainstorming",
+            label: "Used as brainstorming partner",
+          },
+          {
+            field: "tool_usage",
+            key: "tool_usage_secondary_opinion",
+            label: "Used as neutral second opinion",
+          },
+          {
+            field: "tool_goal",
+            key: "tool_goal_self",
+            label: "Understanding own patterns",
+          },
+        ];
 
-              const h3Data = rawData.map((r) => {
-                return {
-                  ...r,
-                  cognitive_offloading: OFFLOADING_KEYS.some(
-                    (o) =>
-                      has(r.tool_motivation, o.key) ||
-                      has(r.tool_usage, o.key) ||
-                      has(r.tool_goal, o.key),
-                  )
-                    ? 1
-                    : 0,
-                  offloading_score: OFFLOADING_KEYS.reduce(
-                    (s, o) =>
-                      s +
-                      (has(r.tool_motivation, o.key) ||
-                      has(r.tool_usage, o.key) ||
-                      has(r.tool_goal, o.key)
-                        ? 1
-                        : 0),
-                    0,
-                  ),
-                };
-              });
+        const h3Data = rawData.map((r) => {
+          return {
+            ...r,
+            cognitive_offloading: OFFLOADING_KEYS.some(
+              (o) =>
+                (has(r.tool_motivation, o.key) ||
+                has(r.tool_usage, o.key) ||
+                has(r.tool_goal, o.key)),
+            )
+              ? 1
+              : 0,
+            offloading_score: OFFLOADING_KEYS.reduce(
+              (s, o) =>
+                s +
+                (has(r.tool_motivation, o.key) ||
+                has(r.tool_usage, o.key) ||
+                has(r.tool_goal, o.key)
+                  ? 1
+                  : 0),
+              0)
+            }
+        });
 
-              // Individual item frequencies
-              OFFLOADING_KEYS.forEach(({ key, label }) => {
-                const count = h3Data.filter(
-                  (r) =>
-                    has(r.tool_motivation, key) ||
-                    has(r.tool_usage, key) ||
-                    has(r.tool_goal, key),
-                ).length;
-                console.group("H3 Individual item frequencies");
-                console.log({
-                  item: label,
-                  n: count,
-                  pct: ((count / total) * 100).toFixed(1),
-                });
-                console.groupEnd();
-              });
+        // Individual item frequencies
+        OFFLOADING_KEYS.forEach(({ key, label }) => {
+          const count = h3Data.filter((r) =>
+            (has(r.tool_motivation, key) || has(r.tool_usage, key) || has(r.tool_goal, key)),
+          ).length;
+          console.group("H3 Individual item frequencies");
+          console.log({
+            item: label,
+            n: count,
+            pct: ((count / total) * 100).toFixed(1),
+          });
+          console.groupEnd();
+        });
 
-              // Overall: what % endorsed at least one offloading behavior?
-              const anyOffloading = h3Data.filter(
-                (r) => r.cognitive_offloading === 1,
-              ).length;
+        // Overall: what % endorsed at least one offloading behavior?
+        const anyOffloading = h3Data.filter(
+          (r) => r.cognitive_offloading === 1,
+        ).length;
 
-              console.group(
-                "H3 Overall: what % endorsed at least one offloading behavior?",
-              );
-              console.log({
-                item: "Any cognitive offloading behavior",
-                n: anyOffloading,
-                pct: ((anyOffloading / total) * 100).toFixed(1),
-              });
-              console.groupEnd();
+        console.group("H3 Overall: what % endorsed at least one offloading behavior?");
+        console.log({
+          item: "Any cognitive offloading behavior",
+          n: anyOffloading,
+          pct: ((anyOffloading / total) * 100).toFixed(1),
+        });
+        console.groupEnd();
 
-              // Average offloading score across all respondents
-              const avgScore =
-                h3Data.reduce((s, r) => s + r.offloading_score, 0) / total;
-              console.log("Mean offloading score (0–4):", avgScore.toFixed(2));
+        // Average offloading score across all respondents
+        const avgScore =
+          h3Data.reduce((s, r) => s + r.offloading_score, 0) / total;
+        console.log("Mean offloading score (0–4):", avgScore.toFixed(2));
 
-              // Step 3 — GROUP: cross-tab with nd_status
-              // Per group, per item — endorsement rate
-              ANALYSIS_GROUPS.forEach((group) => {
-                const members = h3Data.filter((r) => r.nd_status === group);
+        // Step 3 — GROUP: cross-tab with nd_status
+        // Per group, per item — endorsement rate
+        ANALYSIS_GROUPS.forEach((group) => {
+          const members = h3Data.filter((r) => r.nd_status === group);
 
-                const itemRates = OFFLOADING_KEYS.map(({ key, label }) => {
-                  const count = members.filter(
-                    (r) =>
-                      has(r.tool_motivation, key) ||
-                      has(r.tool_usage, key) ||
-                      has(r.tool_goal, key),
-                  ).length;
-                  return {
-                    label,
-                    pct: ((count / members.length) * 100).toFixed(1),
-                  };
-                });
+          const itemRates = OFFLOADING_KEYS.map(({ key, label }) => {
+            const count = members.filter(
+              (r) => (has(r.tool_motivation, key) || has(r.tool_usage, key) || has(r.tool_goal, key))
+            ).length;
+            return { label, pct: ((count / members.length) * 100).toFixed(1) };
+          });
 
-                const avgOffloadingScore =
-                  members.reduce((s, r) => s + r.offloading_score, 0) /
-                  members.length;
+          const avgOffloadingScore =
+            members.reduce((s, r) => s + r.offloading_score, 0) / members.length;
 
-                console.group("H3 Step 3 — GROUP: cross-tab with nd_status");
-                console.log(
-                  JSON.stringify(
-                    {
-                      group,
-                      n: members.length,
-                      avg_offloading_score: avgOffloadingScore.toFixed(2),
-                      items: itemRates,
-                    },
-                    null,
-                    2,
-                  ),
-                );
-                console.groupEnd();
-              });
+          console.group("H3 Step 3 — GROUP: cross-tab with nd_status");
+          console.log(JSON.stringify({
+            group,
+            n: members.length,
+            avg_offloading_score: avgOffloadingScore.toFixed(2),
+            items: itemRates,
+          }, null, 2));
+          console.groupEnd();
+        });
 
-              // ==============
-              // ===== H3b ====
-              // ==============
-              // Step 1 — DERIVE: recode both variables to ordinal/categorical
+        // ==============
+        // ===== H3b ====
+        // ==============
+        // Step 1 — DERIVE: recode both variables to ordinal/categorical
 
-              const h3bData = h3Data
-                .map((r) => ({
-                  ...r,
-                  feedback_received: encodeFeedbackReaction(r),
-                  self_change_full: encodeSelfChange(r),
-                  self_change_collapsed: collapsedChange(r),
-                }))
-                .filter((r) => r.self_change_full !== null);
+        const h3bData = h3Data.map(r => ({
+          ...r,
+          feedback_received: encodeFeedbackReaction(r),
+          self_change_full: encodeSelfChange(r),
+          self_change_collapsed: collapsedChange(r),
+        })).filter(r => r.self_change_full !== null);
 
-              console.log(`
+        console.log(`
 
             === H3b ===
 
         `);
 
-              console.log("H3b sample size:", h3bData.length);
+        console.log("H3b sample size:", h3bData.length);
 
-              // Step 2 — COUNT: distribution of each variable independently
-              const FEEDBACK_GROUPS = ["yes", "no", "unsure"];
-              const FEEDBACK_GROUPS_COLLAPSED = ["yes", "no_or_unsure"];
-              const CHANGE_LEVELS = [
-                "improved",
-                "somewhat",
-                "unchanged_or_less",
-              ];
+        // Step 2 — COUNT: distribution of each variable independently
+        const FEEDBACK_GROUPS = ["yes", "no", "unsure"];
+        const FEEDBACK_GROUPS_COLLAPSED = ["yes", "no_or_unsure"];
+        const CHANGE_LEVELS   = ["improved", "somewhat", "unchanged_or_less"];
 
-              const collapsedTable = FEEDBACK_GROUPS_COLLAPSED.map((fg) => {
-                const members =
-                  fg === "yes"
-                    ? h3bData.filter((r) => r.feedback_received === "yes")
-                    : h3bData.filter(
-                        (r) =>
-                          r.feedback_received === "no" ||
-                          r.feedback_received === "unsure",
-                      );
+        const collapsedTable = FEEDBACK_GROUPS_COLLAPSED.map(fg => {
+          const members = fg === "yes"
+            ? h3bData.filter(r => r.feedback_received === "yes")
+            : h3bData.filter(r => r.feedback_received === "no" || r.feedback_received === "unsure");
 
-                return CHANGE_LEVELS.map(
-                  (level) =>
-                    members.filter((r) => r.self_change_collapsed === level)
-                      .length,
-                );
-              });
+          return CHANGE_LEVELS.map(level =>
+            members.filter(r => r.self_change_collapsed === level).length
+          );
+        });
 
-              console.log(
-                "Collapsed 2×3 table:",
-                JSON.stringify(collapsedTable, null, 2),
-              );
+        console.log("Collapsed 2×3 table:", JSON.stringify(collapsedTable, null, 2));
 
-              // Marginal: feedback received
-              console.group("=== FEEDBACK RECEIVED (IV) ===");
-              FEEDBACK_GROUPS.forEach((g) => {
-                const n = h3bData.filter(
-                  (r) => r.feedback_received === g,
-                ).length;
-                console.log(
-                  JSON.stringify(
-                    {
-                      group: g,
-                      n,
-                      pct: ((n / h3bData.length) * 100).toFixed(1),
-                    },
-                    null,
-                    2,
-                  ),
-                );
-              });
-              console.groupEnd();
+        // Marginal: feedback received
+        console.group("=== FEEDBACK RECEIVED (IV) ===");
+        FEEDBACK_GROUPS.forEach(g => {
+          const n = h3bData.filter(r => r.feedback_received === g).length;
+          console.log(JSON.stringify({ group: g, n, pct: (n / h3bData.length * 100).toFixed(1) }, null, 2));
+        });
+        console.groupEnd();
 
-              // Marginal: self change
-              console.group("\n=== SELF CHANGE (DV) ===");
-              CHANGE_LEVELS.forEach((level) => {
-                const n = h3bData.filter(
-                  (r) => r.self_change_collapsed === level,
-                ).length;
-                console.log(
-                  JSON.stringify(
-                    { level, n, pct: ((n / h3bData.length) * 100).toFixed(1) },
-                    null,
-                    2,
-                  ),
-                );
-              });
-              console.groupEnd();
+        // Marginal: self change
+        console.group("\n=== SELF CHANGE (DV) ===");
+        CHANGE_LEVELS.forEach(level => {
+          const n = h3bData.filter(r => r.self_change_collapsed === level).length;
+          console.log(JSON.stringify({ level, n, pct: (n / h3bData.length * 100).toFixed(1) }, null, 2));
+        });
+        console.groupEnd();
 
-              // H3b Step 3 — CROSS-TAB: feedback received × self change
-              // Build the table: for each IV group, show DV distribution
-              const table = {};
+        // H3b Step 3 — CROSS-TAB: feedback received × self change
+        // Build the table: for each IV group, show DV distribution
+        const table = {};
 
-              FEEDBACK_GROUPS.forEach((fg) => {
-                const members = h3bData.filter(
-                  (r) => r.feedback_received === fg,
-                );
-                table[fg] = {};
+        FEEDBACK_GROUPS.forEach(fg => {
+          const members = h3bData.filter(r => r.feedback_received === fg);
+          table[fg] = {};
 
-                CHANGE_LEVELS.forEach((level) => {
-                  const n = members.filter(
-                    (r) => r.self_change_collapsed === level,
-                  ).length;
-                  table[fg][level] = {
-                    n,
-                    pct:
-                      members.length > 0
-                        ? ((n / members.length) * 100).toFixed(1)
-                        : "—",
-                  };
-                });
+          CHANGE_LEVELS.forEach(level => {
+            const n = members.filter(r => r.self_change_collapsed === level).length;
+            table[fg][level] = {
+              n,
+              pct: members.length > 0 ? (n / members.length * 100).toFixed(1) : "—"
+            };
+          });
 
-                console.group(
-                  "H3b Step 3 — CROSS-TAB: feedback received × self change",
-                );
-                console.log(
-                  JSON.stringify(
-                    {
-                      feedback_received: fg,
-                      n_total: members.length,
-                      ...Object.fromEntries(
-                        CHANGE_LEVELS.map((level) => [
-                          level,
-                          `${table[fg][level].n} (${table[fg][level].pct}%)`,
-                        ]),
-                      ),
-                    },
-                    null,
-                    2,
-                  ),
-                );
-                console.groupEnd();
-              });
-              // The pattern you're looking for:
-              // "yes" row → highest % in "improved" column
-              // "no" row  → highest % in "unchanged_or_less" column
-              // "unsure"  → should scatter somewhere in between
+          console.group("H3b Step 3 — CROSS-TAB: feedback received × self change");
+          console.log(JSON.stringify({
+            feedback_received: fg,
+            n_total: members.length,
+            ...Object.fromEntries(
+              CHANGE_LEVELS.map(level => [level, `${table[fg][level].n} (${table[fg][level].pct}%)`])
+            )
+          }, null, 2));
+          console.groupEnd();
+        });
+        // The pattern you're looking for:
+        // "yes" row → highest % in "improved" column
+        // "no" row  → highest % in "unchanged_or_less" column
+        // "unsure"  → should scatter somewhere in between
 
-              // Step 3b — Reaction breakdown (yes group only)
-              const YES_GROUP = h3bData.filter(
-                (r) => r.feedback_received === "yes",
-              );
-              console.log(
-                "\n=== REACTION TO DISSONANT FEEDBACK (yes group only, n =",
-                YES_GROUP.length,
-                ") ===",
-              );
+        // Step 3b — Reaction breakdown (yes group only)
+        const YES_GROUP = h3bData.filter(r => r.feedback_received === "yes");
+        console.log("\n=== REACTION TO DISSONANT FEEDBACK (yes group only, n =", YES_GROUP.length, ") ===");
 
-              const REACTION_KEYS = [
-                {
-                  field: "ai_feedback_response",
-                  key: "ai_feedback_response_thought",
-                  label: "Reflected on it",
-                },
-                {
-                  field: "ai_feedback_response",
-                  key: "ai_feedback_response_integrated",
-                  label: "Integrated (at least partially)",
-                },
-                {
-                  field: "ai_feedback_response",
-                  key: "ai_feedback_response_uncomfortable",
-                  label: "Uncomfortable but curious",
-                },
-                {
-                  field: "ai_feedback_response",
-                  key: "ai_feedback_response_ignored",
-                  label: "Ignored it",
-                },
-                {
-                  field: "ai_feedback_response",
-                  key: "ai_feedback_response_context",
-                  label: "Depended on context",
-                },
-              ];
+        const REACTION_KEYS = [
+          { field: "ai_feedback_response", key: "ai_feedback_response_thought",       label: "Reflected on it" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_integrated",     label: "Integrated (at least partially)" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_uncomfortable",  label: "Uncomfortable but curious" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_ignored",        label: "Ignored it" },
+          { field: "ai_feedback_response", key: "ai_feedback_response_context",        label: "Depended on context" },
+        ];
 
-              REACTION_KEYS.forEach(({ field, key, label }) => {
-                const n = YES_GROUP.filter((r) => has(r[field], key)).length;
-                console.group(
-                  "H3b Step 3b — Reaction breakdown (yes group only)",
-                );
-                console.log(
-                  JSON.stringify(
-                    {
-                      reaction: label,
-                      n,
-                      pct: ((n / YES_GROUP.length) * 100).toFixed(1),
-                    },
-                    null,
-                    2,
-                  ),
-                );
-                console.groupEnd();
-              });
-              // The pattern you're looking for:
-              // "reflected" + "integrated" should dominate over "ignored"
-              // If "uncomfortable but curious" is also high, that's a positive signal —
-              // it means dissonance was tolerated rather than rejected
+        REACTION_KEYS.forEach(({ field, key, label }) => {
+          const n = YES_GROUP.filter(r => has(r[field], key)).length;
+          console.group("H3b Step 3b — Reaction breakdown (yes group only)");
+          console.log(JSON.stringify({
+            reaction: label,
+            n,
+            pct: (n / YES_GROUP.length * 100).toFixed(1)
+          }, null, 2));
+          console.groupEnd();
+        });
+        // The pattern you're looking for:
+        // "reflected" + "integrated" should dominate over "ignored"
+        // If "uncomfortable but curious" is also high, that's a positive signal —
+        // it means dissonance was tolerated rather than rejected
 
-              console.log("\nChi-square:", chiSquare(collapsedTable)); // reuse your function from H2
-              console.log(
-                "df = 4 | critical value p<0.05: 9.49 | p<0.01: 13.28",
-              );
 
-              // ==============
-              // ===== H4 ====
-              // ==============
-              console.log(`
+        console.log("\nChi-square:", chiSquare(collapsedTable));  // reuse your function from H2
+        console.log("df = 4 | critical value p<0.05: 9.49 | p<0.01: 13.28");
+
+        
+
+
+        // ==============
+        // ===== H4 ====
+        // ==============
+        console.log(`
 
             === H4 ===
 
         `);
 
-              const h4Data = rawData
-                .map((r) => ({
-                  ...r,
-                  ai_therapy_label: encodeAiVsTherapy(r),
-                  is_substitute: isSubstituteFraming(encodeAiVsTherapy(r)),
-                  professional_group: encodeProfessional(r),
-                  has_noaccess: has(
-                    r.tool_motivation,
-                    "tool_motivation_professional",
-                  ),
-                  has_structure: has(
-                    r.tool_motivation,
-                    "tool_motivation_structure",
-                  ),
-                }))
-                .filter((r) => r.ai_therapy_label !== null); // exclude missing DV
+        const h4Data = rawData.map(r => ({
+          ...r,
+          ai_therapy_label:    encodeAiVsTherapy(r),
+          is_substitute:       isSubstituteFraming(encodeAiVsTherapy(r)),
+          professional_group:  encodeProfessional(r),
+          has_noaccess:        has(r.tool_motivation, "tool_motivation_professional"),
+          has_structure:       has(r.tool_motivation, "tool_motivation_structure"),
+        })).filter(r => r.ai_therapy_label !== null); // exclude missing DV
 
-              console.log("H4 sample size:", h4Data.length);
+        console.log("H4 sample size:", h4Data.length);
 
-              // Quick check: what values does is_professional actually contain?
-              // Run this once to verify your encodeProfessional() is catching everything
-              const profValues = [
-                ...new Set(rawData.map((r) => r.is_professional)),
-              ];
-              console.log("Unique is_professional values:", profValues);
+        // Quick check: what values does is_professional actually contain?
+        // Run this once to verify your encodeProfessional() is catching everything
+        const profValues = [...new Set(rawData.map(r => r.is_professional))];
+        console.log("Unique is_professional values:", profValues);
 
-              /*
+        // --- BASELINE 1: how common is the access barrier driver? ---
+        const h4noAccessCount = h4Data.filter(r => r.has_noaccess).length;
+        console.group("=== ACCESS BARRIER (driver_noaccess) ===");
+        console.log({
+          n: h4noAccessCount,
+          pct: (h4noAccessCount / h4Data.length * 100).toFixed(1),
+          label: "cited no professional access as driver"
+        });
+        console.groupEnd();
+
+        // --- BASELINE 2: overall distribution of ai_vs_therapy ---
+        console.group("\n=== AI VS THERAPY POSITIONING (overall) ===");
+        const THERAPY_LEVELS = ["weaker", "complementary", "similar", "better_or_equal", "unsure"];
+        THERAPY_LEVELS.forEach(level => {
+          const n = h4Data.filter(r => r.ai_therapy_label === level).length;
+          console.log({ level, n, pct: (n / h4Data.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        // Binary substitute vs complement
+        const h4substituteCount = h4Data.filter(r => r.is_substitute).length;
+        console.log({
+          substitute_framing_n: h4substituteCount,
+          substitute_framing_pct: (h4substituteCount / h4Data.length * 100).toFixed(1)
+        });
+
+        // --- BASELINE 3: professional split ---
+        console.group("\n=== PROFESSIONAL SPLIT ===");
+        ["professional", "non_professional", "unknown"].forEach(g => {
+          const n = h4Data.filter(r => r.professional_group === g).length;
+          console.log({ group: g, n, pct: (n / h4Data.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        // H4 Step 3 — Four cross-tabs
+        // ── CROSS-TAB 1: noaccess × ai_vs_therapy (PRIMARY) ──────────────────────
+        // The core H4 question: do access-barrier users skew toward substitute framing?
+
+        console.group("\n=== CROSS-TAB 1: noaccess driver × ai_vs_therapy ===");
+        [true, false].forEach(hasAccess => {
+          const members = h4Data.filter(r => r.has_noaccess === hasAccess);
+          const label = hasAccess ? "cited_noaccess" : "no_noaccess";
+
+          const breakdown = THERAPY_LEVELS.map(level => {
+            const n = members.filter(r => r.ai_therapy_label === level).length;
+            return { level, n, pct: (n / members.length * 100).toFixed(1) };
+          });
+
+          const substituteN = members.filter(r => r.is_substitute).length;
+
+          console.log({
+            group: label,
+            n_total: members.length,
+            substitute_pct: (substituteN / members.length * 100).toFixed(1),
+            breakdown
+          });
+        });
+        console.groupEnd();
+
+        // Chi-square on binary 2×2: noaccess(yes/no) × substitute_framing(yes/no)
+        const ct1 = [true, false].map(hasAccess => {
+          const members = h4Data.filter(r => r.has_noaccess === hasAccess);
+          return [
+            members.filter(r => r.is_substitute).length,
+            members.filter(r => !r.is_substitute).length
+          ];
+        });
+        console.log("Chi-square (noaccess × substitute, 2×2, df=1):", chiSquare(ct1));
+        console.log("df=1 | critical value p<0.05: 3.84 | p<0.01: 6.63");
+
+        // ── CROSS-TAB 2: professional × ai_vs_therapy (SECONDARY) ────────────────
+        // Do professionals skew toward "complementary", non-professionals toward substitute?
+
+        console.group("\n=== CROSS-TAB 2: professional × ai_vs_therapy ===");
+        ["professional", "non_professional"].forEach(group => {
+          const members = h4Data.filter(r => r.professional_group === group);
+          const substituteN = members.filter(r => r.is_substitute).length;
+          const complementN = members.filter(r => r.ai_therapy_label === "complementary").length;
+
+          console.log({
+            group,
+            n_total: members.length,
+            substitute_pct: (substituteN / members.length * 100).toFixed(1),
+            complementary_pct: (complementN / members.length * 100).toFixed(1),
+            breakdown: THERAPY_LEVELS.map(level => ({
+              level,
+              pct: (members.filter(r => r.ai_therapy_label === level).length / members.length * 100).toFixed(1)
+            }))
+          });
+        });
+        console.groupEnd();
+
+        // ── CROSS-TAB 3: structure driver × ai_vs_therapy (COMPETING RATIONALE) ──
+        // Is structure-seeking associated with substitute framing?
+        // If yes: people may prefer AI for its directness, not just because therapy is inaccessible
+
+        console.group("\n=== CROSS-TAB 3: structure driver × substitute framing ===");
+        [true, false].forEach(hasStructure => {
+          const members = h4Data.filter(r => r.has_structure === hasStructure);
+          const substituteN = members.filter(r => r.is_substitute).length;
+          console.log({
+            group: hasStructure ? "cited_structure" : "no_structure",
+            n_total: members.length,
+            substitute_pct: (substituteN / members.length * 100).toFixed(1)
+          });
+        });
+        console.groupEnd();
+
+        // ── CROSS-TAB 4: noaccess × nd_status (CONTEXTUAL) ───────────────────────
+        // Do ND respondents cite access barriers more often? Connects H4 back to H2.
+
+        console.group("\n=== CROSS-TAB 4: noaccess × nd_status ===");
+        ["nd_status_diagnosed", "nd_status_suspected", "nd_status_none", "nd_status_other"]
+        .forEach(group => {
+          const members = h4Data.filter(r => r.nd_status === group);
+          const noAccessN = members.filter(r => r.has_noaccess).length;
+          debugger
+          console.log({
+            group,
+            n: members.length,
+            noaccess_pct: (noAccessN / members.length * 100).toFixed(1)
+          });
+        });
+        console.groupEnd();
+
+
+    /*
         DATA INTEGRITY CHECK
         expected: 6 diff from h2Data filtering NDs
-    */
-              const enriched = rawData.map((item) => {
-                const h1Match = h1Data.find((h) => h.id === item.id) || {};
-                const h2Match = h2Data.find((h) => h.id === item.id) || {};
-                const h2bMatch = h2bData.find((h) => h.id === item.id) || {};
-                const h3Match = h3Data.find((h) => h.id === item.id) || {};
+    */    
+    const enriched = rawData.map(item => {
+      const h1Match = h1Data.find(h => h.id === item.id) || {};
+      const h2Match = h2Data.find(h => h.id === item.id) || {};
+      const h2bMatch = h2bData.find(h => h.id === item.id) || {};
+      const h3Match = h3Data.find(h => h.id === item.id) || {};
 
-                return {
-                  ...item,
-                  ...h1Match,
-                  ...h2Match,
-                  ...h2bMatch,
-                  ...h3Match,
-                };
-              });
-              //globalIntegrityCheck(enriched);
-              //console.log("enriched", JSON.stringify(enriched));
+      return {
+        ...item,
+        ...h1Match,
+        ...h2Match,
+        ...h2bMatch,
+        ...h3Match 
+      };
+    });
+    //globalIntegrityCheck(enriched);
+    //console.log("enriched", JSON.stringify(enriched));
 
-              // -----------------   END OF UPLOAD
-            };
-            reader.readAsText(e.target.files[0]);
-          });
-      });
+    // -----------------   END OF UPLOAD  
+    };
+    reader.readAsText(e.target.files[0]);
+  });
 
-      /*****************
+
+  /*****************
   
       H E L P E R S
   
   ******************/
-      function has(fieldValue, targetKey) {
-        if (!fieldValue || fieldValue === "") return false;
-        if (Array.isArray(fieldValue)) return fieldValue.includes(targetKey);
-        return fieldValue === targetKey; // single string case
-      }
+  function has(fieldValue, targetKey) {
+    if (!fieldValue || fieldValue === "") return false;
+    if (Array.isArray(fieldValue)) return fieldValue.includes(targetKey);
+    return fieldValue === targetKey; // single string case
+  }
 
-      function getEmotionalUse(r) {
-        const field =
-          has(r.tool_goal, "tool_goal_understanding") ||
-          has(r.tool_goal, "tool_goal_self");
-        return field;
-      }
+  function getEmotionalUse(r){
+    const field = has(r.tool_goal, "tool_goal_understanding") || has(r.tool_goal,  "tool_goal_self");
+    return field;
+  }
 
-      function getAccessibilityBarrier(r) {
-        const field =
-          has(r.tool_motivation, "tool_motivation_professional") ||
-          has(r.tool_motivation, "tool_motivation_time");
-        return field;
-      }
+  function getAccessibilityBarrier(r){
+    const field = has(r.tool_motivation, "tool_motivation_professional") || has(r.tool_motivation, "tool_motivation_time");
+    return field;
+  }
 
-      function professionalGroup(r) {
-        if (r.is_professional.toLowerCase().includes("igen")) {
-          return "professional";
-        }
-        if (r.is_professional.toLowerCase().includes("nem")) {
-          return "non_professional";
-        }
-        return "unknown_or_decline";
-      }
+  
+  function professionalGroup(r) {
+    if(r.is_professional.toLowerCase().includes("igen")){
+      return "professional";
+    }
+    if(r.is_professional.toLowerCase().includes("nem")){
+      return "non_professional";
+    }
+    return "unknown_or_decline";
+  }
 
-      // ai_frequency comes in as a string label.
-      // For any comparison across groups, you need numbers.
-      // This is called "ordinal encoding" — you're preserving the order.
-      function encodeFrequency(r) {
-        const map = {
-          ai_frequency_daily: 5, // daily
-          ai_frequency_weekly: 4, // several times a week
-          ai_frequency_sometimes: 3, // sometimes
-          ai_frequency_rarely: 2, // rarely
-          ai_frequency_tried: 1, // tried but almost never
-        };
-        return map[r.ai_frequency] ?? null; // null = missing, exclude from analysis
-      }
+  // ai_frequency comes in as a string label.
+  // For any comparison across groups, you need numbers.
+  // This is called "ordinal encoding" — you're preserving the order.
+  function encodeFrequency(r) {
+    const map = {
+      ai_frequency_daily: 5, // daily
+      ai_frequency_weekly: 4, // several times a week
+      ai_frequency_sometimes: 3, // sometimes
+      ai_frequency_rarely: 2, // rarely
+      ai_frequency_tried: 1, // tried but almost never
+    };
+    return map[r.ai_frequency] ?? null; // null = missing, exclude from analysis
+  }
 
-      // used_ai_psych: binary — did they use AI for psychological purposes?
-      // Check your actual string values, but likely something like:
-      function encodeUsedAiPsych(r) {
-        const val = r.used_ai_psych;
-        if (!val) return null;
-        if (val.toLowerCase().includes("igen")) return 1;
-        return 0; // "no" → 0
-      }
+  // used_ai_psych: binary — did they use AI for psychological purposes?
+  // Check your actual string values, but likely something like:
+  function encodeUsedAiPsych(r) {
+    const val = r.used_ai_psych;
+    if (!val) return null;
+    if (val.toLowerCase().includes("igen"))
+      return 1;
+    return 0; // "no" → 0
+  }
 
-      function breadthOfUse(r) {
-        // COMPOSITE: breadth of use — how many different problem types did they bring to AI?
-        // This is just summing the binary tool_goal_* flags.
-        // More flags selected = broader use = higher engagement.
-        const GOAL_KEYS = [
-          "tool_goal_understanding", // emotions/feelings
-          "tool_goal_decision", // decisions
-          "tool_goal_organization", // daily life
-          "tool_goal_self", // self-patterns
-          "tool_goal_conversation", // hard conversations
-          "tool_goal_learning", // learning psych topics
-        ];
-        return GOAL_KEYS.reduce(
-          (sum, key) => sum + (has(r.tool_goal, key) ? 1 : 0),
-          0,
-        );
-        // returns 0–6, higher = broader use
-      }
+  function breadthOfUse(r) {
+    // COMPOSITE: breadth of use — how many different problem types did they bring to AI?
+    // This is just summing the binary tool_goal_* flags.
+    // More flags selected = broader use = higher engagement.
+    const GOAL_KEYS = [
+      "tool_goal_understanding", // emotions/feelings
+      "tool_goal_decision", // decisions
+      "tool_goal_organization", // daily life
+      "tool_goal_self", // self-patterns
+      "tool_goal_conversation", // hard conversations
+      "tool_goal_learning", // learning psych topics
+    ];
+    return GOAL_KEYS.reduce(
+      (sum, key) => sum + (has(r.tool_goal, key) ? 1 : 0),
+      0,
+    );
+    // returns 0–6, higher = broader use
+  }
 
-      function encodeRules(r) {
-        const val = r.ai_personal_rules;
-        if (!val) return null;
-        // Ordinal version (for Kruskal-Wallis or Spearman)
-        if (val === "ai_personal_rules_yes")
-          return { ordinal: 2, set_rules: 1 };
-        if (val === "ai_personal_rules_somewhat")
-          return { ordinal: 1, set_rules: 0 };
-        if (val === "ai_personal_rules_no") return { ordinal: 0, set_rules: 0 };
-        return null;
-      }
+  function encodeRules(r) {
+    const val = r.ai_personal_rules;
+    if (!val) return null;
+    // Ordinal version (for Kruskal-Wallis or Spearman)
+    if (val === "ai_personal_rules_yes") return { ordinal: 2, set_rules: 1 };
+    if (val === "ai_personal_rules_somewhat")
+      return { ordinal: 1, set_rules: 0 };
+    if (val === "ai_personal_rules_no")
+      return { ordinal: 0, set_rules: 0 };
+    return null;
+  }
 
-      // ai_feedback_reaction: did they receive challenging feedback?
-      // Raw values from the schema
-      function encodeFeedbackReaction(r) {
-        const val = r.ai_feedback_reaction;
-        if (!val || val === "") return null;
+  // ai_feedback_reaction: did they receive challenging feedback?
+  // Raw values from the schema
+  function encodeFeedbackReaction(r) {
+    const val = r.ai_feedback_reaction;
+    if (!val || val === "") return null;
+    
+    // Adjust these to match whatever uniqueFeedbackValues printed above
+    if (val === "Igen") return "yes";
+    if (val === "Nem")  return "no";
+    // catch anything else as unsure, including the long Hungarian string
+    return "unsure";
+  }
 
-        // Adjust these to match whatever uniqueFeedbackValues printed above
-        if (val === "Igen") return "yes";
-        if (val === "Nem") return "no";
-        // catch anything else as unsure, including the long Hungarian string
-        return "unsure";
-      }
+  // ai_self_awareness_change: how did self-understanding change?
+  // Ordinal — assign numbers to preserve order for analysis
+  function encodeSelfChange(r) {
+    const map = {
+      "ai_self_awareness_change_confused":  { label: "confused",   ordinal: -1 },
+      "ai_self_awareness_change_same":      { label: "unchanged",  ordinal: 0 },
+      "ai_self_awareness_change_no_effect": { label: "no_effect",  ordinal: 0 },
+      "ai_self_awareness_change_cleared":   { label: "somewhat",   ordinal: 1 },
+      "ai_self_awareness_change_improved":  { label: "improved",   ordinal: 2 },
+    };
+    return map[r.ai_self_awareness_change] ?? null;
+  }
 
-      // ai_self_awareness_change: how did self-understanding change?
-      // Ordinal — assign numbers to preserve order for analysis
-      function encodeSelfChange(r) {
-        const map = {
-          ai_self_awareness_change_confused: { label: "confused", ordinal: -1 },
-          ai_self_awareness_change_same: { label: "unchanged", ordinal: 0 },
-          ai_self_awareness_change_no_effect: {
-            label: "no_effect",
-            ordinal: 0,
-          },
-          ai_self_awareness_change_cleared: { label: "somewhat", ordinal: 1 },
-          ai_self_awareness_change_improved: { label: "improved", ordinal: 2 },
-        };
-        return map[r.ai_self_awareness_change] ?? null;
-      }
+  // Collapsed version — use this for the cross-tab
+  function collapsedChange(r) {
+    const raw = r.ai_self_awareness_change;
+    if (raw === "ai_self_awareness_change_improved") return "improved";
+    if (raw === "ai_self_awareness_change_cleared")  return "somewhat";
+    // confused, same, no_effect → all "unchanged_or_less"
+    return "unchanged_or_less";
+  }
 
-      // Collapsed version — use this for the cross-tab
-      function collapsedChange(r) {
-        const raw = r.ai_self_awareness_change;
-        if (raw === "ai_self_awareness_change_improved") return "improved";
-        if (raw === "ai_self_awareness_change_cleared") return "somewhat";
-        // confused, same, no_effect → all "unchanged_or_less"
-        return "unchanged_or_less";
-      }
+  function chiSquare(table) {
+    const rowTotals = table.map(row => row.reduce((a, b) => a + b, 0));
+    const colTotals = table[0].map((_, j) => table.reduce((s, row) => s + row[j], 0));
+    const grandTotal = rowTotals.reduce((a, b) => a + b, 0);
 
-      function chiSquare(table) {
-        const rowTotals = table.map((row) => row.reduce((a, b) => a + b, 0));
-        const colTotals = table[0].map((_, j) =>
-          table.reduce((s, row) => s + row[j], 0),
-        );
-        const grandTotal = rowTotals.reduce((a, b) => a + b, 0);
+    let chiSq = 0;
+    let smallCellCount = 0;
 
-        let chiSq = 0;
-        let smallCellCount = 0;
+    table.forEach((row, i) => {
+      row.forEach((observed, j) => {
+        const expected = (rowTotals[i] * colTotals[j]) / grandTotal;
+        
+        if (expected === 0) return; // skip — can't divide by zero, cell contributes nothing
+        if (expected < 5) smallCellCount++; // flag but don't skip
+        
+        chiSq += Math.pow(observed - expected, 2) / expected;
+      });
+    });
 
-        table.forEach((row, i) => {
-          row.forEach((observed, j) => {
-            const expected = (rowTotals[i] * colTotals[j]) / grandTotal;
+    console.log(`Small cells (expected < 5): ${smallCellCount} of ${table.flat().length}`);
+    return chiSq;
+  }
 
-            if (expected === 0) return; // skip — can't divide by zero, cell contributes nothing
-            if (expected < 5) smallCellCount++; // flag but don't skip
+  // ai_vs_therapy is single-value — recode to a cleaner categorical
+  function encodeAiVsTherapy(r) {
+    const map = {
+      "ai_vs_therapy_weaker":        "weaker",
+      "ai_vs_therapy_similar":       "similar",
+      "ai_vs_therapy_complementary": "complementary",
+      "ai_vs_therapy_better":        "better_or_equal",
+      "ai_vs_therapy_unsure":        "unsure",
+    };
+    return map[r.ai_vs_therapy] ?? null;
+  }
 
-            chiSq += Math.pow(observed - expected, 2) / expected;
-          });
-        });
+  // For cross-tabs, also create a binary: substitute vs. not
+  // "substitute framing" = positions AI as similar, better, or equal to therapy
+  // "complement framing" = explicitly calls it complementary or weaker
+  function isSubstituteFraming(therapyVal) {
+    return ["similar", "better_or_equal"].includes(therapyVal);
+  }
 
-        console.log(
-          `Small cells (expected < 5): ${smallCellCount} of ${table.flat().length}`,
-        );
-        return chiSq;
-      }
+  // is_professional: check your actual raw values
+  // From the schema it's a free string
+  function encodeProfessional(r) {
+    const val = (r.is_professional || "").toLowerCase();
+    if (val === "nem") return "non_professional";
+    if (val === "tartózkodnék a választól" || val === "") return "unknown";
+    return "professional"; // any "igen" variant
+  }
 
-      // ai_vs_therapy is single-value — recode to a cleaner categorical
-      function encodeAiVsTherapy(r) {
-        const map = {
-          ai_vs_therapy_weaker: "weaker",
-          ai_vs_therapy_similar: "similar",
-          ai_vs_therapy_complementary: "complementary",
-          ai_vs_therapy_better: "better_or_equal",
-          ai_vs_therapy_unsure: "unsure",
-        };
-        return map[r.ai_vs_therapy] ?? null;
-      }
-
-      // For cross-tabs, also create a binary: substitute vs. not
-      // "substitute framing" = positions AI as similar, better, or equal to therapy
-      // "complement framing" = explicitly calls it complementary or weaker
-      function isSubstituteFraming(therapyVal) {
-        return ["similar", "better_or_equal"].includes(therapyVal);
-      }
-
-      // is_professional: check your actual raw values
-      // From the schema it's a free string
-      function encodeProfessional(r) {
-        const val = (r.is_professional || "").toLowerCase();
-        if (val === "nem") return "non_professional";
-        if (val === "") return "unknown";
-        return "professional"; // any "igen" variant
-      }
-
-      /*_______________
+  /*_______________
   
     INTEGRITY CHECK 
   
   _______________*/
 
-      function globalIntegrityCheck(respondents) {
-        const GOAL_KEYS = [
-          "tool_goal_understanding",
-          "tool_goal_decision",
-          "tool_goal_organization",
-          "tool_goal_self",
-          "tool_goal_conversation",
-          "tool_goal_learning",
-        ];
-        const OFFLOADING_KEYS = [
-          { field: "tool_motivation", key: "tool_motivation_structure" },
-          { field: "tool_usage", key: "tool_usage_brainstorming" },
-          { field: "tool_usage", key: "tool_usage_secondary_opinion" },
-          { field: "tool_goal", key: "tool_goal_self" },
-        ];
-        const freqMap = {
-          ai_frequency_daily: 5,
-          ai_frequency_weekly: 4,
-          ai_frequency_sometimes: 3,
-          ai_frequency_rarely: 2,
-          ai_frequency_tried: 1,
-        };
+  function globalIntegrityCheck(respondents) {
+    const GOAL_KEYS = [
+      "tool_goal_understanding", "tool_goal_decision", "tool_goal_organization",
+      "tool_goal_self", "tool_goal_conversation", "tool_goal_learning"
+    ];
+    const OFFLOADING_KEYS = [
+      { field: "tool_motivation", key: "tool_motivation_structure" },
+      { field: "tool_usage",      key: "tool_usage_brainstorming" },
+      { field: "tool_usage",      key: "tool_usage_secondary_opinion" },
+      { field: "tool_goal",       key: "tool_goal_self" },
+    ];
+    const freqMap = {
+      "ai_frequency_daily": 5, "ai_frequency_weekly": 4,
+      "ai_frequency_sometimes": 3, "ai_frequency_rarely": 2, "ai_frequency_tried": 1,
+    };
 
-        const checks = {
-          emotional_use: 0,
-          accessibility_barrier: 0,
-          freq_score: 0,
-          used_psych: 0,
-          breadth: 0,
-          offloading_score: 0,
-        };
+    const checks = {
+      emotional_use: 0,
+      accessibility_barrier: 0,
+      freq_score: 0,
+      used_psych: 0,
+      breadth: 0,
+      offloading_score: 0,
+    };
 
-        respondents.forEach((r) => {
-          if (
-            r.emotional_use !==
-            (has(r.tool_goal, "tool_goal_understanding") ||
-              has(r.tool_goal, "tool_goal_self"))
-          )
-            checks.emotional_use++;
+    respondents.forEach(r => {
+      if (r.emotional_use !== (has(r.tool_goal, "tool_goal_understanding") || has(r.tool_goal, "tool_goal_self")))
+        checks.emotional_use++;
 
-          if (
-            r.accessibility_barrier !==
-            (has(r.tool_motivation, "tool_motivation_professional") ||
-              has(r.tool_motivation, "tool_motivation_time"))
-          )
-            checks.accessibility_barrier++;
+      if (r.accessibility_barrier !== (has(r.tool_motivation, "tool_motivation_professional") || has(r.tool_motivation, "tool_motivation_time")))
+        checks.accessibility_barrier++;
 
-          if (r.freq_score !== (freqMap[r.ai_frequency] ?? null))
-            checks.freq_score++;
+      if (r.freq_score !== (freqMap[r.ai_frequency] ?? null))
+        checks.freq_score++;
 
-          if (r.used_psych !== (r.used_ai_psych === "Igen" ? 1 : 0))
-            checks.used_psych++;
+      if (r.used_psych !== (r.used_ai_psych === "Igen" ? 1 : 0))
+        checks.used_psych++;
 
-          const expectedBreadth = GOAL_KEYS.reduce(
-            (s, k) => s + (has(r.tool_goal, k) ? 1 : 0),
-            0,
-          );
-          if (r.breadth !== expectedBreadth) checks.breadth++;
+      const expectedBreadth = GOAL_KEYS.reduce((s, k) => s + (has(r.tool_goal, k) ? 1 : 0), 0);
+      if (r.breadth !== expectedBreadth)
+        checks.breadth++;
 
-          const expectedOffloading = OFFLOADING_KEYS.reduce(
-            (s, o) => s + (has(r[o.field], o.key) ? 1 : 0),
-            0,
-          );
-          if (r.offloading_score !== expectedOffloading)
-            checks.offloading_score++;
-        });
+      const expectedOffloading = OFFLOADING_KEYS.reduce((s, o) => s + (has(r[o.field], o.key) ? 1 : 0), 0);
+      if (r.offloading_score !== expectedOffloading)
+        checks.offloading_score++;
+    });
 
-        console.log(
-          "\n=== GLOBAL MISMATCH COUNT (out of",
-          respondents.length,
-          "respondents) ===",
-        );
-        Object.entries(checks).forEach(([field, count]) => {
-          const status = count === 0 ? "✓ clean" : `✗ ${count} mismatches`;
-          console.log(`  ${field.padEnd(25)} ${status}`);
-        });
-      }
-    </script>
-  </head>
-  <body>
-    <h1>AI & önreflexió research</h1>
-    <input type="file" id="jsonFile" accept=".json" />
-    <div id="output"></div>
-  </body>
-</html>
+    console.log("\n=== GLOBAL MISMATCH COUNT (out of", respondents.length, "respondents) ===");
+    Object.entries(checks).forEach(([field, count]) => {
+      const status = count === 0 ? "✓ clean" : `✗ ${count} mismatches`;
+      console.log(`  ${field.padEnd(25)} ${status}`);
+    });
+  }
+
+</script>
