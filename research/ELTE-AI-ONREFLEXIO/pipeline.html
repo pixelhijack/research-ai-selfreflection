@@ -344,17 +344,36 @@
           self_change_collapsed: collapsedChange(r),
         })).filter(r => r.self_change_full !== null);
 
+        console.log(`
+
+            === H3b ===
+
+        `);
+
         console.log("H3b sample size:", h3bData.length);
 
         // Step 2 — COUNT: distribution of each variable independently
+        const FEEDBACK_GROUPS = ["yes", "no", "unsure"];
         const FEEDBACK_GROUPS_COLLAPSED = ["yes", "no_or_unsure"];
         const CHANGE_LEVELS   = ["improved", "somewhat", "unchanged_or_less"];
 
+        const collapsedTable = FEEDBACK_GROUPS_COLLAPSED.map(fg => {
+          const members = fg === "yes"
+            ? h3bData.filter(r => r.feedback_received === "yes")
+            : h3bData.filter(r => r.feedback_received === "no" || r.feedback_received === "unsure");
+
+          return CHANGE_LEVELS.map(level =>
+            members.filter(r => r.self_change_collapsed === level).length
+          );
+        });
+
+        console.log("Collapsed 2×3 table:", JSON.stringify(collapsedTable, null, 2));
+
         // Marginal: feedback received
         console.group("=== FEEDBACK RECEIVED (IV) ===");
-        FEEDBACK_GROUPS_COLLAPSED.forEach(g => {
+        FEEDBACK_GROUPS.forEach(g => {
           const n = h3bData.filter(r => r.feedback_received === g).length;
-          console.log({ group: g, n, pct: (n / h3bData.length * 100).toFixed(1) });
+          console.log(JSON.stringify({ group: g, n, pct: (n / h3bData.length * 100).toFixed(1) }, null, 2));
         });
         console.groupEnd();
 
@@ -367,12 +386,10 @@
         console.groupEnd();
 
         // H3b Step 3 — CROSS-TAB: feedback received × self change
-        console.log("\n=== CROSS-TAB: feedback_received × self_change ===");
-
         // Build the table: for each IV group, show DV distribution
         const table = {};
 
-        FEEDBACK_GROUPS_COLLAPSED.forEach(fg => {
+        FEEDBACK_GROUPS.forEach(fg => {
           const members = h3bData.filter(r => r.feedback_received === fg);
           table[fg] = {};
 
@@ -383,7 +400,7 @@
               pct: members.length > 0 ? (n / members.length * 100).toFixed(1) : "—"
             };
           });
-
+debugger
           console.group("H3b Step 3 — CROSS-TAB: feedback received × self change");
           console.log(JSON.stringify({
             feedback_received: fg,
@@ -426,21 +443,11 @@
         // If "uncomfortable but curious" is also high, that's a positive signal —
         // it means dissonance was tolerated rather than rejected
 
-        // Chi-square for the main cross-tab
-        // Build as array-of-arrays for the chi-square function
-        const chiTable = FEEDBACK_GROUPS_COLLAPSED.map(fg =>
-          CHANGE_LEVELS.map(level => table[fg][level].n)
-        );
 
-        console.log("\nChi-square:", chiSquare(chiTable));  // reuse your function from H2
+        console.log("\nChi-square:", chiSquare(collapsedTable));  // reuse your function from H2
         console.log("df = 4 | critical value p<0.05: 9.49 | p<0.01: 13.28");
 
-        const uniqueFeedbackValues = [...new Set(h3bData.map(r => r.ai_feedback_reaction))];
-console.log("Raw ai_feedback_reaction values:", uniqueFeedbackValues);
-
-const uniqueEncoded = [...new Set(h3bData.map(r => r.feedback_received))];
-console.log("Encoded feedback_received values:", uniqueEncoded);
-
+        
         // Part B — Lower boundary-setting despite higher engagement
 
 
