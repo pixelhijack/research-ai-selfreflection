@@ -354,8 +354,16 @@ Trust in AI when it confirms existing thinking (trust_agrees_with_me) showed a d
 H5 is partially supported. The predicted framing-type clusters are identifiable and show meaningful differences on dependency-related outcomes, though the direction of the dependency concern findings was unexpected and warrants cautious interpretation. The absence of significant trust and rule-setting differences suggests that instrumental versus relational orientation may have stronger implications for risk awareness than for epistemic trust calibration or self-regulatory behavior in this sample.
 ##### Hypothesis testing — H6
 
+H6 predicted that higher prior self-awareness would be associated with more critical engagement with AI feedback, greater likelihood of setting explicit usage boundaries, and more nuanced self-understanding change — reflecting a reflection amplification effect whereby existing introspective capacity potentiates productive AI use.
 
+None of the three tested associations reached statistical significance. Spearman correlation between prior self-awareness (ordinal 1–5) and self-understanding change (ordinal -1 to 2) yielded ρ=-0.135 (t=-1.385, df=104, p=ns), indicating a weak non-significant negative trend — higher prior awareness was marginally associated with less reported change, consistent with a ceiling interpretation rather than amplification. Spearman correlation between prior self-awareness and critical engagement (reflection or integration of challenging feedback) in the subgroup who received dissonant AI feedback (n=32) yielded ρ=0.039 (t=0.211, df=30, p=ns), effectively zero. Chi-square analysis of awareness group against explicit rule-setting showed a directionally consistent pattern — 22.2% of high-awareness respondents set explicit rules versus 7.1% of low-awareness respondents — but did not approach significance (χ²=3.04, df=2, p=ns), with two small expected cells further limiting reliability.
+
+H6 is not supported. Two methodological factors constrain interpretation. First, the prior self-awareness distribution showed a pronounced ceiling effect: 67.3% of respondents rated themselves 4 or 5 out of 5, severely restricting the variance available for correlation. This floor compression would suppress a real relationship even if one existed in a more representative sample. Second, the critical engagement subgroup (n=32) is underpowered for correlation analysis. These limitations mean the null result should be interpreted as inconclusive rather than disconfirmatory — the hypothesis remains theoretically plausible but untestable in this dataset.
+
+Contextual analysis of prior self-awareness by neurodivergent status showed suspected ND respondents reporting the lowest mean awareness (M=3.44) compared to neurotypical (M=3.92), diagnosed ND (M=3.76), and other_psych (M=4.00) respondents. While group differences were modest and not formally tested, the suspected ND finding is consistent with the theoretical rationale that undiagnosed neurodivergence may impede self-knowledge, and warrants investigation in future research with adequate sample sizes per group.
 ##### Hypothesis testing — H7
+
+
 ##### Hypothesis testing — H8
 
 

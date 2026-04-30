@@ -701,6 +701,121 @@
         console.groupEnd();
 
 
+        // ==============
+        // ===== H6 ====
+        // ==============
+        console.log(`
+
+            === H6 ===
+
+        `);
+
+        // H6 Step 1 — DERIVE
+        const h6Data = rawData.map(r => ({
+          ...r,
+          awareness_score:      encodeSelfAwareness(r),
+          self_change_score:    encodeSelfChange(r),
+          set_rules_binary:     encodeSetRules(r),
+          critical_engagement:  encodeCriticalEngagement(r),
+        })).filter(r => r.awareness_score !== null); // exclude missing IV
+
+        console.log("H6 sample size:", h6Data.length);
+
+        // Quick marginal distribution of the IV — always check this first
+        console.group("\n=== PRIOR SELF-AWARENESS DISTRIBUTION ===");
+        [1,2,3,4,5].forEach(score => {
+          const n = h6Data.filter(r => r.awareness_score === score).length;
+          console.log({ score, n, pct: (n / h6Data.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        // H6 Step 2 — COUNT: baselines 
+        // Distribution of each DV — always check before correlating
+        console.group("\n=== DV DISTRIBUTIONS ===");
+        // Self change
+        [-1, 0, 1, 2].forEach(score => {
+          const labels = { "-1": "confused", "0": "unchanged", "1": "somewhat", "2": "improved" };
+          const n = h6Data.filter(r => r.self_change_score === score).length;
+          console.log({ self_change: labels[score], score, n,
+            pct: (n / h6Data.length * 100).toFixed(1) });
+        });
+
+        // Set rules
+        [0, 1].forEach(val => {
+          const n = h6Data.filter(r => r.set_rules_binary === val).length;
+          console.log({ set_rules: val === 1 ? "yes" : "no_or_somewhat",
+            n, pct: (n / h6Data.length * 100).toFixed(1) });
+        });
+
+        // Critical engagement
+        [0, 1].forEach(val => {
+          const n = h6Data.filter(r => r.critical_engagement === val).length;
+          console.log({ critical_engagement: val === 1 ? "yes" : "no",
+            n, pct: (n / h6Data.length * 100).toFixed(1) });
+        });
+        console.groupEnd();
+
+        
+        
+        // H6 Step 3 — Spearman correlations + Chi-square
+
+
+
+        console.log("\n=== SPEARMAN: awareness × self_change ===");
+        console.log(spearmanCorrelation(h6Data, "awareness_score", "self_change_score"));
+        // Expected: weak negative — higher prior awareness → less room to change
+        // OR weak positive — more self-aware people engage more productively
+        // Either direction is theoretically interesting
+
+        console.log("\n=== SPEARMAN: awareness × critical_engagement ===");
+        // Filter to only respondents who received challenging feedback
+        // Critical engagement is only meaningful in that context
+        const receivedFeedback = h6Data.filter(r => r.ai_feedback_reaction === "Igen");
+        console.log("n with challenging feedback:", receivedFeedback.length);
+        console.log(spearmanCorrelation(receivedFeedback, "awareness_score", "critical_engagement"));
+        // Expected: positive — higher awareness → more likely to reflect/integrate
+
+        console.log("\n=== CHI-SQUARE: awareness × set_rules ===");
+        // Group awareness into low (1-2), medium (3), high (4-5) to build a 3×2 table
+        function awarenessGroup(r) {
+          if (r.awareness_score <= 2) return "low";
+          if (r.awareness_score === 3) return "medium";
+          return "high";
+        }
+
+        const AWARENESS_GROUPS = ["low", "medium", "high"];
+        const h6rulesTable = AWARENESS_GROUPS.map(g => {
+          const members = h6Data.filter(r => awarenessGroup(r) === g
+            && r.set_rules_binary !== null);
+          return [
+            members.filter(r => r.set_rules_binary === 1).length,
+            members.filter(r => r.set_rules_binary === 0).length,
+          ];
+        });
+
+        console.log("Rules by awareness group:");
+        AWARENESS_GROUPS.forEach((g, i) => {
+          const total = h6rulesTable[i][0] + h6rulesTable[i][1];
+          console.log({ group: g, n: total,
+            set_rules_pct: (h6rulesTable[i][0] / total * 100).toFixed(1) });
+        });
+        console.log("Chi-square (awareness × set_rules, df=2):", chiSquare(h6rulesTable));
+        console.log("p<0.05: 5.99 | p<0.01: 9.21");
+
+        // --- ND × prior_self_awareness (contextual, connects back to H2) ---
+        console.log("\n=== ND GROUP × PRIOR SELF-AWARENESS ===");
+        ["nd_status_diagnosed","nd_status_suspected","nd_status_none","nd_status_other"]
+          .forEach(group => {
+            const members = h6Data.filter(r => r.nd_status === group
+              && r.awareness_score !== null);
+            const avg = members.reduce((s, r) => s + r.awareness_score, 0) / members.length;
+            console.log({ group, n: members.length, avg_awareness: avg.toFixed(2) });
+          });
+
+
+
+
+
     /*===========================================
         DATA INTEGRITY CHECK
         expected: 6 diff from h2Data filtering NDs
@@ -975,6 +1090,118 @@
   function hasSetRules(r) {
     return r.ai_personal_rules === "ai_personal_rules_yes" ? 1 : 0;
   }
+
+  // H6 
+  // IV: prior_self_awareness → numeric 1–5
+  function encodeSelfAwareness(r) {
+    const map = {
+      "ai_self_awareness_1": 1,
+      "ai_self_awareness_2": 2,
+      "ai_self_awareness_3": 3,
+      "ai_self_awareness_4": 4,
+      "ai_self_awareness_5": 5,
+    };
+    return map[r.ai_self_awareness] ?? null;
+  }
+
+  // DV (a): self_understanding_change → ordinal numeric
+  function encodeSelfChange(r) {
+    const map = {
+      "ai_self_awareness_change_confused":  -1,
+      "ai_self_awareness_change_same":       0,
+      "ai_self_awareness_change_no_effect":  0,
+      "ai_self_awareness_change_cleared":    1,
+      "ai_self_awareness_change_improved":   2,
+    };
+    return map[r.ai_self_awareness_change] ?? null;
+  }
+
+  // DV (b): set_rules → binary 1/0
+  // "yes explicitly" = 1, everything else = 0
+  function encodeSetRules(r) {
+    if (!r.ai_personal_rules) return null;
+    return r.ai_personal_rules === "ai_personal_rules_yes" ? 1 : 0;
+  }
+
+  // DV (c): critical engagement composite
+  // true if they reflected AND/OR integrated — active processing of AI feedback
+  // requires received_challenging_feedback = "yes" to be meaningful
+  // for the full sample, use as: did they engage critically with AI output at all
+  function encodeCriticalEngagement(r) {
+    const reflected  = has(r.ai_feedback_response, "ai_feedback_response_thought");
+    const integrated = has(r.ai_feedback_response, "ai_feedback_response_integrated");
+    return (reflected || integrated) ? 1 : 0;
+  }
+
+  // Spearman correlation function
+  function spearmanCorrelation(data, keyA, keyB) {
+    // Filter to rows where both values are present
+    const pairs = data
+      .filter(r => r[keyA] !== null && r[keyB] !== null)
+      .map(r => ({ a: r[keyA], b: r[keyB] }));
+
+    const n = pairs.length;
+    if (n < 3) return { rho: null, n, note: "too few observations" };
+
+    // Convert values to ranks
+    // For ties: assign average rank (standard Spearman tie handling)
+    function rankArray(values) {
+      const sorted = [...values]
+        .map((v, i) => ({ v, i }))
+        .sort((a, b) => a.v - b.v);
+
+      const ranks = new Array(values.length);
+      let i = 0;
+      while (i < sorted.length) {
+        let j = i;
+        // Find end of tie group
+        while (j < sorted.length - 1 && sorted[j].v === sorted[j+1].v) j++;
+        // Average rank for all tied values (ranks are 1-indexed)
+        const avgRank = (i + j) / 2 + 1;
+        for (let k = i; k <= j; k++) ranks[sorted[k].i] = avgRank;
+        i = j + 1;
+      }
+      return ranks;
+    }
+
+    const aValues = pairs.map(p => p.a);
+    const bValues = pairs.map(p => p.b);
+    const aRanks = rankArray(aValues);
+    const bRanks = rankArray(bValues);
+
+    // Pearson on ranks = Spearman
+    const meanA = aRanks.reduce((s, v) => s + v, 0) / n;
+    const meanB = bRanks.reduce((s, v) => s + v, 0) / n;
+
+    let num = 0, denomA = 0, denomB = 0;
+    for (let i = 0; i < n; i++) {
+      const da = aRanks[i] - meanA;
+      const db = bRanks[i] - meanB;
+      num    += da * db;
+      denomA += da * da;
+      denomB += db * db;
+    }
+
+    const rho = num / Math.sqrt(denomA * denomB);
+
+    // Approximate p-value via t-distribution
+    // t = rho * sqrt((n-2) / (1 - rho²))
+    // df = n - 2
+    // For a quick significance check without a full t-table:
+    const t = rho * Math.sqrt((n - 2) / (1 - rho * rho));
+    const df = n - 2;
+
+    // Critical t values (two-tailed):
+    // df~100: p<0.05 → |t|>1.984  p<0.01 → |t|>2.626
+    // df~50:  p<0.05 → |t|>2.009  p<0.01 → |t|>2.678
+    const absT = Math.abs(t);
+    const significant_p05 = absT > 1.984;
+    const significant_p01 = absT > 2.626;
+
+    return { rho: rho.toFixed(3), t: t.toFixed(3), df, n,
+            significant_p05, significant_p01 };
+  }
+
 
   /*_______________
   
