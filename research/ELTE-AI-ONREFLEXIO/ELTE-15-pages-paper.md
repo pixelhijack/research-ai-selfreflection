@@ -2,8 +2,10 @@
 
 ## Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc
 
-## 1. Abstract
+## 1. Abstract / framing ethical stance?
    (write this last)
+
+This research adopts a functionally neutral stance toward AI-assisted psychological engagement. The question is not whether AI should be used for self-reflection — the data suggest it already is, at scale and across demographic groups — but how it is used, what psychological mechanisms it activates, and where its structural properties create risks that users themselves may not recognize. The findings presented here suggest that AI-mediated self-reflection occupies a genuinely novel space: distinct from classical psychotherapy in its accessibility, immediacy, and low social cost, yet sharing with therapeutic contexts the capacity to produce meaningful self-concept change when dissonant feedback is encountered and processed. Understanding this space rigorously — its mechanisms, its population-level variation, and its failure modes — is a prerequisite for both ethical deployment and effective regulation. The alternative, treating AI psychological use as either categorically beneficial or categorically dangerous, forecloses the empirical questions before they are asked.
 
 ## 2. Introduction
 
@@ -152,9 +154,15 @@ For frequent users, AI does not act only as a "chat partner", but easily transit
 ## 4. Research Questions & Hypotheses
    
 ### 4.1 Research Questions
-   RQ1 – Does AI lead to better self-awareness for neurodivergents (or any other / neurotypical) as a supplement or even alternative to modern therapy
-   RQ2 – AI addiction
-   RQ3 – AI psychosis / narcissism
+
+**RQ1 — Patterns and motivations of psychological AI use** 
+_To what extent do individuals use AI for psychological self-reflection and personal insight, and what motivates this use: accessibility barriers, preference for structured feedback, or curiosity?_
+
+**RQ2 — Epistemic trust architecture in psychological AI use** 
+_How do users calibrate trust in AI-generated psychological feedback, through heuristic surface cues or content-based evaluation? And what is the relationship between trust patterns and self-concept change?_
+
+**RQ3 — Risk perception vs. actual risk dynamics in psychological AI use** 
+_Do users accurately identify the primary risks of psychological AI use, and to what extent do self-reported concern patterns reflect or obscure dependency and confirmation bias dynamics?_
 
 ### 4.2 Hypotheses
 
