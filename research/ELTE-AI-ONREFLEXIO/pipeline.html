@@ -980,7 +980,27 @@
       };
     });
     //globalIntegrityCheck(enriched);
+
+    // let's copy all H1...H8 derived / composite keys onto every participant
     //console.log("ENRICHED", JSON.stringify(enriched));
+
+    // there were hypotheses, where we exlcluded some participants
+    // we need to add their missing composite keys too as 'null'
+    const allKeys = [...new Set(enriched.flatMap(item => Object.keys(item)))];
+    const finalizedData = enriched.map(item => {
+      const normalizedItem = { ...item };
+      
+      allKeys.forEach(key => {
+        if (!(key in normalizedItem)) {
+          normalizedItem[key] = null;
+        }
+      });
+      
+      return normalizedItem;
+    });
+    //console.log("FINALIZED", JSON.stringify(finalizedData));
+
+
 
     // -----------------   END OF UPLOAD  
     };
