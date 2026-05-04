@@ -959,17 +959,28 @@
       const h2Match = h2Data.find(h => h.id === item.id) || {};
       const h2bMatch = h2bData.find(h => h.id === item.id) || {};
       const h3Match = h3Data.find(h => h.id === item.id) || {};
+      const h3bMatch = h3bData.find(h => h.id === item.id) || {};
+      const h4Match = h4Data.find(h => h.id === item.id) || {};
+      const h5Match = h5Data.find(h => h.id === item.id) || {};
+      const h6Match = h6Data.find(h => h.id === item.id) || {};
+      const h7Match = h7Data.find(h => h.id === item.id) || {};
+
 
       return {
         ...item,
         ...h1Match,
         ...h2Match,
         ...h2bMatch,
-        ...h3Match 
+        ...h3Match,
+        ...h3bMatch,
+        ...h4Match,
+        ...h5Match,
+        ...h6Match,
+        ...h7Match
       };
     });
     //globalIntegrityCheck(enriched);
-    //console.log("enriched", JSON.stringify(enriched));
+    //console.log("ENRICHED", JSON.stringify(enriched));
 
     // -----------------   END OF UPLOAD  
     };

@@ -61,7 +61,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 10:01:34 de. CET",
@@ -118,7 +132,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 10:04:15 de. CET",
@@ -154,7 +182,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/26 11:10:38 de. CET",
@@ -211,7 +242,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 11:12:51 de. CET",
@@ -277,7 +322,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 11:57:28 de. CET",
@@ -340,7 +399,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/26 12:12:52 du. CET",
@@ -398,7 +471,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "similar",
+        "is_substitute": true,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 12:56:37 du. CET",
@@ -456,7 +543,21 @@
         "emotional_use": true,
         "accessibility_barrier": false,
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "unsure",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "similar",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 1:04:37 du. CET",
@@ -503,7 +604,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "mixed",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 2:04:53 du. CET",
@@ -559,7 +674,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 2:51:35 du. CET",
@@ -626,7 +755,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 5,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 7:10:00 du. CET",
@@ -681,7 +824,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/26 9:50:50 du. CET",
@@ -720,7 +877,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 7:02:39 de. CET",
@@ -756,7 +916,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 7:23:25 de. CET",
@@ -792,7 +955,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 10:39:57 de. CET",
@@ -857,7 +1023,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 1:45:23 du. CET",
@@ -893,7 +1073,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 1:45:44 du. CET",
@@ -929,7 +1112,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 1:47:48 du. CET",
@@ -971,7 +1157,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 1:51:29 du. CET",
@@ -1030,7 +1230,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 1:55:37 du. CET",
@@ -1069,7 +1283,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 1:58:50 du. CET",
@@ -1110,7 +1327,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 2:00:19 du. CET",
@@ -1166,7 +1386,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/27 2:04:42 du. CET",
@@ -1226,7 +1460,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:08:56 du. CET",
@@ -1290,7 +1538,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:12:41 du. CET",
@@ -1349,7 +1611,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:28:30 du. CET",
@@ -1416,7 +1692,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/27 2:34:04 du. CET",
@@ -1484,7 +1774,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:35:55 du. CET",
@@ -1545,7 +1849,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:38:18 du. CET",
@@ -1598,7 +1916,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 1,
+        "self_change_score": 2,
+        "set_rules_binary": 1,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 2:39:25 du. CET",
@@ -1657,7 +1989,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "unknown",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 3:25:34 du. CET",
@@ -1696,7 +2042,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 4:07:50 du. CET",
@@ -1758,7 +2107,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 1,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 4:16:03 du. CET",
@@ -1815,7 +2178,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 4:38:44 du. CET",
@@ -1865,7 +2242,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 5:06:29 du. CET",
@@ -1933,7 +2324,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "unsure",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 5:32:53 du. CET",
@@ -1994,7 +2399,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 1,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 5:39:58 du. CET",
@@ -2030,7 +2449,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 6:16:08 du. CET",
@@ -2084,7 +2506,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/27 6:48:46 du. CET",
@@ -2123,7 +2559,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 6:49:06 du. CET",
@@ -2162,7 +2601,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 7:19:30 du. CET",
@@ -2198,7 +2640,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/27 7:32:00 du. CET",
@@ -2234,7 +2679,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "unknown"
     },
     {
         "dateTime": "2026/01/27 8:33:36 du. CET",
@@ -2281,7 +2729,21 @@
         "emotional_use": false,
         "accessibility_barrier": false,
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 8:58:26 du. CET",
@@ -2347,7 +2809,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 9:14:46 du. CET",
@@ -2415,7 +2891,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/27 9:55:24 du. CET",
@@ -2481,7 +2971,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/27 10:02:38 du. CET",
@@ -2544,7 +3048,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 6:02:01 de. CET",
@@ -2604,7 +3122,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:25:48 de. CET",
@@ -2655,7 +3187,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:32:31 de. CET",
@@ -2715,7 +3261,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 8:56:54 de. CET",
@@ -2747,7 +3307,10 @@
         "emotional_use": false,
         "accessibility_barrier": false,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "professional"
     },
     {
         "dateTime": "2026/01/28 9:02:16 de. CET",
@@ -2814,7 +3377,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 9:03:31 de. CET",
@@ -2850,7 +3427,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/28 9:04:24 de. CET",
@@ -2918,7 +3498,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 9:23:16 de. CET",
@@ -2957,7 +3551,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/28 9:33:32 de. CET",
@@ -3025,7 +3622,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 9:46:24 de. CET",
@@ -3079,7 +3690,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 9:58:56 de. CET",
@@ -3118,7 +3743,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/28 10:05:26 de. CET",
@@ -3154,7 +3782,10 @@
         "breadth": 0,
         "rules": null,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/28 10:06:54 de. CET",
@@ -3215,7 +3846,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 10:24:41 de. CET",
@@ -3275,7 +3920,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 3,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 10:49:23 de. CET",
@@ -3338,7 +3997,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/28 10:51:35 de. CET",
@@ -3405,7 +4078,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 11:29:21 de. CET",
@@ -3465,7 +4152,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/28 11:31:53 de. CET",
@@ -3519,7 +4220,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:13:07 du. CET",
@@ -3580,7 +4295,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:28:50 du. CET",
@@ -3625,7 +4354,14 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "framing_type": "mixed",
+        "awareness_score": 4,
+        "self_change_score": null,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/28 7:38:00 du. CET",
@@ -3687,7 +4423,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:40:34 du. CET",
@@ -3729,7 +4479,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:42:55 du. CET",
@@ -3788,7 +4552,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 7:46:16 du. CET",
@@ -3827,7 +4605,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "mixed",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/28 7:52:21 du. CET",
@@ -3865,7 +4657,21 @@
         "emotional_use": false,
         "accessibility_barrier": false,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/28 8:20:22 du. CET",
@@ -3918,7 +4724,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 8:47:25 du. CET",
@@ -3977,7 +4797,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 8:58:17 du. CET",
@@ -4026,7 +4860,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/28 9:02:30 du. CET",
@@ -4082,7 +4930,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": -1,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 2,
+        "self_change_score": -1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 9:07:55 du. CET",
@@ -4121,7 +4983,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 10:28:14 du. CET",
@@ -4178,7 +5054,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 10:28:41 du. CET",
@@ -4255,7 +5145,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/28 11:49:57 du. CET",
@@ -4303,7 +5207,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 12:06:40 de. CET",
@@ -4360,7 +5278,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 7:11:32 de. CET",
@@ -4420,7 +5352,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 10:16:18 de. CET",
@@ -4460,7 +5406,21 @@
         "emotional_use": false,
         "accessibility_barrier": true,
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 10:33:36 de. CET",
@@ -4524,7 +5484,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 11:02:54 de. CET",
@@ -4580,7 +5554,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "unsure",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 1:10:37 du. CET",
@@ -4636,7 +5624,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/29 2:21:16 du. CET",
@@ -4697,7 +5699,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 8:58:57 de. CET",
@@ -4765,7 +5781,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 9:43:52 de. CET",
@@ -4834,7 +5864,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 9:53:14 de. CET",
@@ -4902,7 +5946,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 9:59:05 de. CET",
@@ -4963,7 +6021,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/30 10:31:24 de. CET",
@@ -5017,7 +6089,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 10:33:53 de. CET",
@@ -5086,7 +6172,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/30 11:05:32 de. CET",
@@ -5141,7 +6241,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "mixed",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 11:20:19 de. CET",
@@ -5208,7 +6322,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 11:36:56 de. CET",
@@ -5265,7 +6393,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 11:38:46 de. CET",
@@ -5309,7 +6451,21 @@
         "emotional_use": true,
         "accessibility_barrier": false,
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 11:56:34 de. CET",
@@ -5380,7 +6536,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "similar",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 12:04:40 du. CET",
@@ -5438,7 +6608,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "similar",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 12:19:17 du. CET",
@@ -5503,7 +6687,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "similar",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 12:27:25 du. CET",
@@ -5556,7 +6754,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 12:31:13 du. CET",
@@ -5612,7 +6824,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 12:33:54 du. CET",
@@ -5700,7 +6926,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 3,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/30 12:53:59 du. CET",
@@ -5761,7 +7001,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 1:09:31 du. CET",
@@ -5825,7 +7079,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 1:25:00 du. CET",
@@ -5873,7 +7141,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 2:10:40 du. CET",
@@ -5921,7 +7203,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "mixed",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 3:22:20 du. CET",
@@ -5989,7 +7285,17 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": true,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/01/30 8:29:08 du. CET",
@@ -6042,7 +7348,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 8:35:09 du. CET",
@@ -6094,7 +7414,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/30 10:24:26 du. CET",
@@ -6170,7 +7504,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": true
     },
     {
         "dateTime": "2026/01/31 8:40:57 de. CET",
@@ -6229,7 +7577,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 2,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/31 2:14:28 du. CET",
@@ -6286,7 +7648,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 1,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/31 3:18:45 du. CET",
@@ -6345,7 +7721,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "mixed",
+        "awareness_score": 3,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/31 5:55:08 du. CET",
@@ -6419,7 +7809,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 2,
+        "self_change_collapsed": "improved",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 2,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/01/31 10:23:23 du. CET",
@@ -6475,7 +7879,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/01 3:14:56 du. CET",
@@ -6531,7 +7949,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/02 2:41:13 du. CET",
@@ -6590,7 +8022,21 @@
             "set_rules": 1
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 1,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/02 9:24:03 du. CET",
@@ -6660,7 +8106,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "yes",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/03 7:30:33 de. CET",
@@ -6719,7 +8179,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 4
+        "offloading_score": 4,
+        "feedback_received": "unsure",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "better_or_equal",
+        "is_substitute": true,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": true,
+        "framing_type": "relational",
+        "awareness_score": 1,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/03 12:14:07 du. CET",
@@ -6771,7 +8245,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 0,
-        "offloading_score": 0
+        "offloading_score": 0,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": true,
+        "has_structure": false,
+        "framing_type": "relational",
+        "awareness_score": 4,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/03 3:10:49 du. CET",
@@ -6824,7 +8312,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "unsure",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 4,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/08 1:19:38 de. CET",
@@ -6879,7 +8381,21 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 1
+        "offloading_score": 1,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "ai_therapy_label": "weaker",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": false,
+        "framing_type": "instrumental",
+        "awareness_score": 3,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false
     },
     {
         "dateTime": "2026/02/11 3:56:49 de. CET",
@@ -6940,7 +8456,17 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 2
+        "offloading_score": 2,
+        "feedback_received": "no",
+        "self_change_full": 0,
+        "self_change_collapsed": "unchanged_or_less",
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 0,
+        "set_rules_binary": 0,
+        "critical_engagement": 0,
+        "confirmation_profile": false,
+        "professional_group": "non_professional"
     },
     {
         "dateTime": "2026/02/16 6:03:31 de. CET",
@@ -6982,6 +8508,20 @@
             "set_rules": 0
         },
         "cognitive_offloading": 1,
-        "offloading_score": 3
+        "offloading_score": 3,
+        "feedback_received": "no",
+        "self_change_full": 1,
+        "self_change_collapsed": "somewhat",
+        "ai_therapy_label": "complementary",
+        "is_substitute": false,
+        "professional_group": "non_professional",
+        "has_noaccess": false,
+        "has_structure": true,
+        "framing_type": "instrumental",
+        "awareness_score": 5,
+        "self_change_score": 1,
+        "set_rules_binary": 0,
+        "critical_engagement": 1,
+        "confirmation_profile": false
     }
 ]

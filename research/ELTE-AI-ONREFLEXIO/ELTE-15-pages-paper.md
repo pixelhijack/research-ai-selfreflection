@@ -1,5 +1,7 @@
 # AI as metacognitive scaffold: a mixed-methods study of self-directed psychological use across neurotypes
 
+# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes
+
 ## Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc
 
 ## 1. Abstract / framing ethical stance?
