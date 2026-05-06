@@ -3,6 +3,8 @@
 <script>
   document.getElementById('jsonFile').addEventListener('change', function(e) {
     const reader = new FileReader();
+
+    const enriched = [/* load here */];
     reader.onload = (event) => {
         const rawData = JSON.parse(event.target.result);
       
@@ -11,6 +13,424 @@
 
         const data = Object.values(rawData).flat();
         console.log("unifiedArray", data);
+
+
+
+
+        const getFrequenciesByDimension = (data, groupByField) => {
+            const groupedFrequencies = {};
+
+            // 1. Gyakoriságok összesítése
+            data.forEach(item => {
+                const groupValue = item[groupByField] || 'unspecified';
+                
+                if (!groupedFrequencies[groupValue]) {
+                groupedFrequencies[groupValue] = {};
+                }
+
+                // Biztonsági ellenőrzés, ha nincs tags mező
+                (item.tags || []).forEach(tag => {
+                groupedFrequencies[groupValue][tag] = (groupedFrequencies[groupValue][tag] || 0) + 1;
+                });
+            });
+
+            // 2. Rendezés és százalékosítás
+            const finalReport = {};
+
+            Object.keys(groupedFrequencies).forEach(group => {
+                // Kiszámoljuk, hány elem tartozik összesen ebbe a csoportba (a bázis)
+                const itemsInGroup = data.filter(i => (i[groupByField] || 'unspecified') === group).length;
+
+                finalReport[group] = Object.entries(groupedFrequencies[group])
+                .map(([tag, count]) => ({
+                    tag,
+                    count,
+                    prevalence: ((count / itemsInGroup) * 100).toFixed(1) + '%' // Csoporton belüli gyakoriság
+                }))
+                .sort((a, b) => b.count - a.count);
+            });
+
+            return finalReport;
+            };
+
+        //const professionalReport = analyzeByGroup(enriched, "professional_group");
+
+        // Elemzés a framing_type alapján
+        const frequencyReport = getFrequenciesByDimension(enriched, 'freq_score');
+
+        console.log("=== TAG FREQUENCIES BY TYPE ===");
+            Object.keys(frequencyReport).forEach(type => {
+            console.log(`\nTag frequencies by group freq_score: ${type.toUpperCase()}`);
+            console.table(frequencyReport[type]);
+        });
+
+
+        /*
+            Tag frequencies by group freq_score: 5
+            (index)
+            tag
+            count
+            0	'partner'	14	
+            1	'data_processing'	10	
+            2	'dependence'	9	
+            3	'introspection'	9	
+            4	'search_focused'	8	
+            5	'clarity'	8	
+            6	'skeptical'	7	
+            7	'therapy'	7	
+            8	'perplexity'	6	
+            9	'tool'	6	
+            10	'social_media_integrated'	5	
+            11	'communication'	5	
+            12	'copilot'	4	
+            13	'productivity_suite'	4	
+            14	'grok'	4	
+            15	'medical'	4	
+            16	'emotion'	4	
+            17	'work'	3
+
+        Tag frequencies by group freq_score: 4
+        (index)
+        tag
+        count
+        0	'therapy'	8	
+        1	'dependence'	6	
+        2	'introspection'	5	
+        3	'quote'	5	
+        4	'partner'	4	
+        5	'tool'	3	
+        6	'emotion'	3	
+        7	'sycophancy'	3	
+        8	'skeptical'	3	
+        9	'privacy'	3	
+        10	'open_source_alternative'	3	
+        11	'productivity_suite'	3
+
+        Tag frequencies by group freq_score: 3
+        (index)
+        tag
+        count
+        0	'data_processing'	3	
+        1	'sycophancy'	3	
+        2	'copilot'	2	
+        3	'productivity_suite'	2	
+        4	'emotion'	2	
+        5	'work'	2
+
+        Tag frequencies by group freq_score: 2
+        (index)
+        tag
+        count
+    
+        0	'data_processing'	1
+        Tag frequencies by group freq_score: 1
+        pipeline-qualitative.html:9350 
+        (index)
+        tag
+        count
+        prevalence
+        0	'concerned'	2	
+        1	'dependence'	2
+        */
+        /*
+            Tag frequencies by group ai_therapy_label: UNSURE
+            
+            (index)
+            tag
+            count
+            prevalence
+            0	'data_processing'	7	'38.9%'
+            1	'dependence'	3	'16.7%'
+            2	'work'	3	'16.7%'
+            3	'partner'	3	'16.7%'
+            4	'introspection'	2	'11.1%'
+            5	'search_focused'	2	'11.1%'
+
+            Tag frequencies by group ai_therapy_label: COMPLEMENTARY
+            (index)
+            tag
+            count
+            prevalence
+            0	'therapy'	6	'14.3%'
+            1	'data_processing'	6	'14.3%'
+            2	'copilot'	5	'11.9%'
+            3	'productivity_suite'	5	'11.9%'
+            4	'introspection'	5	'11.9%'
+            5	'skeptical'	5	'11.9%'
+            6	'dependence'	5	'11.9%'
+            7	'partner'	5	'11.9%'
+            8	'clarity'	5	'11.9%'
+            9	'meta_reflection'	3	'7.1%'
+            10	'sycophancy'	3	'7.1%'
+            11	'emotion'	3	'7.1%'
+            12	'tool'	3	'7.1%'
+            13	'communication'	3	'7.1%'
+            14	'perplexity'	2	'4.8%'
+            15	'search_focused'	2	'4.8%'
+            16	'prompt_quality_dependency'	2	'4.8%'
+            17	'help_seeking'	2	'4.8%'
+            18	'access'	2	'4.8%'
+            19	'privacy'	2	'4.8%'
+            20	'hallucination'	2	'4.8%'
+            21	'positive'	2	'4.8%'
+            22	'self_aware'	2	'4.8%'
+            23	'diagnosis'	2	'4.8%'
+            24	'work'	2	'4.8%'
+
+            Tag frequencies by group ai_therapy_label: UNSPECIFIED
+             
+            (index)
+            tag
+            count
+            prevalence
+            0	'productivity_suite'	4	'18.2%'
+            1	'search_focused'	3	'13.6%'
+            2	'copilot'	3	'13.6%'
+            3	'perplexity'	2	'9.1%'
+
+
+            Tag frequencies by group ai_therapy_label: WEAKER
+            (index)
+            tag
+            count
+            prevalence
+            0	'skeptical'	7	'22.6%'
+            1	'dependence'	5	'16.1%'
+            2	'introspection'	5	'16.1%'
+            3	'therapy'	5	'16.1%'
+            4	'concerned'	4	'12.9%'
+            5	'clarity'	4	'12.9%'
+            6	'partner'	4	'12.9%'
+            7	'tool'	3	'9.7%'
+            8	'emotion'	3	'9.7%'
+            9	'hallucination'	3	'9.7%'
+            10	'open_source_alternative'	3	'9.7%'
+            11	'data_processing'	3	'9.7%'
+            12	'sycophancy'	3	'9.7%'
+            13	'communication'	2	'6.5%'
+            14	'environmental'	2	'6.5%'
+            15	'perplexity'	2	'6.5%'
+            16	'search_focused'	2	'6.5%'
+            17	'hallucination_confidence'	2	'6.5%'
+            18	'deepseek'	2	'6.5%'
+            19	'journaling'	2	'6.5%'
+            20	'parenting'	2	'6.5%'
+            21	'work'	2	'6.5%'
+
+            Tag frequencies by group ai_therapy_label: SIMILAR
+            (index)
+            tag
+            count
+            prevalence
+            0	'social_media_integrated'	3	'60.0%'
+            1	'grok'	2	'40.0%'
+            2	'open_source_alternative'	2	'40.0%'
+            3	'introspection'	1	'20.0%'
+            4	'partner'	1	'20.0%'
+            5	'quote'	1	'20.0%'
+            6	'therapy'	1	'20.0%'
+            7	'positive'	1	'20.0%'
+            8	'articulation_benefit'	1	'20.0%'
+            9	'deepseek'	1	'20.0%'
+
+            Tag frequencies by group ai_therapy_label: BETTER_OR_EQUAL
+            (index)
+            tag
+            count
+            prevalence
+            0	'partner'	7	'87.5%'
+            1	'dependence'	6	'75.0%'
+            2	'quote'	5	'62.5%'
+            3	'introspection'	5	'62.5%'
+            4	'therapy'	4	'50.0%'
+            5	'emotion'	4	'50.0%'
+            6	'decision_paralysis'	2	'25.0%'
+            7	'medical'	2	'25.0%'
+            8	'enthusiastic'	2	'25.0%'
+            9	'limitations'	2	'25.0%'
+            10	'tool'	2	'25.0%'
+
+        */
+
+        /*
+        
+        Tag frequencies by group: INSTRUMENTAL
+        (index)
+        tag
+        count
+        prevalence
+        0	'therapy'	13	'18.1%'
+        1	'data_processing'	13	'18.1%'
+        2	'dependence'	12	'16.7%'
+        3	'introspection'	11	'15.3%'
+        4	'partner'	11	'15.3%'
+        5	'skeptical'	9	'12.5%'
+        6	'emotion'	8	'11.1%'
+        7	'clarity'	7	'9.7%'
+        8	'concerned'	6	'8.3%'
+        9	'sycophancy'	6	'8.3%'
+        10	'search_focused'	5	'6.9%'
+        11	'hallucination'	5	'6.9%'
+        12	'open_source_alternative'	5	'6.9%'
+        13	'work'	5	'6.9%'
+        14	'tool'	4	'5.6%'
+        15	'perplexity'	4	'5.6%'
+        16	'communication'	3	'4.2%'
+        17	'quote'	3	'4.2%'
+        18	'positive'	3	'4.2%'
+        19	'environmental'	3	'4.2%'
+        20	'privacy'	3	'4.2%'
+        21	'deepseek'	3	'4.2%'
+        22	'copilot'	3	'4.2%'
+        23	'productivity_suite'	3	'4.2%'
+        
+        */
+       /*
+        
+        Tag frequencies by group: MIXED
+        
+        (index)
+        tag
+        count
+        prevalence
+        0	'productivity_suite'	4	'16.0%'
+        1	'search_focused'	3	'12.0%'
+        2	'copilot'	3	'12.0%'
+        3	'perplexity'	2	'8.0%'
+        4	'tool'	2	'8.0%'
+        5	'communication'	2	'8.0%'
+        6	'clarity'	2	'8.0%'
+        7	'skeptical'	2	'8.0%'
+        8	'study'	1	'4.0%'
+        9	'joule'	1	'4.0%'
+        10	'work'	1	'4.0%'
+        11	'introspection'	1	'4.0%'
+        12	'source_verification'	1	'4.0%'
+        13	'communication_improvement'	1	'4.0%'
+        14	'data_processing'	1	'4.0%'
+        15	'partner'	1	'4.0%'
+        16	'sycophancy'	1	'4.0%'
+        17	'meta_reflection'	1	'4.0%'
+        */
+
+        /*
+        Tag frequencies by group: RELATIONAL
+        (index)
+        tag
+        count
+        prevalence
+        0	'partner'	9	'31.0%'
+        1	'dependence'	7	'24.1%'
+        2	'introspection'	6	'20.7%'
+        3	'therapy'	5	'17.2%'
+        4	'quote'	4	'13.8%'
+        5	'copilot'	3	'10.3%'
+        6	'skeptical'	3	'10.3%'
+        7	'grok'	3	'10.3%'
+        8	'social_media_integrated'	3	'10.3%'
+        9	'data_processing'	3	'10.3%'
+        10	'emotion'	3	'10.3%'
+        11	'tool'	3	'10.3%'
+        12	'productivity_suite'	2	'6.9%'
+        13	'medical'	2	'6.9%'
+        14	'enthusiastic'	2	'6.9%'
+        15	'clarity'	2	'6.9%'
+        16	'parenting'	2	'6.9%'
+        */
+
+
+        console.log("PROFESSZIONÁLIS CSOPORT:");
+        //console.table(professionalReport['professional']);
+
+        /*
+            Tag frequencies by group "professional":
+            (index)
+            tag
+            count
+            0	'dependence'	3
+            1	'skeptical'	2
+            2	'introspection'	2
+            3	'partner'	2
+            4	'search_focused'	2
+            5	'data_processing'	2
+            6	'sycophancy'	1
+            7	'privacy'	1
+            8	'concerned'	1
+            9	'hallucination'	1
+            10	'boundary_violation'	1
+            11	'big_tech_distrust'	1
+            12	'disillusionment'	1
+            13	'enthusiastic'	1
+            14	'meta_reflection'	1
+            15	'playful'	1
+            16	'persona_projection'	1
+            17	'emotion'	1
+            18	'boundary_setting'	1
+            19	'intentional_limitation'	1
+            20	'emotion_removal'	1
+            21	'rationality_seeking'	1
+            22	'agent'	1
+            23	'perplexity'	1
+            24	'medical'	1
+            25	'study'	1
+            26	'academic'	1
+            27	'science'	1
+        */
+
+        
+        console.log("NEM PROFESSZIONÁLIS CSOPORT:");
+        //console.table(professionalReport['non_professional']);
+
+        /*
+            Tag frequencies by group "non_professional"
+            (index)
+            tag
+            count
+            0	'partner'	18
+            1	'therapy'	17
+            2	'dependence'	15
+            3	'introspection'	15
+            4	'data_processing'	15
+            5	'skeptical'	12
+            6	'clarity'	10
+            7	'tool'	9
+            8	'copilot'	9
+            9	'productivity_suite'	9
+            10	'emotion'	9
+            11	'search_focused'	7
+            12	'sycophancy'	7
+            13	'work'	7
+            14	'perplexity'	6
+            15	'communication'	6
+            16	'quote'	6
+            17	'concerned'	5
+            18	'open_source_alternative'	5
+            19	'social_media_integrated'	5
+            20	'hallucination'	4
+            21	'grok'	4
+            22	'positive'	3
+            23	'meta_reflection'	3
+            24	'environmental'	3
+            25	'deepseek'	3
+            26	'medical'	3
+            27	'limitations'	3
+            28	'prompt_quality_dependency'	2
+            29	'help_seeking'	2
+            30	'access'	2
+            31	'hallucination_confidence'	2
+            32	'enthusiastic'	2
+            33	'generic'	2
+            34	'self_aware'	2
+            35	'developer_tool'	2
+            36	'diagnosis'	2
+            37	'family'	2
+            38	'journaling'	2
+            39	'parenting'	2
+            40	'self_development'	2
+        
+        */
+
+        
 
         const tagFrequency = data.reduce((acc, item) => {
         item.tags.forEach(tag => {
@@ -63,6 +483,10 @@
         console.log(sortedFrequencyByField);
 
         /*
+
+        DOMINANT FINDINGS
+
+        FREQUENCies BY TAG
 
         {tag: 'partner', count: 21}
         {tag: 'dependence', count: 19}

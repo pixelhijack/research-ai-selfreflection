@@ -1,5 +1,3 @@
-# AI as metacognitive scaffold: a mixed-methods study of self-directed psychological use across neurotypes
-
 # AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes
 
 ## Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc
@@ -391,6 +389,18 @@ Concern frequency analysis across the full sample (n=126) confirmed this predict
 
 H8 is confirmed. Users in this sample show greater epistemic vigilance about factual accuracy than anxiety about relational or dependency dynamics. This finding has two interpretations that are not mutually exclusive. The optimistic reading is that widespread exposure to AI error and hallucination discourse has produced a calibrated, skeptical user base that prioritizes information quality over emotional experience. The more cautious reading — consistent with H3b's finding that dissonant AI feedback drives self-concept change, and with confirmation bias literature — is that dependency and narrative overfitting may operate below conscious awareness precisely because they feel coherent rather than erroneous. Users may be alert to the risks they can detect (factual errors, which feel wrong) while remaining blind to the risks they cannot (self-reinforcing narratives, which feel right). If this interpretation holds, the 31.7% emotional dependency concern rate may underestimate actual dependency dynamics in the sample — a limitation that self-report methodology cannot resolve but that warrants longitudinal investigation.
 ###  6.2 Qualitative Results
+
+Qualitative analysis of free-text responses (n=76 coded entries, 30 open narratives) corroborated, nuanced, and in one case extended the quantitative findings.
+
+The most frequent qualitative tag was 'partner' (n=21), substantially exceeding its quantitative counterpart. While behavioral operationalization in H5 classified 23.0% of respondents as relationally-framed, qualitative data suggest the relational register is considerably more widespread — users describe AI in partnership terms even when their behavioral patterns coded as instrumental. This discrepancy implies that relational orientation toward AI may be better captured through language than through behavioral proxies, and that H5's quantitative framing likely underestimates the prevalence of relational AI engagement.
+
+A high-risk subgroup emerged qualitatively among respondents who rated AI as better than or equal to therapy (n=8). This group showed the highest co-occurrence of partner (87.5%), dependence (75.0%) and emotional engagement (50.0%). 
+
+Sycophancy was introduced unprompted as a concern by 8 respondents across framing groups — a concept absent from the closed-question instrument. Its spontaneous emergence indicates that a sophisticated subset of users has independently identified the specific mechanism by which AI self-reflection fails: agreement bias rather than factual error. This enriches H8's finding that misinformation concern dominates quantitatively: the qualitative layer reveals that users who think carefully about AI risk name _sycophancy_ — a subtler and arguably more dangerous failure mode than hallucination — as their primary concern.
+
+The skeptical tag (n=14) clustered most densely in the weaker-than-therapy group (22.6%) and co-occurred frequently with dependence (n=6 co-occurrences), suggesting that users who have consciously evaluated AI against therapy and found it inferior are simultaneously more aware of dependency risk. This mirrors the H5 finding that instrumental users showed higher dependency concern than relational users — epistemic distance from AI appears to sharpen rather than reduce risk awareness.
+
+The qualitative and quantitative layers are largely convergent. The primary addition from qualitative analysis is the following: relational framing might be more pervasive than behavioral coding captures; a small identifiable subgroup shows qualitative markers of deep AI internalization that constitute genuine dependency risk; and sycophancy — not hallucination — is the risk concept that emerges spontaneously among the most reflective users.
 
 ## 7. Discussion
    
