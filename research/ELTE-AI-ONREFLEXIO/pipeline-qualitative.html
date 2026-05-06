@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<input type="file" id="jsonFile" accept=".json">
+<script>
+  document.getElementById('jsonFile').addEventListener('change', function(e) {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+        const rawData = JSON.parse(event.target.result);
+      
+        // ===== INITIAL =====
+        console.log("RAW DATA", rawData);
+
+        const data = Object.values(rawData).flat();
+        console.log("unifiedArray", data);
+
+        const tagFrequency = data.reduce((acc, item) => {
+        item.tags.forEach(tag => {
+            // Ha már láttuk a taget, növeljük, ha nem, indítsuk 1-ről
+            acc[tag] = (acc[tag] || 0) + 1;
+        });
+        return acc;
+        }, {});
+
+        console.log("FREQUENCY", tagFrequency);
+
+        const sortedTagFrequency = Object.entries(tagFrequency)
+            .sort(([, countA], [, countB]) => countB - countA) // Csökkenő sorrend
+            .reduce((acc, [tag, count]) => {
+                acc[tag] = count;
+                return acc;
+            }, {});
+
+            // Ha vizuálisan jobban átlátható tömbre vágysz (gyakori kutatási adatoknál):
+            const sortedTagArray = Object.entries(tagFrequency)
+            .map(([tag, count]) => ({ tag, count }))
+            .sort((a, b) => b.count - a.count);
+
+        console.log("sorted FREQUENCY", sortedTagArray);
+
+    
+       
+
+        // 1. Csoportosítás és gyakoriság számolása egy lépésben
+        const frequencyByField = data.reduce((acc, item) => {
+        const { fieldKey, tags } = item;
+        
+        if (!acc[fieldKey]) acc[fieldKey] = {};
+        
+        tags.forEach(tag => {
+            acc[fieldKey][tag] = (acc[fieldKey][tag] || 0) + 1;
+        });
+        
+        return acc;
+        }, {});
+
+        // 2. Az eredmények rendezése minden fieldKey-en belül
+        const sortedFrequencyByField = {};
+
+        Object.keys(frequencyByField).forEach(field => {
+        sortedFrequencyByField[field] = Object.entries(frequencyByField[field])
+            .map(([tag, count]) => ({ tag, count }))
+            .sort((a, b) => b.count - a.count); // Csökkenő sorrend
+        });
+
+        console.log(sortedFrequencyByField);
+
+
+
+    // -----------------   END OF UPLOAD  
+    };
+    reader.readAsText(e.target.files[0]);
+  });
+
+
+  /*****************
+  
+      H E L P E R S
+  
+  ******************/
+
+</script>
