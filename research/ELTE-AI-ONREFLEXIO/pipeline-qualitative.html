@@ -29,7 +29,6 @@
                 return acc;
             }, {});
 
-            // Ha vizuálisan jobban átlátható tömbre vágysz (gyakori kutatási adatoknál):
             const sortedTagArray = Object.entries(tagFrequency)
             .map(([tag, count]) => ({ tag, count }))
             .sort((a, b) => b.count - a.count);
@@ -39,7 +38,7 @@
     
        
 
-        // 1. Csoportosítás és gyakoriság számolása egy lépésben
+        // 1. Grouping and frequency
         const frequencyByField = data.reduce((acc, item) => {
         const { fieldKey, tags } = item;
         
@@ -52,7 +51,7 @@
         return acc;
         }, {});
 
-        // 2. Az eredmények rendezése minden fieldKey-en belül
+        // 2. sort by field keys
         const sortedFrequencyByField = {};
 
         Object.keys(frequencyByField).forEach(field => {
@@ -62,6 +61,123 @@
         });
 
         console.log(sortedFrequencyByField);
+
+        /*
+
+        {tag: 'partner', count: 21}
+        {tag: 'dependence', count: 19}
+        {tag: 'therapy', count: 18}
+        {tag: 'introspection', count: 18}
+        {tag: 'data_processing', count: 17}
+        {tag: 'skeptical', count: 14}
+        {tag: 'emotion', count: 11}
+        {tag: 'clarity', count: 11}
+        {tag: 'search_focused', count: 9}
+        {tag: 'copilot', count: 9}
+        {tag: 'productivity_suite', count: 9}
+        {tag: 'tool', count: 9}
+        {tag: 'sycophancy', count: 8}
+        {tag: 'perplexity', count: 7}
+        {tag: 'work', count: 7}
+        {tag: 'concerned', count: 6}
+        {tag: 'communication', count: 6}
+        {tag: 'open_source_alternative', count: 5}
+        {tag: 'social_media_integrated', count: 5}
+        {tag: 'hallucination', count: 5}
+        {tag: 'medical', count: 4}
+        {tag: 'grok', count: 4}
+        {tag: 'quote', count: 4}
+        {tag: 'meta_reflection', count: 4}
+        {tag: 'environmental', count: 3}
+        {tag: 'privacy', count: 3}
+        {tag: 'limitations', count: 3}
+        {tag: 'positive', count: 3}
+        {tag: 'deepseek', count: 3}
+        {tag: 'family', count: 3}
+        {tag: 'enthusiastic', count: 3}
+        */
+
+        /*
+            CO-OCCURENCE MATRIX
+        */
+       const allTags = [...new Set(data.flatMap(item => item.tags))].sort();
+       const cooccurrenceMatrix = {};
+        allTags.forEach(tag1 => {
+        cooccurrenceMatrix[tag1] = {};
+        allTags.forEach(tag2 => {
+            cooccurrenceMatrix[tag1][tag2] = 0;
+        });
+        });
+
+        // 3. A mátrix feltöltése
+        data.forEach(item => {
+        const tags = item.tags;
+        for (let i = 0; i < tags.length; i++) {
+            for (let j = 0; j < tags.length; j++) {
+            // Itt minden párost megszámolunk (önmagával is: cooccurrenceMatrix[A][A] = A gyakorisága)
+            cooccurrenceMatrix[tags[i]][tags[j]] += 1;
+            }
+        }
+        });
+
+        const tagCounts = {};
+        data.forEach(item => {
+            item.tags.forEach(t => tagCounts[t] = (tagCounts[t] || 0) + 1);
+        });
+
+        const top10Tags = Object.entries(tagCounts)
+            .sort((a, b) => b[1] - a[1])
+            .slice(0, 10)
+            .map(entry => entry[0]);
+
+        // 2. Számoljuk ki a ko-okkurrenciát csak erre a 10-re
+        const miniMatrix = top10Tags.map(t1 => {
+        return top10Tags.map(t2 => {
+            return data.filter(item => item.tags.includes(t1) && item.tags.includes(t2)).length;
+        });
+        });
+
+        // 3. String literal építése formázással
+        const colWidth = 12;
+        let cooccurrenceVisual = "".padEnd(colWidth) + top10Tags.map(t => t.substring(0, 10).padEnd(colWidth)).join("") + "\n";
+        cooccurrenceVisual += "-".repeat(cooccurrenceVisual.length) + "\n";
+
+        top10Tags.forEach((t1, i) => {
+        cooccurrenceVisual += t1.substring(0, 10).padEnd(colWidth); // Sor fejléce
+        miniMatrix[i].forEach(count => {
+            cooccurrenceVisual += count.toString().padEnd(colWidth); // Értékek
+        });
+        cooccurrenceVisual += "\n";
+        });
+
+        console.log("%c Co-occurrence Matrix (Top 10)", "font-weight: bold; color: #00ff00;");
+        console.log(cooccurrenceVisual);
+
+        console.group("CO-OCCURRENCE MATRIX");
+        console.table("cooccurrenceMatrix", cooccurrenceMatrix);
+        console.log(`Sycophancy + Dependence: ${cooccurrenceMatrix['sycophancy']['dependence']}`);
+        console.log(`Skeptical + High Usage: ${cooccurrenceMatrix['skeptical']['high_usage']}`);
+        console.log(`Partner + Emotion: ${cooccurrenceMatrix['partner']['emotion']}`);
+        console.groupEnd();
+
+        /*
+            CO-OCCURRENCE MATRIX
+
+             Co-occurrence Matrix (Top 10)
+                        partner     dependence  therapy     introspect  data_proce  skeptical   emotion     clarity     search_foc  copilot     
+            -------------------------------------------------------------------------------------------------------------------------------------
+            partner     21          3           7           6           0           1           4           4           0           0           
+            dependence  3           19          2           3           1           6           3           1           0           0           
+            therapy     7           2           18          6           2           2           4           5           0           0           
+            introspect  6           3           6           18          1           5           7           5           0           0           
+            data_proce  0           1           2           1           17          2           1           1           0           0           
+            skeptical   1           6           2           5           2           14          2           2           0           0           
+            emotion     4           3           4           7           1           2           11          2           0           0           
+            clarity     4           1           5           5           1           2           2           11          0           0           
+            search_foc  0           0           0           0           0           0           0           0           7           0           
+            copilot     0           0           0           0           0           0           0           0           0           9           
+        
+        */
 
 
 
