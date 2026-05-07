@@ -338,7 +338,7 @@ H4 predicted that a subset of users would report using AI as a therapeutic subst
 
 Overall, 26.9% of respondents (n=28) cited inability to access professional support as a driver of their AI use, establishing a meaningful but minority access-barrier subgroup. The dominant positioning of AI relative to therapy across the full sample was complementary (40.4%), followed by weaker (29.8%), unsure (17.3%), and substitute framing — 'similar to' or 'better than' therapy combined — at 12.5%. This distribution suggests that most users in this sample do not approach AI as a therapy replacement.
 
-However, cross-tabulation of access-barrier citation against substitute framing revealed a statistically significant association (χ²=9.05, df=1, p<0.01, one small expected cell noted). Among users who cited professional inaccessibility as a driver, 28.6% endorsed substitute framing — compared to 6.6% among those who did not cite this driver, a 4.3-fold difference. This confirms H4's core prediction: when accessibility is the driver, users are substantially more likely to frame AI as therapeutically equivalent rather than merely supplementary.
+However, cross-tabulation of access-barrier citation against substitute framing revealed a statistically significant association (χ²=9.05, df=1, p<0.01, one small expected cell noted). Among users who cited professional inaccessibility as a driver, 28.6% endorsed substitute framing — compared to 6.6% among those who did not cite this driver, a 4.3-times difference. This confirms H4's core prediction: when accessibility is the driver, users are substantially more likely to frame AI as therapeutically equivalent rather than merely supplementary.
 
 A competing rationale — that substitute framing reflects preference for AI's directness and structured output rather than access barriers — was not supported. Users who cited structure-seeking as a driver showed virtually identical substitute framing rates to those who did not (12.3% vs 12.8%), ruling out preference for directness as an explanation for substitution positioning.
 
@@ -415,66 +415,3 @@ The qualitative and quantitative layers are largely convergent. The primary addi
 
 ---
 
-
-Sampling bias and places the survey was posted:
-my own Facebook and Instagram follower groups (neurodivergents over-sampled)
-ADHD / Autism / Neurodivergency Facebook groups
-AI Facebook group
-Reddit (r/hungary_pszichologia)
-The sampling is clearly not representative.
-
-EVALUATION OF THE SURVEY RESULTS
-
-Disclaimer: mi a célom vele?
-nem vagyok pszichológus, kutatásmódszertanban képzett. DE: adatfeldolgozásban, AI-ban igen. a cél: prezentálni h képes leszek lefolytatni egy ilyet, végigvinni, utánajárni
-
-A témaválasztás disclaimer
-3 jelölt: ez, salience overdrive, neurodivergens munkakörnyezet
-
-Az AI használata
-AI as augmentation, a módszer bemutatása: mit csinálok, mire tanítom az AI embereim, mi a jó és rossz AI módszer
-
-A téma bemutatása
-miért releváns az AI + pszichológia kombináció self-discovery, öndiagnózis
-
-- nagyon sokan használják pszichológiai témákra az AI-t, de nagyon tabu, kevesen merik bevallani (ezért az anonim, és ezért nem mernék elkérni mindenféle pontos demográfiai adatot)
-- ritka a responsible használat, gyakori a confirmation bias, de emiatt a controversy is AI-val szemben
-- ND körben tuti felülreprezentált lesz ez a használat (self-diagnosis, self-discovery)
-
-Ami kell:
-
-- szakirodalomi attekintes a temaban
-- research gap meghatarozasa
-- kutatasi kerdes meghatarozasa
-- kutatasi paradigma/modszertan
-- sampling modszertan
-- expected contribution
-
-
-H1 – Certain users (women, neurodivergents, professional psychologists) engage with AI for self-reflection more intensively and in qualitatively different ways than neurotypical users. Prevalence of personal use would be around 70%, even if it is a social taboo to admit.
-
-Rationale: neurodivergent individuals often face barriers to traditional therapy (cost, waitlists, communication mismatch, masking fatigue) and frequently report finding it easier to process thoughts in text. AI provides a low-judgment, always-available interface that matches common neurodivergent cognitive profiles (i.e. need for structured output, preference for asynchronous interaction). The professional dimension might not need additional explanation. The gender dimension is exploratory, no hard data on why women are more exposed to self-discovery tendencies (different emotional processing norms, help-seeking behavior literature, zeitgeist).
-
-H2 — The primary motivation for psychological AI use is accessibility, not preference: people turn to AI because professional help is unavailable or expensive, not because they perceive AI as superior. If they do prefer AI over therapy, the question is whether it is because of the potential for a direct, honest response which might consist of more direct actionable steps than a therapy or maybe because of the underlying shame (“doesn’t dare to ask the therapist”).
-
-Rationale: This would align with the "therapy gap" literature. If true, AI functions as a substitute of last resort rather than a chosen tool, which has different implications for design and ethics.
-
-H3 — Higher prior self-awareness predicts more critical (less naive) engagement with AI feedback.
-
-Rationale: People who already have developed introspective frameworks may use AI rather as a tool and selectively integrate outputs, while people with lower baseline self-awareness may be more likely to passively accept AI responses, creating potential vulnerability.
-
-H4 — Users who have received challenging or dissonant AI feedback (i.e., feedback that contradicted their self-image) are more likely to report changed self-understanding than those who only received confirmatory feedback. As an inverse phrasing of this hypothesis: there are significant effects showing signs of narrative overfitting, confirmation bias, echo chamber, being lost in one's own bubble.
-
-Rationale: Cognitive dissonance theory and assimilation/accommodation models (Piaget, schema theory) suggest that self-concept change requires encountering contradictory information, not reinforcement.
-
-H5 — Neurodivergent users are less likely to set explicit usage boundaries/rules for AI, despite reporting higher engagement.
-
-Rationale: Impulsivity, hyperfocus patterns, and difficulties with self-regulation (particularly in ADHD profiles) may reduce metacognitive regulation of AI use, creating higher risk of over-reliance for this group — even if they report awareness of the risks.
-
-H6 — Trust in AI responses is primarily heuristic-based (a “gut feeling” based on structural clarity, confidence of tone) rather than content-based (accuracy, sources), across all groups.
-
-Rationale: This follows dual-process theory — users evaluate AI outputs with System 1 cues (does it look coherent, does it feel right?) rather than System 2 verification. This would replicate known patterns in how people evaluate online health information.
-
-H7 — Users who work in psychological/mental health professions show more critical evaluation patterns and lower perceived equivalence of AI to therapy, compared to non-professional users.  
-
-Rationale: Professional training builds schema for therapeutic boundaries and limitations of non-relational interventions. Domain knowledge should produce more skeptical calibration.
