@@ -1,9 +1,8 @@
-# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes
+# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes *(WIP draft)*
 
-## Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc
+## *Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc*
 
-## 1. Abstract / framing ethical stance?
-   (write this last)
+## 1. Abstract
 
 This research adopts a functionally neutral stance toward AI-assisted psychological engagement. The question is not whether AI should be used for self-reflection — the data suggest it already is, at scale and across demographic groups — but how it is used, what psychological mechanisms it activates, and where its structural properties create risks that users themselves may not recognize. The findings presented here suggest that AI-mediated self-reflection occupies a genuinely novel space: distinct from classical psychotherapy in its accessibility, immediacy, and low social cost, yet sharing with therapeutic contexts the capacity to produce meaningful self-concept change when dissonant feedback is encountered and processed. Understanding this space rigorously — its mechanisms, its population-level variation, and its failure modes — is a prerequisite for both ethical deployment and effective regulation. The alternative, treating AI psychological use as either categorically beneficial or categorically dangerous, forecloses the empirical questions before they are asked.
 
@@ -269,7 +268,7 @@ As a split variable, question "Have you ever used AI in psychology area, discuss
 ##### Limitations
 To flag limitations here: the sample was self-selected, Hungarian-speaking, digitally engaged, likely overrepresenting neurodivergents (surveys about AI self-reflection circulate in neurodivergent communities, and this was also re-posted in other, even more niche Facebook Groups).
 
-##### Hypothesis testing — H1
+#### Hypothesis testing — H1
 
 56% of respondents used AI for emotional disclosure purposes. This rate was higher among diagnosed ND respondents (59%) than neurotypicals (52%), and higher among non-professionals than professionals (56.77% vs 50%). Accessibility barriers (not enough time / option to seek professional psychologist) were cited by 38% of all respondents. These patterns are consistent with H1's prediction that AI serves as a low-barrier alternative for emotional disclosure, though no direct comparison to human-disclosure contexts was available in this dataset.
 
@@ -297,7 +296,7 @@ Out of 118 non-professionals, 56.77% used AI for emotional purposes.
 
 <- TO NOTES 
 
-##### Hypothesis testing — H2
+#### Hypothesis testing — H2
 
 H2 predicted that neurodivergent respondents would demonstrate higher AI use frequency, higher rates of psychological AI use, and broader problem-domain engagement compared to neurotypical respondents, and that this higher engagement would co-occur with lower explicit self-regulatory boundary-setting.
 
@@ -305,7 +304,7 @@ Part A of this hypothesis was not supported. Kruskal-Wallis testing revealed no 
 
 Part B showed a more directionally consistent, though informal, pattern. Among respondents who used AI for psychological purposes, ND groups demonstrated broader problem-domain engagement (diagnosed ND: M=2.97, suspected ND: M=2.88) compared to neurotypical respondents (M=2.27), while explicit rule-setting rates remained similarly low across all groups (diagnosed ND: 17.2%, suspected ND: 20.0%, neurotypical: 12.5%). This produced higher engagement-to-regulation ratios in ND groups (3.32 and 3.35 respectively) compared to neurotypicals (2.76), consistent with H2's prediction of an internal contradiction between high engagement and low self-regulatory boundary-setting. However, this ratio is a descriptive heuristic rather than a formal statistical measure, and the group differences do not reach statistical significance. These findings are tentative and should be interpreted with caution given the small and self-selected sample.
 
-##### Hypothesis testing — H3
+#### Hypothesis testing — H3
 
 H3a predicted that users would report using AI primarily for cognitive offloading purposes — structuring thoughts, brainstorming, perspective-seeking, and self-pattern understanding — and that neurodivergent respondents would show a particular skew toward structuring-oriented use.
 
@@ -316,12 +315,12 @@ Group-level analysis revealed modest but directionally consistent differences. T
 These findings partially support H3a. The overall prevalence of cognitive offloading behaviors is robust, and the self-pattern understanding item shows the predicted ND-skew. However, differences are modest and no statistical testing was applied given the descriptive nature of this analysis. The results should be interpreted as directional signals rather than confirmed group effects.
 
 ---
-### H3b compressed version
+#### H3b compressed version
 
 H3b predicted that receiving dissonant AI feedback would associate with greater self-understanding change. The cross-tabulation strongly confirms this. Among respondents who received challenging feedback (n=32), 93.7% reported improved self-understanding (40.6% significantly, 53.1% somewhat); among those who did not (n=60), 76.7% reported no change. Chi-square analysis confirmed the association (χ²=50.80, df=4, p<0.001), representing the strongest statistical finding in this dataset. Reaction analysis (yes group, n=32) showed 81.3% reflected on the feedback, 43.8% partially integrated it, and critically, 0% ignored it — consistent with Festinger's cognitive dissonance theory and Piaget's accommodation model: schema-contradicting information in a low-threat context produces engagement rather than rejection. H3b is strongly supported.
 
 ---
-### H3b long version
+#### H3b long version
 
 H3b predicted that receiving dissonant AI feedback — feedback that contradicted the respondent's existing self-image — would be associated with greater reported self-understanding change compared to receiving no such feedback, consistent with cognitive dissonance theory and Piagetian accommodation models.
 
@@ -332,7 +331,7 @@ The cross-tabulation produced a striking pattern. Among respondents who reported
 Secondary analysis of the yes group's reactions (n=32) reinforces the finding. The most common response to dissonant feedback was reflection (81.3%), followed by context-dependent engagement (34.4%), partial integration (43.8%), and productive discomfort — uncomfortable but curious (31.3%). Critically, zero respondents reported ignoring the challenging feedback entirely. This reaction profile suggests that when AI delivers schema-contradicting information, users in this sample did not defensively reject it — they engaged with it, tolerated the discomfort, and frequently updated their self-understanding as a result.
 
 H3b is strongly supported. This is the most statistically robust finding in the dataset, and the reaction breakdown provides a plausible mechanism: dissonant feedback leads to changed self-understanding because it is processed rather than dismissed. This aligns with Festinger's cognitive dissonance framework and with Swann's self-verification theory — notably, the data suggest that in AI-mediated contexts, accommodation may be more likely than self-verification, possibly because the low-stakes, non-judgmental nature of AI interaction reduces the defensive motivation to reject threatening self-relevant information.
-##### Hypothesis testing — H4
+#### Hypothesis testing — H4
 
 H4 predicted that a subset of users would report using AI as a therapeutic substitute or interim support, driven primarily by accessibility barriers rather than preference for AI over human therapy.
 
@@ -347,7 +346,7 @@ Secondary analysis by professional status was directionally consistent with pred
 Analysis by neurodivergent status showed that suspected ND respondents cited access barriers most frequently (34.8%), followed by other_psych (37.5%) and neurotypical (28.2%), with diagnosed ND respondents showing the lowest rate (20.7%). The elevated access-barrier rate among suspected ND respondents is notable: without a formal diagnosis, this group may face the greatest barriers to referral pathways and professional support, making AI a more prominent substitute by necessity.
 
 H4 is partially supported. The accessibility-to-substitution pathway is confirmed and statistically significant. The preference-for-directness competing rationale is ruled out. The overall prevalence of substitute framing remains low (12.5%), consistent with AI functioning as a supplement of last resort for a specific subgroup rather than a broad population-level shift away from therapy. The shame and stigma rationale proposed in the hypothesis rationale cannot be separated from the accessibility explanation using self-report data and remains a theoretical possibility.
-##### Hypothesis testing — H5
+#### Hypothesis testing — H5
 
 H5 predicted that users would cluster into instrumental framing (AI as tool) versus relational framing (AI as agent/companion), and that these groups would differ in trust patterns, dependency risk awareness, and self-regulatory behavior.
 
@@ -360,7 +359,7 @@ Chi-square analysis across five dependent variables revealed two statistically s
 Trust in AI when it confirms existing thinking (trust_agrees_with_me) showed a directional pattern consistent with H5 — relational users scored highest (27.6%) versus instrumental (19.4%) and mixed (4.0%) — but did not reach statistical significance (χ²=5.17, df=2, p=0.075, one small cell). Trust based on confident tone showed significance (χ²=7.09, df=2, p<0.05) with relational users highest at 13.8%, but three of six expected cells fell below 5, making this result unreliable and reported as suggestive only. Rule-setting behavior did not differ significantly across framing types (χ²=4.77, df=2, p>0.05).
 
 H5 is partially supported. The predicted framing-type clusters are identifiable and show meaningful differences on dependency-related outcomes, though the direction of the dependency concern findings was unexpected and warrants cautious interpretation. The absence of significant trust and rule-setting differences suggests that instrumental versus relational orientation may have stronger implications for risk awareness than for epistemic trust calibration or self-regulatory behavior in this sample.
-##### Hypothesis testing — H6
+#### Hypothesis testing — H6
 
 H6 predicted that higher prior self-awareness would be associated with more critical engagement with AI feedback, greater likelihood of setting explicit usage boundaries, and more nuanced self-understanding change — reflecting a reflection amplification effect whereby existing introspective capacity potentiates productive AI use.
 
@@ -369,7 +368,7 @@ None of the three tested associations reached statistical significance. Spearman
 H6 is not supported. Two methodological factors constrain interpretation. First, the prior self-awareness distribution showed a pronounced ceiling effect: 67.3% of respondents rated themselves 4 or 5 out of 5, severely restricting the variance available for correlation. This floor compression would suppress a real relationship even if one existed in a more representative sample. Second, the critical engagement subgroup (n=32) is underpowered for correlation analysis. These limitations mean the null result should be interpreted as inconclusive rather than disconfirmatory — the hypothesis remains theoretically plausible but untestable in this dataset.
 
 Contextual analysis of prior self-awareness by neurodivergent status showed suspected ND respondents reporting the lowest mean awareness (M=3.44) compared to neurotypical (M=3.92), diagnosed ND (M=3.76), and other_psych (M=4.00) respondents. While group differences were modest and not formally tested, the suspected ND finding is consistent with the theoretical rationale that undiagnosed neurodivergence may impede self-knowledge, and warrants investigation in future research with adequate sample sizes per group.
-##### Hypothesis testing — H7
+#### Hypothesis testing — H7
 
 H7 predicted that trust in AI responses would be primarily heuristic-based — driven by System 1 cues such as structural clarity and confident tone — rather than content-based evaluation, and that confirmation-seeking would outrank openness to new perspectives as a trust signal.
 
@@ -381,7 +380,7 @@ The pure confirmation heuristic profile — trusting when AI agrees and distrust
 
 H7 is not supported as stated. The data suggest a more nuanced trust architecture: surface structure serves as a primary acceptance heuristic, but content quality and perspective novelty are meaningful secondary criteria. Heuristic processing dominates distrust rather than trust. A revised framing — that AI users apply System 1 judgment as a filter for rejection and System 2 judgment for acceptance — better fits the observed pattern and may warrant formal investigation in future research.
 
-##### Hypothesis testing — H8
+#### Hypothesis testing — H8
 
 H8 predicted that users would report greater concern about AI misinformation and hallucinations than about emotional dependency or over-reliance, challenging the dominant public discourse framing which tends to foreground dependency and human-connection loss as the primary risks of psychological AI use.
 
@@ -405,6 +404,14 @@ The qualitative and quantitative layers are largely convergent. The primary addi
 ## 7. Discussion
    
 ### 7.1 Summary of Findings
+
+The study identified that AI-assisted self-reflection occupies a **"novel space"** between traditional therapy and simple tool usage. Here are the key findings:
+
+- **Emotional Disclosure:** 56% of respondents use AI for emotional disclosure, driven by the tool's 24/7 availability and the absence of social judgment.
+- **The Power of Dissonance:** A surprising **93.7% of users who received challenging or "dissonant" feedback reported improved self-understanding**, suggesting AI is an effective "mirror" for self-concept change.
+- **Cognitive Scaffolding:** 77.8% of users treat AI as a "metacognitive scaffold" to structure thoughts, brainstorm, and understand internal patterns.
+- **Neurodivergent Engagement:** While frequency of use is similar across neurotypes, **neurodivergent (ND) users engage with AI across broader problem domains** and are more likely to use it to externalize and structure self-understanding.
+- **Trust and Risk:** Users are more concerned about **factual accuracy and hallucinations (59.5%)** than emotional dependency (31.7%). Sophisticated users have identified **sycophancy** (AI agreement bias) as a subtle but primary risk.
 ### 7.2 Interpretation
 ### 7.3 Theoretical Contribution
 ### 7.4 Risks / Alternative Interpretations
