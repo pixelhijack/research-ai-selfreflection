@@ -14,33 +14,31 @@ While the early years AI was predominantly used by technical people for professi
 
 ### 2.2 Gap
 
-AI adoption now divides professionals all over the world and sparks heated debates between the "skeptics / doomsdayers" versus the "utopists / optimists". While there are many research on the subject of AI usage, studies usually focus on task-oriented AI usage and clinical tools. Also, either falls to express the downsides and dangers of using AI or, on the other hand, originates from the biggest players of the industry (Anthropic) which omits these and paints a positive-opinionated picture for obvious reasons. What is missing: naturalistic self-reflective use.
+AI adoption now divides professionals all over the world and sparks heated debates between the "skeptics / alarmists / doomsdayers" versus the "utopists / optimists / the hype". While there are many research on the subject of AI usage, studies usually focus on task-oriented AI use and clinical tools. Also, most of the interpretations either fall to express the downsides and dangers of using AI or, on the other hand, originate from the biggest players of the industry (Anthropic, OpenAI) which omits these and paint a positive-opinionated picture for obvious reasons. What is missing: naturalistic self-reflective use.
 
-### 2.3 Why it matters
+### 2.3 Why it matters? My angle
 
-Even the most pessimist scenarios don't argue that AI is becoming a commodity in a lightning speed, just like electricity, telecommunication or the internet did.
+Even the most pessimist scenarios don't argue that AI is becoming a commodity in a lightning speed, just like electricity, telecommunication or the internet did. The reason why the discussions around AI are so heated and controversial is that (just as other commodities), AI could be used for several intents, thus it is a double-edged sword. Two main paradigms are emerging recently: AI as replacement for human skills (automation) versus AI as augmentation (used as a tool).
 
-- AI though is a double-edged sword,
-- Two main paradigms are emerging: AI as replacement for human skills (automation) versus AI as augmentation (as a tool).
+During my exploration of the subject of AI usage, I wanted to stay away from either side of the AI-debate to avoid judgements and observe users as they are, because opinions currently are still just bets on the future.
 
-### 2.4 My angle
-
-During my exploration of the subject of AI usage, I wanted to stay away of either arguing pro or con AI and avoid judgements as opinions this time are just bets on the future.
-
-I was curious how AI is trusted and used by
+My perspective was a researcher's neutral curiosity, how AI is trusted and used by:
 
 - general AI users (as a contextual baseline)
 - neurodivergent users (as an alternative based on a distinct group, by lived experience)
 - therapists / psychology professionals (as optional extension of the dataset).
 
-The study is intentionally exploratory and multi-perspective where epistemic level was pre-committed, but which sub-group comparison will be emphasised and how prominent each theme will become finally were not.
+The study is intentionally exploratory and multi-perspective where epistemic level was pre-committed, but which sub-group comparison will be emphasised and how prominent each theme would become visible during the data analysis and hypothesis testing.
 
-(For simplicity, neurodivergents abbreviated at some points as ND, neurotypicals as NT)
+(For simplicity, I use usual abbreviations at some points for neurodivergents as ND, neurotypicals as NT.)
 
-### 2.5 Main research question
+### 2.4 Main research question
 
-This mixed-method study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes.
+As a starting point, this mixed-method study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3) later, after the literature review and identifying the research gap this study meant to cover.
 
+### 2.5 AI disclaimer
+
+To flag explicitly for the sake of transparency, AI served not only the subject of this study, but also a methodological and operational assistant too. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to assist the whole research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, even if I seem confident, name blindspots, confirmation bias, overclaims or narrative overfitting, besides helping to guide me through to keep the study methodically valid and help me with testing, structure and format. Frontier LLMs (Claude, Gemini, ChatGPT, Gemma) were used in survey design, literature review, hypothesis testing and synthesising the findings, progressing back and forth with the AI assistance on a line-by-line granular level.
 ## 3. Theoretical Background / Literature Review
 
 For the ease of overview on the topics AI usage for self-reflection covers, four main areas were identified for this study: human-AI interactions, self-disclosure online, cognitive offloading & the extended mind and mental health tools. Each will be discussed and summarised how they overarch the main research questions and the existing research gap.
@@ -431,7 +429,7 @@ The findings validate and extend several core theories:
 
 #### Implications: what shift the findings describe happening in the world concerning AI usage?
 
-- **From Tools to Relational Partners:** The world is shifting from seeing LLMs as "command-line" tools to **collaborative negotiators** and "metacognitive scaffolds".
+- **From Tools to Relational Partners:** The world is shifting from seeing LLMs as "just software" or "command-line" tools to **collaborative negotiators** and "metacognitive scaffolds".
 - **Democratization of Self-Reflection:** AI provides a low-cost, low-stakes environment for "schema-contradicting" feedback, which was previously the exclusive domain of professional therapy
 
 #### How the three main Research Questions (RQ) were answered by the study's findings?
@@ -440,11 +438,15 @@ The findings validate and extend several core theories:
 
 **RQ2 — Epistemic trust architecture in psychological AI use:** Users employ a **nuanced trust architecture** where **structural clarity** (50%) acts as a primary acceptance heuristic, but **content-based signals** like openness to new perspectives (34.1%) remain significant. Heuristic "gut feelings" are used primarily to **reject** AI outputs, while more deliberate criteria are applied to accept them. The study identifies a robust link between trust and identity: **93.7% of users receiving dissonant feedback** reported improved self-understanding, suggesting that the low-stakes nature of AI facilitates **schema accommodation** (self-concept change) rather than defensive self-verification.
 
-**RQ3 — Risk perception vs. actual risk dynamics in psychological AI use:** Users accurately identify **misinformation and hallucinations (59.5%)** as their primary concern, yet they significantly under-report anxiety regarding **emotional dependency (31.7%)**. This discrepancy suggests that users are vigilant against detectable factual errors but may be more blind to **narrative overfitting** and **sycophancy** (agreement bias), which advanced users identified qualitatively as a more subtle and dangerous failure mode. Paradoxically, **instrumental users** exhibit higher risk awareness than **relational users**, indicating that those most integrated with AI may be the least likely to recognize the risks of dependency.
+**RQ3 — Risk perception vs. actual risk dynamics in psychological AI use:** Users accurately identify **misinformation and hallucinations (59.5%)** as their primary concern, yet they significantly under-report anxiety regarding **emotional dependency (31.7%)**. This discrepancy suggests that users are vigilant against detectable factual errors but may be more blind to **narrative overfitting** and **sycophancy** (agreement bias), which advanced users identified qualitatively as a more subtle and dangerous failure mode. Paradoxically, **instrumental users** exhibit higher risk awareness than **relational users**, indicating that those most integrated with AI may be the least likely to recognise the risks of dependency.
 
 ### 7.4 Risks / Alternative Interpretations
 
+
+
 ## 8. Conclusion
+
+This research, even though not conducted over a statistically representative sample and serving a rather theoretical case-study for university application, AI-assisted on methodological background, is mostly found results which align with literature and existing other studies. As mentioned in the limitations, the field of AI and also its interpretations and controversies are heavily under change. Artificial intelligence seems to be one of the quickest shifting disruptive technology, and social debate is still hot around how much this is a mere hype, a bubble, which will burst at some point. Regulation is still in its earliest child-period, just as well social judgement of its place in our life. One thing seems to be sure, even if we don't yet see the implications bringing doomsday or utopical abundance: AI would probably not go away, just become more ubiquitous. 
 
 ## 9. References
 
