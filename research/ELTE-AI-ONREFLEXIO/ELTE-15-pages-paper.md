@@ -10,17 +10,17 @@ This research adopts a functionally neutral stance toward AI-assisted psychologi
 
 ### 2.1 Problem framing
 
-While the early years AI was predominantly used by technical people for professional goals, based on recent reports the trend is shifting and AI usage now started to take over for personal reasons. ([Anthropic report](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) [Tenet](https://www.wearetenet.com/blog/ai-usage-statistics)) This is a usual learning curve: after the tech-savvy early adopters, a new technology goes widespread. Anthropic in a 81 000 person sample representative global study ([Anthropic 81k study](https://www.anthropic.com/features/81k-interviews)) ([Self-disclosure to AI: People provide personal information to AI and humans equivalently](https://www.sciencedirect.com/science/article/pii/S2949882125000647#:~:text=This%20study%20examined%20how%20participants%20chose%20between,thought%20to%20be%20analyzed%20by%20an%20AI%2C)) explored what people really expects from AI. One of the leading drives was "personal transformation": mental well-being, self-discovery. Based on multiple independent studies, generative AI levelled up to 2025 and companionship and therapy-substitute became the number one use case. Users tend to share more with an AI than a human based on assumed emotional safety for self-disclosure.
+While the early years AI was predominantly used by technical people for professional goals, based on recent reports the trend is shifting and AI usage now started to take over for personal reasons. ([Anthropic report](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) [Tenet](https://www.wearetenet.com/blog/ai-usage-statistics)) This is a usual learning curve: after the tech-savvy early adopters, a new technology goes widespread. Anthropic in a 81 000 person sample representative global study ([Anthropic 81k study](https://www.anthropic.com/features/81k-interviews)) ([Self-disclosure to AI: People provide personal information to AI and humans equivalently](https://www.sciencedirect.com/science/article/pii/S2949882125000647#:~:text=This%20study%20examined%20how%20participants%20chose%20between,thought%20to%20be%20analyzed%20by%20an%20AI%2C)) explored what people really expects from AI. One of the leading drives was "personal transformation": mental well-being, self-discovery. Based on multiple independent studies, generative AI for companionship and therapy-substitute became the number one use case. 
 
 ### 2.2 Gap
 
-AI adoption now divides professionals all over the world and sparks heated debates between the "skeptics / alarmists / doomsdayers" versus the "utopists / optimists / the hype". While there are many research on the subject of AI usage, studies usually focus on task-oriented AI use and clinical tools. Also, most of the interpretations either fall to express the downsides and dangers of using AI or, on the other hand, originate from the biggest players of the industry (Anthropic, OpenAI) which omits these and paint a positive-opinionated picture for obvious reasons. What is missing: naturalistic self-reflective use.
+AI adoption now divides professionals all over the world and sparks heated debates between the "skeptics / alarmists / doomsdayers" versus the "utopists / optimists / the hype" *(intentionally characterised here for the discourse, without taking sides)*. While there are many research on the subject of AI usage, studies usually focus on task-oriented AI use and clinical tools. Also, most of the interpretations either fall to express the downsides and dangers of using AI or, on the other hand, originate from the biggest players of the industry (Anthropic, OpenAI) which omits these and paint a positive-opinionated picture for obvious reasons. What is missing: naturalistic self-reflective use.
 
 ### 2.3 Why it matters? My angle
 
 Even the most pessimist scenarios don't argue that AI is becoming a commodity in a lightning speed, just like electricity, telecommunication or the internet did. The reason why the discussions around AI are so heated and controversial is that (just as other commodities), AI could be used for several intents, thus it is a double-edged sword. Two main paradigms are emerging recently: AI as replacement for human skills (automation) versus AI as augmentation (used as a tool).
 
-During my exploration of the subject of AI usage, I wanted to stay away from either side of the AI-debate to avoid judgements and observe users as they are, because opinions currently are still just bets on the future.
+During my exploration of the subject of AI usage, I wanted to stay away from either side of the AI-debate to avoid judgements and observe users as they are.
 
 My perspective was a researcher's neutral curiosity, how AI is trusted and used by:
 
@@ -28,7 +28,7 @@ My perspective was a researcher's neutral curiosity, how AI is trusted and used 
 - neurodivergent users (as an alternative based on a distinct group, by lived experience)
 - therapists / psychology professionals (as optional extension of the dataset).
 
-The study is intentionally exploratory and multi-perspective where epistemic level was pre-committed, but which sub-group comparison will be emphasised and how prominent each theme would become visible during the data analysis and hypothesis testing.
+The study is intentionally exploratory and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes to become visible during the data analysis and hypothesis testing.
 
 (For simplicity, I use usual abbreviations at some points for neurodivergents as ND, neurotypicals as NT.)
 
@@ -38,14 +38,14 @@ As a starting point, this mixed-method study investigates how individuals use AI
 
 ### 2.5 AI disclaimer
 
-To flag explicitly for the sake of transparency, AI served not only the subject of this study, but also a methodological and operational assistant too. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to assist the whole research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, even if I seem confident, name blindspots, confirmation bias, overclaims or narrative overfitting, besides helping to guide me through to keep the study methodically valid and help me with testing, structure and format. Frontier LLMs (Claude, Gemini, ChatGPT, Gemma) were used in survey design, literature review, hypothesis testing and synthesising the findings, progressing back and forth with the AI assistance on a line-by-line granular level.
+To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the whole research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting; also, provide structure and guide me through to keep the study methodically valid. Frontier LLMs (Claude, Gemini, ChatGPT, Gemma) were used in survey design, literature review, hypothesis testing and synthesising the findings, progressing back and forth with the AI assistance on a line-by-line granular level. Qualitative and quantitative data processing is linked in the Appendices section.
 ## 3. Theoretical Background / Literature Review
 
 For the ease of overview on the topics AI usage for self-reflection covers, four main areas were identified for this study: human-AI interactions, self-disclosure online, cognitive offloading & the extended mind and mental health tools. Each will be discussed and summarised how they overarch the main research questions and the existing research gap.
 
 ### 3.1 Human–AI Interaction (HAI)
 
-Human-AI Interaction (HAI) is a field which studies how people perceive, anthropomorphise and emotionally respond to AI systems, bridging the gap between computer science and cognitive neuroscience. In general, a human-AI interaction is not just "using software", but it is a social event where the brain's social circuits are "hijacked" by linguistic cues (warmth, empathy, first-person language). The field raises several questions recently with the steep rise of LLMs, for example whether anthropomorphism a design trick or an emergent human bias, or if relational framing increase effectiveness or dependency, thus emotional AI should simulate empathy or stay being as a mere instrument rather than a social actor.
+Human-AI Interaction (HAI) is a field which studies how people perceive, anthropomorphise and emotionally respond to AI systems, bridging the gap between computer science and cognitive neuroscience. In general, a human-AI interaction is not just "using software", but it is a social event where the brain's social circuits are "hijacked" by linguistic cues (warmth, empathy, first-person language). The field raises several questions recently with the steep rise of LLMs, for example whether anthropomorphism is a design trick or an emergent human bias, or if relational framing increase effectiveness or dependency, thus emotional AI should simulate empathy or stay being as a mere instrument rather than a social actor.
 
 #### Common findings
 
@@ -56,10 +56,6 @@ Human-AI Interaction (HAI) is a field which studies how people perceive, anthrop
 - The paper "HumanLLM: Benchmarking and Improving LLM Anthropomorphism via Human Cognitive Patterns" (2026, [arXiv:2601.10198](https://arxiv.org/abs/2604.15316#:~:text=Subjects%3A,arXiv%2Dissued%20DOI%20via%20DataCite)) explores how LLMs are used as "Role-Playing Language Agents" (RPLAs, assigned historical / fictional personas) that simulate human behavior, applied as emotional companions, interactive video game characters, digital clones and virtual asistents, but often suffering from "personality drift." (https://arxiv.org/abs/2502.09082, https://arxiv.org/html/2506.23107v1)
 - "Understanding the Effects of Miscalibrated AI Confidence on User Trust" (2024/2025, [arXiv:2402.07632](https://arxiv.org/html/2402.07632v4#:~:text=To%20understand%20the%20effects%20of,difficult%20for%20users%20to%20detect.)): users (especially if in a vulnerable state) struggle to detect when an AI is "wrong but confident." This leads to over-trust, where the user stops checking the AI’s work.
 - "Dehumanizing Machines: Mitigating Anthropomorphic Behaviors in Text Generation Systems" (2025), ACL Anthology: a critical look on how the smallest linguistic cues (like the AI using first-person pronouns "I", "me") trigger social cognition pathways and empathy in the human brain, leading to more disclosure.
-
-#### What is missing / How this research contributes?
-
-Most studies are lab-based; non-clinical, non-task AI usage, naturalistic self-reflection use cases are not really analysed. Most research studies task completion, not real-life / existential processing. Neurodivergence-specific interaction patterns also not distinguished. Long-term cognitive impact is also missing (and will be out of scope for here as well). This study contributes by examining spontaneous, organic AI use rather than engineered chatbot trials, exploring whether users mentalize the AI (attribute a mind to it, see Theory of Mind) during self-reflection.
 
 ### 3.2 Self-Disclosure Online
 
@@ -73,10 +69,6 @@ Human social cognition is hardwired to reciprocity: even if an artificial actor 
 - "AI-exhibited Personality Traits Can Shape Human Self-concept through Conversations" (Jan 2026, [arXiv:2601.12727](https://arxiv.org/html/2601.12727v1#:~:text=Our%20findings%20uncover%20how%20AI,highlighting%20both%20risks%20and%20opportunities.)): a research showing how users' self-concepts began to align with the AI's "personality" (programmed being extraverted or reflective). If the AI was reflective, the user started viewing themselves as more reflective. This suggests the AI doesn't just "hear" the disclosure; it acts as a mirror that reshapes the user's identity.
 - "Comparing the value of perceived human versus AI-generated empathy" (2024, [PubMed / Nature](<https://pubmed.ncbi.nlm.nih.gov/40588597/#:~:text=We%20conducted%20nine%20studies%20(n,%2C%20than%20AI%2Dattributed%20ones.)>)). A study on "anti-AI bias": while AI produces more _objectively_ supportive text, users often rate it lower if they **know** it’s AI. However, this bias is "dampened" during long-term use.
 
-#### What is missing / How this research contributes
-
-Most studies around online self-disclosure are human-to-human so far, long-term AI-specific disclosure is not that much researched (for example, difference between human anonymity and AI non-judgment). Also, Neurodivergent populations’ differential comfort levels within this context has been under-described. 
-
 ### 3.3 Cognitive offloading & the extended mind
 
 For frequent users, AI does not act only as a "chat partner", but easily transition to something as a functional part of the human neural architecture, a metacognitive scaffold, a tool that helps the brain "think about thinking", or an "external brain" to which they can offload decisions, dilemmas, feelings to explain. Internal debates emerge around questions like whether offloading reduce cognitive ability (memory, learning, problem-solving, socialising) long-term, or does it rather free resources for higher-level thinking
@@ -89,10 +81,6 @@ For frequent users, AI does not act only as a "chat partner", but easily transit
 - "The Cognitive Effects of AI: How LLMs Are Changing Human Thinking" (Sept 2025, [AIRI / MIT Media Lab findings](https://www.thealgorithmicbridge.com/p/what-the-studies-say-about-how-ai#:~:text=But%20the%20pattern%20across%20studies,can%20maintain%20or%20increase%20engagement.)): this summary of EEG-based research on brain activity during AI-assisted writing and reflection finds that AI behaves like a creativity exoskeleton - it can help you move further, but if you never walk without it, your own muscles atrophy
 - "Scaffolding Metacognition with GenAI: Supporting Task Management for University Students with ADHD" (2026, [CHI Conference / arXiv](https://arxiv.org/html/2602.09381v1#:~:text=Drawing%20on%20these%20findings%2C%20we,for%20both%20research%20and%20practice.)): Specific research on how Generative AI helps "breaking down" large, abstract emotional or cognitive tasks into small, manageable steps—a process called "Cognitive Scaffolding."
 
-#### What is missing / How this research contributes
-
-Most recent studies describe AI as a static tool and its cognitive effects - AI as dynamic cognitive partner, especially in emotional processing (not just memory) is missing from this landscape, just as well as neurodivergent-specific executive scaffolding through AI. A generic impression is that most offloading research predates LLMs by proving its negatively disrupting effects, while positives are harder to measure.
-
 ### 3.4 Digital tools for mental health
 
 Traditional therapy has a "treatment gap": many people cannot afford the costs. AI might fill this gap by providing accessibility shortcuts and immediate feedback, which could be particularly effective for neurodivergent users who require instant, non-judgmental and many times 24/7 scaffolding but need to wait sometimes for years for a single diagnosis, which is not even providing much help beyond some certainty. At the same time, AI also could become a huge trap with misinformation (self-diagnosis) and enforcing users' confirmation biases, so we must distinguish between "designed" therapeutic AI (with safeguards) and the "organic" use of general frontier models (this survey captured the latter). Internal debates pushing questions like whether chatbots are ethical for vulnerable populations at all (principle of "nil nocere": what if it helps 9 user but reinforcing self-hurting behaviour for the 10th?); or what are the healthy boundaries of a software, does simulated empathy mislead users; or if AI can or should replace therapists?
@@ -104,13 +92,12 @@ Traditional therapy has a "treatment gap": many people cannot afford the costs. 
 - "Applying artificial intelligence in neurodevelopmental disorders management and research" (2025/2026, PMC / Frontiers): a research on how AI platforms reduce impulsivity in ADHD patients more effectively than some therapist-guided CBT. AI agents provide "real-time reinforcement" that humans cannot. For neurodivergent individuals, the instant and 24/7 available feedback loop of an AI helps bridge the gap between an emotion and a coping strategy.
 - "Beyond Simulations: What 20,000 Real Conversations Reveal About Mental Health AI Safety" (Jan 2026, PMC): an "ecological audit" of actual human-AI therapy conversations, stating that while general-purpose LLMs (like standard ChatGPT) have improved, they still fail roughly **0.38%** of the time in high-risk scenarios (like crisis disclosure), sometimes reinforcing maladaptive behaviors or hallucinating psychological advice.
 
-#### What is missing / How this research contributes
-
-Again, as mentioned before, non-clinical exploratory self-use is under-studied, just as identity-based usage patterns between neurotypes. Studies usually try to track purpose-designed CBT apps and specific tool usage, but not unregulated, spontaneous self-directed AI usage.
-
 ### 3.5 Literature / gap synthesis
 
-All our four pillars of the literature show some common gaps in recent studies' coverage. Human-AI interactions showed how humans are evolutionarily "wired" to treat AI socially (CASA/MASA - first pillar). Our social wiring leads to deep **self-disclosure online**, because the "social risk" is zero (second pillar). This disclosure allows the AI to act as **metacognitive scaffold**, offloading the "mental heavy lifting" of organising one's life (third pillar). For many (especially the neurodivergent population), this might results in a functional **therapeutic substitution**, though it carries high-tech risks. Most studies lack real-life, non-clinical or non tool-specific observations, targeting human-AI context, and also missing neurotype differentiation. 
+
+Human-AI interactions showed how humans are evolutionarily "wired" to treat AI socially (CASA/MASA - first pillar). Our social wiring leads to deep **self-disclosure online**, because the "social risk" is zero (second pillar). Most studies around online self-disclosure yet are human-to-human, long-term AI-specific disclosure is not much covered. Online disclosure allows the AI to act as **metacognitive scaffold**, offloading the "mental heavy lifting" of organising one's life (third pillar). A generic impression is that most research about cognitive offloading predates LLMs by proving its negatively disrupting effects, while positives are harder to measure. For many (especially the neurodivergent population), cognitive offloading might results in a functional **therapeutic substitution**, though it carries high-tech risks. Studies usually try to track purpose-designed CBT apps and specific tool usage, but not unregulated, spontaneous self-directed AI usage.
+
+All our four pillars of the literature show some common gaps in coverage: they are mostly lab-based, while non-clinical, non tool-specific observations, naturalistic self-reflection use cases, targeting human-AI context are not really analysed. Most research studies task completion, not real-life / existential processing. Neurotype differentiation is also not much distinguished. Long-term cognitive impact / longitudinal studies are also not yet present. 
 
 ## 4. Research questions & hypotheses
 
@@ -141,8 +128,7 @@ Rationale: neurodivergent individuals often face barriers to traditional therapy
 
 #### H3– Cognitive offloading / perspective shift hypothesis
 
-Users will describe AI as helpful with structuring thoughts, organizing emotions, perspective shifting.
-Users who have received challenging or dissonant AI feedback (i.e., feedback that contradicted their self-image) are more likely to report changed self-understanding than those who only received confirmatory feedback. As an inverse phrasing of this hypothesis: there are significant effects showing signs of narrative overfitting, confirmation bias, echo chamber, being lost in one's own bubble.
+Users will describe AI as helpful with structuring thoughts, organizing emotions, perspective shifting. Neurodivergents would skew more towards structure-oriented use. Users who receive challenging or dissonant AI feedback (i.e., feedback that contradicts their self-image) are more likely to report changed self-understanding than those who only receive confirmatory feedback. H3b – as an inverse phrasing of this hypothesis: there are significant effects showing signs of narrative overfitting, confirmation bias, echo chamber, being lost in one's own bubble for certain characteristic users.
 
 Rationale: Cognitive dissonance theory and assimilation/accommodation models (Piaget, schema theory) suggest that self-concept change requires encountering contradictory information, not reinforcement.
 
@@ -156,7 +142,7 @@ Rationale: the primary motivation for psychological AI use is accessibility, not
 
 Users of AI usually cluster into two profiles: 1. AI-as-tool (instrumental framing) vs 2. AI-as-agent (relational framing). These groups will differ in trust level, dependency risk and emotional reliance.
 
-Rationale: what is haven't widely discussed yet is the _role_ of AI chatbots fills in a user's life based on how / for what reason it is used. AI usage can cover a wide range from being a mere tool (for developers in a data pipeline for example, or recognising plants / bird calls, asking for wifi setting support), through used as a Delphoi Oracle (asking for life advice) through used as a complete presidential consultancy team.
+Rationale: what is haven't widely discussed yet is the _role_ of AI chatbots fills in a user's life based on how / for what reason it is used. In layman's terms, AI usage can cover a wide range from being a mere tool (for developers in a data pipeline for example, or recognising plants / bird calls, asking for wifi setting support), through used as a Delphoi Oracle (asking for life advice) through used as a complete presidential consultancy team.
 
 #### H6 – Reflection amplification hypothesis
 
@@ -172,9 +158,9 @@ Rationale: This follows dual-process theory — users evaluate AI outputs with S
 
 #### H8 - Dependence hypothesis
 
-Hallucinations are more of a turn-off than dependence.
+Hallucinations are more of a turn-off than dependency concern.
 
-Rationale: a descriptive hypothesis that challenges that for 2026, users become much more epistemically cautious with AI based on widespread AI fatigue and AI skepticism, however self-reinforcing confirmation bias / narrative overfitting loops create a stronge dependency and might be much more dangerous than unchecked hallucinations / invalid facts (even though model sycophancy is already recognised and flagged, see OpenAI GPT-4o scandals).
+Rationale: a descriptive hypothesis that challenges that for 2026, users become much more epistemically cautious with AI based on widespread AI fatigue and AI skepticism, however self-reinforcing confirmation bias / narrative overfitting loops create a stronge dependency and might be much more dangerous than unchecked hallucinations / invalid facts (even though model sycophancy is already recognised and flagged, see OpenAI GPT-4o scandals). This hypothesis is rahter descriptive/exploratory, falsifiability questionable. 
 
 ## 5. Methods
 
@@ -182,11 +168,11 @@ Rationale: a descriptive hypothesis that challenges that for 2026, users become 
 
 Because of the many-direction branching rich nature of the questions arised during the design of this research, it is used a mixed-method approach on a cross-sectional survey. The survey was anonymous (with optional email address field for expressing interest in potentional follow-ups), consisted of 23 questions.
 
-The sample is not representative for the general population, the survey is meant for showcase purposes and can be repeated on better-fit sample for more structured and nuanced results. The survey was posted on multiple channels to gather data: personal Facebook wall, various Facebook groups (Adult A(u)DHD, Neurodivergency groups, AI technical news group), and hungarian subreddit forums (r/psychology) and resulted in 126 participants filling in it during a 2 weeks period.
+The sample is not representative for the general population, it was self-selected, Hungarian-speaking, digitally engaged, likely over-representing neurodivergents. The survey is meant for showcase purposes only and should be repeated on better-fit sample for more structured and nuanced results. It was posted on multiple channels to gather data: personal Facebook wall, various Facebook groups (Adult A(u)DHD, Neurodivergency groups, AI technical news group), and Hungarian subreddit forums (r/psychology) and resulted in 126 participants filling in it during a 2 weeks period.
 
-### 5.2 Limitations
+### 5.2 Other limitations
 
-**It is important to flag limitations explicitly:**
+**To flag limitations explicitly, beyond the sample mentioned before:**
 
 - Personal AI usage is still it is early phase at the time of this survey and its social view is controversial and quite a taboo. Also, neurodivergency is getting more widely known and even accepted, but stereotypes about ADHD and especially Autism are still extremely strong. Therefore the vulnerability of neurodivergent populations is strong, neurodivergent community by itself will hold a selection bias and are commonly more motivated in self-discovery, AI usage and filling in questionnaires in AI / psychology / neurodivergency topics.
 - Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context.
@@ -241,10 +227,6 @@ The sum of suspected and diagnosed neurodivergents are 54%, and while real diagn
 ##### Used AI for psychological goals distribution
 
 As a split variable, question "Have you ever used AI in psychology area, discussing your personal things, your internal workflows, social situations, or as a therapist?" which early terminated the questionnaire if answered "no", resulted in 89 participants, 70% of the total, out of which is 66 participants, so ~74% of those who used AI for psychological goals are women.
-
-##### Limitations
-
-To flag limitations here: the sample was self-selected, Hungarian-speaking, digitally engaged, likely overrepresenting neurodivergents (surveys about AI self-reflection circulate in neurodivergent communities, and this was also re-posted in other, even more niche Facebook Groups).
 
 #### Hypothesis testing — H1
 
@@ -442,7 +424,7 @@ The findings validate and extend several core theories:
 
 ### 7.4 Risks / Alternative Interpretations
 
-
+Mentalisation is really hard to measure...
 
 ## 8. Conclusion
 
