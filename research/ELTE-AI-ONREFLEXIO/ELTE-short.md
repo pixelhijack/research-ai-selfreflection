@@ -149,17 +149,19 @@ Rationale: a descriptive hypothesis that challenges that for 2026, users become 
 
 ### 5.1 Design, participants, materials, procedure
 
-Because of the many-direction branching rich nature of the questions arised during the design of this research, it is used a mixed-method approach on a cross-sectional survey. The survey was anonymous (with optional email address field for expressing interest in potentional follow-ups), consisted of 23 questions.
+This study used a mixed-methods approach on a cross-sectional survey design, reflecting the branching, multi-directional nature of the research questions. The anonymous survey consisted of 23 questions with an optional email field for follow-up interest, and was completed by 126 participants over a two-week period.
 
-The sample is not representative for the general population, it was self-selected, Hungarian-speaking, digitally engaged, likely over-representing neurodivergents. The survey is meant for showcase purposes only and should be repeated on better-fit sample for more structured and nuanced results. It was posted on multiple channels to gather data: personal Facebook wall, various Facebook groups (Adult A(u)DHD, Neurodivergency groups, AI technical news group), and Hungarian subreddit forums (r/psychology) and resulted in 126 participants filling in it during a 2 weeks period.
+The sample is non-representative and self-selected: Hungarian-speaking, digitally engaged, and likely over-representing neurodivergent individuals. Distribution channels included personal social media, adult A(u)DHD and neurodivergency Facebook groups, an AI technical news group, and Hungarian Reddit forums (r/psychology). The study is best treated as a pilot and should be replicated on a more representative sample for generalisable results.
 
-### 5.2 Other limitations
+### 5.2 Limitations
 
-**To flag limitations explicitly, beyond the sample mentioned before:**
+Beyond sampling, three limitations warrant explicit flagging:
 
-- Personal AI usage is still it is early phase at the time of this survey and its social view is controversial and quite a taboo. Also, neurodivergency is getting more widely known and even accepted, but stereotypes about ADHD and especially Autism are still extremely strong. Therefore the vulnerability of neurodivergent populations is strong, neurodivergent community by itself will hold a selection bias and are commonly more motivated in self-discovery, AI usage and filling in questionnaires in AI / psychology / neurodivergency topics.
-- Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context.
-- Personal attitudes towards LLMs and the whole topic is highly time-sensitive and potentially become outdated extremely quick and potentially age badly as the AI world is shifting in a lightning speed. Any results tracked within this study is a direct reflection of a period while it was conducted and processed (February-May 2026) and subject of changes.
+**Selection bias in the neurodivergent subsample.** Neurodivergent communities are disproportionately motivated to engage with topics at the intersection of self-discovery, AI, and psychology, and are generally more inclined toward questionnaire participation in these areas. The ND subsample likely over-represents engaged, self-aware users and should not be generalised to the neurodivergent population broadly.
+
+**Lack of clinical validation.** The findings were not validated within a clinical or professional psychological framework, which limits their interpretability in applied mental health contexts.
+
+**Time-sensitivity.** Attitudes toward AI use are shifting rapidly. All findings reflect a specific window (February–May 2026) and may have limited shelf life as both AI capabilities and public perception continue to evolve.
 
 ## 6. Data analysis & results
 
@@ -169,13 +171,7 @@ The sample is not representative for the general population, it was self-selecte
 
 ##### Gender and age distribution
 
-Out of the 126 participants, 123 filled in the gender:
-
-- male: 31 (~25.2%)
-- female: 88 (~71.5%)
-- didn't want to disclose: 4 participants
-
-The participants are primarily in the early-to-mid-adult stages of life, with the **25–34** and **35–44** age groups being equally represented and together accounting for two-thirds of the total sample. The distribution is heavily skewed toward female participants and individuals between the ages of 25 and 44.
+Of 126 participants, 123 reported gender: 88 female (~71.5%), 31 male (~25.2%), 4 undisclosed. The sample skews heavily female and concentrated in the 25–44 age range, which together accounts for approximately two-thirds of participants.
 
 | Age Group       | Number of Participants | Percentage |
 | --------------- | ---------------------- | ---------- |
@@ -188,6 +184,8 @@ The participants are primarily in the early-to-mid-adult stages of life, with th
 
 ##### Neurodivergence status distribution
 
+Of 120 respondents (6 skipped):
+
 | Neurodivergency Status              | Number of Participants | Percentage |
 | ----------------------------------- | ---------------------- | ---------- |
 | Neurotypical                        | 42                     | **~33%**   |
@@ -195,21 +193,19 @@ The participants are primarily in the early-to-mid-adult stages of life, with th
 | Suspected neurodivergent            | 32                     | **~25%**   |
 | Diagnosed with some other condition | 9                      | **~7%**    |
 
-Based on the dataset, 120 participants answered on the question asking about neurodivergency status, excluded the 6 declined / skipped. Diagnosed neurodivergents represent a significant portion of the dataset, with respondents frequently citing that AI tools like ChatGPT or Gemini help with executive functions and organizing daily life. A large group of users suspect they may be neurodivergent, often using AI to better understand their internal patterns or social interactions.
-
-The sum of suspected and diagnosed neurodivergents are 54%, and while real diagnosed prevalence rates are considered between 5-20%, this outcome quite overlaps with multiple recent studies: ZenBusiness study found 53% of british Gen Z identifies themselves with neurodivergence, Deloitte Global Gen Z and Millennial Survey (2023) found 53% in a global survey, while Understood.org & Harris Poll (2024) found 51%. True prevalence and discussing the implications are out of scope for this study, but it is interesting to imagine a world where neurodivergence is not considered a small minority anymore. ([link](https://www.understood.org/en/research-and-surveys/understood-org-genz-survey), [link](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/), [link](https://www.greaterbirminghamchambers.com/resource/what-hr-is-being-told-about-neurodiversity-is-wrong-and-it-s-costing-you.html))
+Combined suspected and diagnosed ND respondents represent 54% of the sample. This substantially exceeds clinical prevalence estimates (typically cited at 5–20%), but aligns with recent self-identification data: comparable rates of ~53% ND self-identification among Gen Z and Millennial cohorts have been reported by ZenBusiness, Deloitte (2023), and Understood.org/Harris Poll (2024). This pattern likely reflects recruitment through ND-adjacent communities and the known tendency toward higher self-identification rates in digitally engaged younger populations. True prevalence and its broader implications are outside the scope of this study; the ND variable here functions as a self-reported identity grouping for between-group comparison, not a clinical classification. ([link](https://www.understood.org/en/research-and-surveys/understood-org-genz-survey), [link](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/), [link](https://www.greaterbirminghamchambers.com/resource/what-hr-is-being-told-about-neurodiversity-is-wrong-and-it-s-costing-you.html))
 
 ##### Professional status distribution
 
-8 out of the 126 participants answered he/she is working as a mental health professional (therapist, psychologist, coach, social worker).
+8 of 126 participants (~6%) identified as mental health professionals (therapist, psychologist, coach, or social worker).
 
 ##### AI usage frequency distribution
 
 54 participants (42%) admitted to use AI on a daily basis, 42 weekly (33%), 16 sometimes (12%), 5 rarely (4%), and 9 tried but almost never really using it (7%).
 
-##### Used AI for psychological goals distribution
+##### Psychological AI use distribution
 
-As a split variable, question "Have you ever used AI in psychology area, discussing your personal things, your internal workflows, social situations, or as a therapist?" which early terminated the questionnaire if answered "no", resulted in 89 participants, 70% of the total, out of which is 66 participants, so ~74% of those who used AI for psychological goals are women.
+The question "Have you ever used AI for psychological purposes — discussing personal matters, understanding your internal patterns, social situations, or as a therapy substitute?" served as a branching filter: 89 participants (70%) answered yes and continued; 37 exited early. Of the 89 who reported psychological AI use, 66 (~74%) were women.
 
 #### Hypothesis testing — H1
 
