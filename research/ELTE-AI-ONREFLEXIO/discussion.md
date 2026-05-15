@@ -75,6 +75,7 @@ survey about psychological / self-reflective AI usage, that you might find inter
 - real hazard is not false data but dependency & psychosis
 - responsibility of frontier model providers
 - H3b: certain characteristic = amplification signals / predictors could be high anxiety, rumination, narcissism, hypercognition, hypomaniac and psychotic salience states – but this is speculatory and also clinical area thus out of scope for this hypothesis and study
+- H8: Users may be alert to the risks they can detect (factual errors, which feel wrong) while remaining blind to the risks they cannot (self-reinforcing narratives, which feel right).
 
 # DISCUSSION SECTION: gemini
 
