@@ -391,40 +391,61 @@ The qualitative and quantitative layers are largely convergent. The primary addi
 
 ### 7.1 Summary of Findings
 
-The study identified that AI-assisted self-reflection occupies a **"novel space"** between traditional therapy and simple tool usage. Here are the key findings:
+This study examined how individuals use AI for psychological self-reflection and whether patterns differ across neurotypes. Five findings stand out:
 
-- **Emotional Disclosure:** 56% of respondents use AI for emotional disclosure, driven by the tool's 24/7 availability and the absence of social judgment.
-- **The Power of Dissonance:** A surprising **93.7% of users who received challenging or "dissonant" feedback reported improved self-understanding**, suggesting AI is an effective "mirror" for self-concept change.
-- **Cognitive Scaffolding:** 77.8% of users treat AI as a "metacognitive scaffold" to structure thoughts, brainstorm, and understand internal patterns.
-- **Neurodivergent Engagement:** While frequency of use is similar across neurotypes, **neurodivergent (ND) users engage with AI across broader problem domains** and are more likely to use it to externalize and structure self-understanding.
-- **Trust and Risk:** Users are more concerned about **factual accuracy and hallucinations (59.5%)** than emotional dependency (31.7%). Sophisticated users have identified **sycophancy** (AI agreement bias) as a subtle but primary risk.
+70% of participants reported psychological AI use, with 56% engaging in emotional disclosure. Cognitive offloading — primarily brainstorming (61.1%) and structured problem overview (53.2%) — was the dominant usage pattern. Accessibility barriers drove therapeutic substitute framing for a specific subgroup, confirmed by a 4.3× higher substitution rate among access-constrained users. The strongest statistical finding was H3b: 93.7% of users who received dissonant AI feedback reported improved self-understanding (χ²=50.80, p<0.001), with 0% ignoring the feedback entirely. Users show greater concern about factual accuracy (59.5%) than emotional dependency (31.7%), but qualitative data suggest the more reflective users have identified sycophancy — not hallucination — as the primary risk.
 
 ### 7.2 Interpretation
 
-#### Comparison: Connect the findings to the literature
+#### Connections to the literature
 
-The findings validate and extend several core theories:
+The findings validate and extend three core theoretical frameworks. Suler's online disinhibition effect is confirmed: the absence of social judgment in AI interactions lowers disclosure barriers, producing engagement rates comparable to human-to-human online contexts. Clark & Chalmers' active externalism is operationalised in practice: users describing AI as a "cognitive crutch," an "interactive journal," or a tool for "reconditioning" themselves are enacting extended mind theory in naturalistic conditions. The digital therapeutic alliance literature is both confirmed and qualified: emotional bonds with AI form readily, but this study specifies that for most users, the alliance is a supplement of last resort driven by structural inaccessibility rather than preference.
 
-- **Online Disinhibition Effect (Suler):** The research confirms that the lack of judgment in AI interactions lowers social barriers, facilitating deep disclosure similar to human-to-human online interactions.
-- **The Extended Mind (Clark & Chalmers):** Users' reliance on AI for "thinking about thinking" and organizing executive functions supports the theory of **active externalism**, where the AI becomes a functional part of the user's cognitive architecture.
-- **Digital Therapeutic Alliance (DTA):** The study aligns with findings that users build emotional bonds with AI, but it specifies that for many, this alliance is a **supplement of last resort** driven by accessibility barriers (cost/waitlists) rather than a preference for machines over humans
+The H3b finding adds something the existing literature does not clearly predict: in AI-mediated contexts, schema-contradicting feedback produces accommodation rather than defensive rejection at a striking rate. The low-threat, non-judgmental interaction context appears to suppress the self-verification motive that typically resists self-concept change in human contexts. This finding positions AI-assisted self-reflection as genuinely distinct from both casual information-seeking and formal therapy — not merely a cheaper substitute, but a structurally different intervention context.
 
-#### Implications: what shift the findings describe happening in the world concerning AI usage?
+#### Implications
 
-- **From Tools to Relational Partners:** The world is shifting from seeing LLMs as "just software" or "command-line" tools to **collaborative negotiators** and "metacognitive scaffolds".
-- **Democratization of Self-Reflection:** AI provides a low-cost, low-stakes environment for "schema-contradicting" feedback, which was previously the exclusive domain of professional therapy
+Two shifts are visible in the data. First, the tool-to-relational-partner transition predicted by Nielsen's third paradigm framing is already observable in naturalistic use — qualitative language reveals relational orientation even among users whose behavioral patterns coded as instrumental, suggesting the shift is occurring faster and more broadly than behavioral measures capture. Second, AI is functioning as a partial democratiser of self-reflective practice: schema-contradicting feedback, previously accessible mainly through professional therapeutic contexts, is now available at zero cost and zero social risk to anyone with internet access. Whether this is net positive depends entirely on what the AI reflects back — which returns to the provider responsibility question below.
 
-#### How the three main Research Questions (RQ) were answered by the study's findings?
+#### How the three RQs were answered
 
-**RQ1 — Patterns and motivations of psychological AI use:** Approximately **70% of participants** use AI for psychological goals, with **56%** engaging specifically in **emotional disclosure**. While **cognitive offloading**—primarily brainstorming (61.1%) and seeking structured overviews (53.2%)—is the most prevalent usage pattern, **accessibility barriers** (38%) serve as the critical motivator for framing AI as a **therapeutic substitute**. Neurodivergent users demonstrate broader problem-domain engagement and are significantly more likely than neurotypicals to use AI to **externalize and structure self-understanding**.
+**RQ1:** Psychological AI use is widespread (70%), primarily motivated by cognitive scaffolding needs, with accessibility barriers as the critical driver of substitute framing. ND users engage across broader problem domains and skew toward self-pattern understanding — directionally consistent with the theoretical rationale even where statistical significance was not reached.
 
-**RQ2 — Epistemic trust architecture in psychological AI use:** Users employ a **nuanced trust architecture** where **structural clarity** (50%) acts as a primary acceptance heuristic, but **content-based signals** like openness to new perspectives (34.1%) remain significant. Heuristic "gut feelings" are used primarily to **reject** AI outputs, while more deliberate criteria are applied to accept them. The study identifies a robust link between trust and identity: **93.7% of users receiving dissonant feedback** reported improved self-understanding, suggesting that the low-stakes nature of AI facilitates **schema accommodation** (self-concept change) rather than defensive self-verification.
+**RQ2:** Trust architecture is more sophisticated than predicted. Structural clarity functions as a primary acceptance heuristic, but content quality and perspective novelty are meaningful secondary criteria. More importantly, heuristic processing dominates _distrust_ rather than trust — users apply gut-feeling judgment to reject outputs and more deliberate evaluation to accept them. The H3b finding adds a trust-identity link: dissonant feedback is not only accepted but processed and integrated, suggesting the low-stakes AI context facilitates a genuinely productive epistemic posture in a meaningful subset of users.
 
-**RQ3 — Risk perception vs. actual risk dynamics in psychological AI use:** Users accurately identify **misinformation and hallucinations (59.5%)** as their primary concern, yet they significantly under-report anxiety regarding **emotional dependency (31.7%)**. This discrepancy suggests that users are vigilant against detectable factual errors but may be more blind to **narrative overfitting** and **sycophancy** (agreement bias), which advanced users identified qualitatively as a more subtle and dangerous failure mode. Paradoxically, **instrumental users** exhibit higher risk awareness than **relational users**, indicating that those most integrated with AI may be the least likely to recognise the risks of dependency.
+**RQ3:** Users accurately identify the detectable risk (misinformation, 59.5%) while under-reporting the less visible one (dependency, 31.7%). The core dynamic is: factual errors feel wrong and trigger conscious skepticism; self-reinforcing narratives feel coherent and bypass it. Sophisticated users identified this independently through the sycophancy concept. Paradoxically, instrumental users showed higher dependency awareness than relational users — those most integrated with AI may be least positioned to recognise its risks.
 
-### 7.4 Risks / Alternative Interpretations
+### 7.3 Original observations
 
-Mentalisation is really hard to measure...
+#### The self-awareness ceiling and pseudo-mentalisation
+
+One descriptive pattern in the data warrants attention beyond the formal hypothesis testing. Prior self-awareness scores were strikingly high: 67.3% of respondents rated themselves 4 or 5 out of 5, with fewer than 15% rating themselves below 3. While this produced the ceiling effect that constrained H6's testability, it also raises a substantive question independent of the statistical problem.
+
+A substantial body of mentalisation research suggests that self-reported introspective accuracy is systematically inflated — individuals who believe they mentalise well frequently apply what Fonagy and colleagues term pseudo-mentalisation: the generation of plausible-sounding self-narratives that feel accurate but lack genuine reflective grounding. If this applies here, the combination of high self-reported awareness and an AI system designed to produce coherent, affirming narrative feedback creates a specific risk profile: users most confident in their self-knowledge may be least likely to interrogate AI outputs that confirm their existing self-model. This connects directly to H8's core finding — the risks users cannot detect are precisely those that feel right.
+
+#### Frontier model design and provider responsibility
+
+A structural observation the data cannot test but the findings implicate: the human-AI dynamics captured in this study are not interactions with a neutral tool. Frontier models are explicitly designed with anthropomorphic properties, engagement-maximising response patterns, and — until recent explicit corrections — strong sycophantic tendencies. The relational framing, disclosure depth, and trust patterns observed here are partly outputs of deliberate design decisions by model providers. This means the risk landscape is not simply a function of user psychology; it is co-produced by systems optimised for engagement. Any regulatory or clinical framework for psychological AI use needs to account for this — the intervention point is not only user behavior but model behavior.
+
+#### Speculative: vulnerability moderators for H3b
+
+The dissonant-feedback-to-self-change pathway identified in H3b is the study's most robust finding, but the conditions under which it becomes harmful rather than productive are outside this study's scope. Individual difference variables — trait anxiety, rumination, hypercognitive styles, and particularly psychosis-spectrum salience sensitivity — may moderate whether dissonant AI feedback produces productive accommodation or destabilising reinforcement. Emerging clinical case literature suggests AI-associated psychotic episodes in vulnerable populations warrant serious investigation. This study cannot address that question, but it is a necessary next step for any translational application of these findings.
+
+### 7.4 Risks / Alternative interpretations
+
+**Sample and selection effects.** The self-selected, ND-adjacent sample means the findings describe a digitally engaged, psychologically motivated user population — likely the most sophisticated and reflective segment of actual AI users. Effects observable here may be attenuated or absent in a general population sample, and risk patterns may be more severe in less reflective users not captured by this recruitment strategy.
+
+**Self-report validity.** The pseudo-mentalisation observation above applies recursively to the entire dataset: respondents describing their own AI use, trust patterns, and self-understanding change are doing so through the same potentially inflated self-model the study is examining. Behavioral and longitudinal measures would be necessary to validate the self-report patterns found here.
+
+**The sycophancy confound.** H3b's striking finding — 93.7% reporting improved self-understanding after dissonant feedback — assumes the feedback was genuinely dissonant and the reported change genuine. If AI systems are designed to produce responses that _feel_ dissonant while remaining fundamentally validating, the accommodation effect may be partially artifactual. This cannot be resolved without access to the actual conversation content, which the survey design did not capture.
+
+**Directionality.** Cross-sectional design cannot establish whether AI use produces the observed patterns or whether people with particular psychological profiles (higher openness, more ruminative, more self-directed) are disproportionately drawn to psychological AI use. The reflection amplification and dependency findings are consistent with both directions.
+
+### 7.5 Future research directions
+
+Four directions follow directly from the findings and their limitations:
+
+A **longitudinal design** is needed to separate selection effects from genuine AI-driven change in self-understanding, dependency, and cognitive scaffolding patterns. A **within-subject disclosure comparison** would allow H1's core claim — greater disclosure to AI than to humans in comparable contexts — to be properly tested rather than proxied. **Neurotype-stratified sampling** with adequate per-group power would allow the ND-specific patterns identified descriptively here to be tested inferentially. Finally, **conversation-level analysis** — examining actual AI interaction transcripts rather than self-report — would resolve the sycophancy confound and allow the mechanisms underlying H3b to be examined directly.
 
 ## 8. Conclusion
 
