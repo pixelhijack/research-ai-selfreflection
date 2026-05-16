@@ -2,6 +2,12 @@
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
 
+Literature review
+Research questions
+Hypotheses
+Quantitative results - Hypotheses testing
+Qualitative analysis
+
 ## 1. Abstract
 
 AI is already being used for psychological self-reflection, at scale, across demographic groups, and largely outside any clinical or regulatory framework. The question worth asking is not whether this is happening — it is — but what psychological mechanisms it activates, who uses it and how, and where its structural properties create risks that users themselves may not recognise.
@@ -199,7 +205,7 @@ Of 120 respondents (6 skipped):
 | Suspected neurodivergent            | 32                     | **~25%**   |
 | Diagnosed with some other condition | 9                      | **~7%**    |
 
-Combined suspected and diagnosed ND respondents represent 54% of the sample. This substantially exceeds clinical prevalence estimates (typically cited at 5–20%), but aligns with recent self-identification data: comparable rates of ~53% ND self-identification among Gen Z and Millennial cohorts have been reported by ZenBusiness, Deloitte (2023), and Understood.org/Harris Poll (2024). This pattern likely reflects recruitment through ND-adjacent communities and the known tendency toward higher self-identification rates in digitally engaged younger populations. True prevalence and its broader implications are outside the scope of this study; the ND variable here functions as a self-reported identity grouping for between-group comparison, not a clinical classification. ([link](https://www.understood.org/en/research-and-surveys/understood-org-genz-survey), [link](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/), [link](https://www.greaterbirminghamchambers.com/resource/what-hr-is-being-told-about-neurodiversity-is-wrong-and-it-s-costing-you.html))
+Combined suspected and diagnosed ND respondents represent 54% of the sample. This substantially exceeds clinical prevalence estimates (typically cited at 5–20%), but aligns with recent self-identification data: comparable rates of ~53% ND self-identification among Gen Z and Millennial cohorts have been reported by ZenBusiness, Deloitte (2023), and Understood.org / Harris Poll (2024). This pattern likely reflects recruitment through ND-adjacent communities and the known tendency toward higher self-identification rates in digitally engaged younger populations. True prevalence and its broader implications are outside the scope of this study; the ND variable here functions as a self-reported identity grouping for between-group comparison, not a clinical classification. 
 
 ##### Professional status distribution
 
@@ -402,6 +408,7 @@ The dissonant-feedback-to-self-change pathway identified in H3b is the study's m
 Four directions follow directly from the findings and their limitations:
 
 A **longitudinal design** is needed to separate selection effects from genuine AI-driven change in self-understanding, dependency, and cognitive scaffolding patterns. A **within-subject disclosure comparison** would allow H1's core claim — greater disclosure to AI than to humans in comparable contexts — to be properly tested rather than proxied. **Neurotype-stratified sampling** with adequate per-group power would allow the ND-specific patterns identified descriptively here to be tested inferentially. Finally, **conversation-level analysis** — examining actual AI interaction transcripts rather than self-report — would resolve the sycophancy confound and allow the mechanisms underlying H3b to be examined directly.
+
 ## 8. Conclusion
 
 This study set out to examine how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes — questions the existing literature had not addressed in naturalistic, non-clinical conditions. Despite a self-selected and non-representative sample, the findings are largely coherent, internally consistent, and directionally aligned with the theoretical frameworks they engage.
@@ -414,9 +421,62 @@ AI-assisted self-reflection is already happening, at scale, across populations. 
 
 ## 9. References
 
+Anthropic. (2025). Anthropic economic index: September 2025 report. https://www.anthropic.com/research/anthropic-economic-index-september-2025-report
+
+Anthropic. (2025). What do people really want from AI? Findings from 81,000 interviews. https://www.anthropic.com/features/81k-interviews
+
+Au Yeung, J., Dalmasso, J., Foschini, L., Dobson, R. J. B., & Kraljevic, Z. (2025). The psychogenic machine: Simulating AI psychosis, delusion reinforcement and harm enablement in large language models. arXiv. https://arxiv.org/abs/2509.10970
+
+Clark, A., & Chalmers, D. (1998). The extended mind. Analysis, 58(1), 7–19.
+
+Deloitte. (2023). Deloitte global Gen Z and millennial survey 2023. https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html
+
+Akila Kadambi, Ylenia D'Elia, Tanishka Shah, Iulia Comsa, Alison Lentz, Katie Siri-Ngammuang, Tara Buechler, Jonas Kaplan, Antonio Damasio, Srini Narayanan, Lisa Aziz-Zadeh. (2026). Anthropomorphism and trust in human-large language model interactions. arXiv. https://arxiv.org/abs/2604.15316
+
+Jingshu Li, Yitian Yang, Renwen Zhang, Q. Vera Liao, Tianqi Song, Zhengtao Xu, Yi-chieh Lee. (2024). Understanding the effects of miscalibrated AI confidence on user trust. arXiv. https://arxiv.org/abs/2402.07632
+
+Myra Cheng, Su Lin Blodgett, Alicia DeVrio, Lisa Egede, Alexandra Olteanu. (2025). Dehumanizing machines: Mitigating anthropomorphic behaviors in text generation systems. ACL Anthology, arXiv. https://arxiv.org/abs/2502.14019
+
+Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of the CASA and MASA paradigms. Human-Computer Interaction https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml
+
+Nielsen, J. (2023). AI as the third paradigm in human-computer interaction. Nielsen Norman Group. https://www.nngroup.com/articles/ai-paradigm/
+
+Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.
+
+Elizabeth Merwin, Allen C. Hagen, Joseph R. Keebler, Chad Forbes. (2026). Self-disclosure to AI: People provide personal information to AI and humans equivalently. https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently
+
+Tobias Kleinert, Marie Waldschütz, Julian Blau, Markus Heinrichs & Bastian Schiller . (2026). AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human. Communications Psychology. https://www.nature.com/articles/s44271-025-00391-7.
+
+Jingshu Li, Tianqi Song, Nattapat Boonprakong, Zicheng Zhu, Yitian Yang, Yi-Chieh Lee. (2026). AI-exhibited personality traits can shape human self-concept through conversations. arXiv. https://arxiv.org/abs/2601.12727
+
+Matan Rubin, Joanna Z Li, Federico Zimmerman, Desmond C Ong, Amit Goldenberg, Anat Perry. (2024). Comparing the value of perceived human versus AI-generated empathy. https://pubmed.ncbi.nlm.nih.gov/40588597/
+
+Ginto Chirayath, K Premamalini, Jeena Joseph. (2025). Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping. Frontiers in Psychology. https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/
+
+Jian Wang. (2026). Cognitive offloading through digital tools and its relationship with critical thinking, task persistence, and learning depth. Frontiers in Psychology. https://pubmed.ncbi.nlm.nih.gov/41909580/
+
+airi.com. (2025). The cognitive effects of AI: How LLMs are changing human thinking. https://airi.com.au/thought-leadership/f/the-cognitive-effects-of-ai-how-llms-are-changing-human-thinking
+
+Zihao Zhu, Junnan Yu, Yuhan Luo. (2026). Scaffolding metacognition with GenAI: Supporting task management for university students with ADHD. CHI Conference. https://arxiv.org/abs/2602.09381
+
+Zian Xu, Yi-Chieh Lee, Karolina Stasiak, Jim Warren, Danielle Lottridge. (2025). The digital therapeutic alliance with mental health chatbots: Diary study and thematic analysis. JMIR Mental Health. https://pubmed.ncbi.nlm.nih.gov/41072011/
+
+Heinz, M. V., et al. (2025). Randomized Trial of a Generative AI Chatbot for Mental Health Treatment. https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment
+
+Siham Mohamed, Adam Ben-Jaafar, Mabel Frimpong, Subham Roy, Vivek Sanker, Princess Afia Nkrumah-Boateng, Shahzeb Imran, Ahmed Abdul Mumeen, Suhur Mohamed, Andrew Awuah Wireko. (2025). Applying artificial intelligence in neurodevelopmental disorders management and research. https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/.
+
+Caitlin Stamatis, Jonah Meyerhoff, Richard Zhang, Olivier Tieleman, Matteo Malgaroli, Thomas Hull. (2026). Beyond simulations: What 20,000 real conversations reveal about mental health AI safety. https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/
+
+Understood.org & Harris Poll. (2024). Gen Z and neurodiversity survey. https://www.understood.org/en/research-and-surveys/understood-org-genz-survey
+
+Over Half Of Gen Z Identify As Neurodiverse. (2025). https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/
+
+Understood.org survey: Neurodiversity at work — focus on Gen Z (2024) https://www.understood.org/en/research-and-surveys/understood-org-genz-survey
+
+
 ## 10. Appendices / Associated Data
 
-### Original survey brief
+### Original questionnaire
 
 Ez az anonim kérdőív azt hivatott körüljárni, hogyan használunk mesterséges intelligenciát (AI) pszichológiai kérdésekre, mentális egészséggel kapcsolatos célokra, saját magunk megértésére, személyes dilemmák megoldására, vagy akár terápia alternatívájaként.
 
@@ -427,7 +487,7 @@ Néhány kérdés személyes tapasztalatokat érint.
 
 Becsült kitöltési idő: ~10-12 perc (23 kérdés).
 
-### Google Forms diagrams (raw data, auto-generated by Google)
+### Raw results (via Google Forms)
 
 ![gender: Milyen nemű vagy?](https://res.cloudinary.com/dg7vg50i9/image/upload/v1778302185/research/ai-onreflexio/01-gender.png "gender: Milyen nemű vagy?")
 ![age: Hány éves vagy?](https://res.cloudinary.com/dg7vg50i9/image/upload/v1778302185/research/ai-onreflexio/02-age.png "age: Hány éves vagy?")
