@@ -465,57 +465,53 @@ AI-assisted self-reflection is already happening, at scale, across populations. 
 
 ## 9. References
 
-Anthropic. (2025). Anthropic economic index: September 2025 report. https://www.anthropic.com/research/anthropic-economic-index-september-2025-report
+Anthropic. (2025). _Anthropic economic index: September 2025 report._ [https://www.anthropic.com/research/anthropic-economic-index-september-2025-report](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report)
 
-Anthropic. (2025). What do people really want from AI? Findings from 81,000 interviews. https://www.anthropic.com/features/81k-interviews
+Anthropic. (2025). _What do people really want from AI? Findings from 81,000 interviews._ [https://www.anthropic.com/features/81k-interviews](https://www.anthropic.com/features/81k-interviews)
 
-Au Yeung, J., Dalmasso, J., Foschini, L., Dobson, R. J. B., & Kraljevic, Z. (2025). The psychogenic machine: Simulating AI psychosis, delusion reinforcement and harm enablement in large language models. arXiv. https://arxiv.org/abs/2509.10970
+Au Yeung, J., Dalmasso, J., Foschini, L., Dobson, R. J. B., & Kraljevic, Z. (2025). _The psychogenic machine: Simulating AI psychosis, delusion reinforcement and harm enablement in large language models._ arXiv. [https://arxiv.org/abs/2509.10970](https://arxiv.org/abs/2509.10970)
 
-Clark, A., & Chalmers, D. (1998). The extended mind. Analysis, 58(1), 7–19.
+Cheng, M., Blodgett, S. L., DeVrio, A., Egede, L., & Olteanu, A. (2025). _Dehumanizing machines: Mitigating anthropomorphic behaviors in text generation systems._ ACL Anthology. [https://arxiv.org/abs/2502.14019](https://arxiv.org/abs/2502.14019) 
 
-Deloitte. (2023). Deloitte global Gen Z and millennial survey 2023. https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html
+Chirayath, G., Premamalini, K., & Joseph, J. (2025). _Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping._ _Frontiers in Psychology._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/) 
 
-Akila Kadambi, Ylenia D'Elia, Tanishka Shah, Iulia Comsa, Alison Lentz, Katie Siri-Ngammuang, Tara Buechler, Jonas Kaplan, Antonio Damasio, Srini Narayanan, Lisa Aziz-Zadeh. (2026). Anthropomorphism and trust in human-large language model interactions. arXiv. https://arxiv.org/abs/2604.15316
+Clark, A., & Chalmers, D. (1998). The extended mind. _Analysis, 58_(1), 7–19.
 
-Jingshu Li, Yitian Yang, Renwen Zhang, Q. Vera Liao, Tianqi Song, Zhengtao Xu, Yi-chieh Lee. (2024). Understanding the effects of miscalibrated AI confidence on user trust. arXiv. https://arxiv.org/abs/2402.07632
+Deloitte. (2023). _Deloitte global Gen Z and millennial survey 2023._ [https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html](https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html)
 
-Myra Cheng, Su Lin Blodgett, Alicia DeVrio, Lisa Egede, Alexandra Olteanu. (2025). Dehumanizing machines: Mitigating anthropomorphic behaviors in text generation systems. ACL Anthology, arXiv. https://arxiv.org/abs/2502.14019
+Forbes, Maria Ross. (2025). _Over half of Gen Z identify as neurodiverse._ [https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/) 
 
-Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of the CASA and MASA paradigms. Human-Computer Interaction https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml
+Heinz, M. V., Mackin, D., Bhattacharya S., Trudeau B. M. (2025). _Randomized trial of a generative AI chatbot for mental health treatment._ [https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment](https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment) DOI:10.1056/AIoa2400802 
 
-Nielsen, J. (2023). AI as the third paradigm in human-computer interaction. Nielsen Norman Group. https://www.nngroup.com/articles/ai-paradigm/
+Kadambi, A., D'Elia, Y., Shah, T., Comsa, I., Lentz, A., Siri-Ngammuang, K., Buechler, T., Kaplan, J., Damasio, A., Narayanan, S., & Aziz-Zadeh, L. (2026). _Anthropomorphism and trust in human-large language model interactions._ arXiv. [https://arxiv.org/abs/2604.15316](https://arxiv.org/abs/2604.15316) 
 
-Suler, J. (2004). The online disinhibition effect. CyberPsychology & Behavior, 7(3), 321–326.
+Kleinert, T., Waldschütz, M., Blau, J., Heinrichs, M., & Schiller, B. (2026). AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human. _Communications Psychology._ [https://www.nature.com/articles/s44271-025-00391-7](https://www.nature.com/articles/s44271-025-00391-7) 
 
-Elizabeth Merwin, Allen C. Hagen, Joseph R. Keebler, Chad Forbes. (2026). Self-disclosure to AI: People provide personal information to AI and humans equivalently. https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently
+Li, J., Song, T., Boonprakong, N., Zhu, Z., Yang, Y., & Lee, Y.-C. (2026). _AI-exhibited personality traits can shape human self-concept through conversations._ arXiv. [https://arxiv.org/abs/2601.12727](https://arxiv.org/abs/2601.12727) 
 
-Tobias Kleinert, Marie Waldschütz, Julian Blau, Markus Heinrichs & Bastian Schiller . (2026). AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human. Communications Psychology. https://www.nature.com/articles/s44271-025-00391-7.
+Li, J., Yang, Y., Zhang, R., Liao, Q. V., Song, T., Xu, Z., & Lee, Y.-C. (2024). _Understanding the effects of miscalibrated AI confidence on user trust._ arXiv. [https://arxiv.org/abs/2402.07632](https://arxiv.org/abs/2402.07632) ⚠️ _Same — full first names, no APA formatting._
 
-Jingshu Li, Tianqi Song, Nattapat Boonprakong, Zicheng Zhu, Yitian Yang, Yi-Chieh Lee. (2026). AI-exhibited personality traits can shape human self-concept through conversations. arXiv. https://arxiv.org/abs/2601.12727
+Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of the CASA and MASA paradigms. _Human-Computer Interaction._ [https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml](https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml) 
 
-Matan Rubin, Joanna Z Li, Federico Zimmerman, Desmond C Ong, Amit Goldenberg, Anat Perry. (2024). Comparing the value of perceived human versus AI-generated empathy. https://pubmed.ncbi.nlm.nih.gov/40588597/
+Merwin, E., Hagen, A. C., Keebler, J. R., & Forbes, C. (2026). _Self-disclosure to AI: People provide personal information to AI and humans equivalently._ [https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently](https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently) ⚠️ _Missing journal/venue name and DOI._
 
-Ginto Chirayath, K Premamalini, Jeena Joseph. (2025). Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping. Frontiers in Psychology. https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/
+Mohamed, S., Ben-Jaafar, A., Frimpong, M., Roy, S., Sanker, V., Nkrumah-Boateng, P. A., Imran, S., Abdul Mumeen, A., Mohamed, S., & Awuah Wireko, A. (2025). _Applying artificial intelligence in neurodevelopmental disorders management and research._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/)  DOI:10.1016/j.chbah.2025.100180
 
-Jian Wang. (2026). Cognitive offloading through digital tools and its relationship with critical thinking, task persistence, and learning depth. Frontiers in Psychology. https://pubmed.ncbi.nlm.nih.gov/41909580/
+Nielsen, J. (2023). _AI as the third paradigm in human-computer interaction._ Nielsen Norman Group. [https://www.nngroup.com/articles/ai-paradigm/](https://www.nngroup.com/articles/ai-paradigm/)
 
-airi.com. (2025). The cognitive effects of AI: How LLMs are changing human thinking. https://airi.com.au/thought-leadership/f/the-cognitive-effects-of-ai-how-llms-are-changing-human-thinking
+Rubin, M., Li, J. Z., Zimmerman, F., Ong, D. C., Goldenberg, A., & Perry, A. (2024). Nature Human Behviour. _Comparing the value of perceived human versus AI-generated empathy._ [https://pubmed.ncbi.nlm.nih.gov/40588597/](https://pubmed.ncbi.nlm.nih.gov/40588597/) DOI: 10.1038/s41562-025-02247-w
 
-Zihao Zhu, Junnan Yu, Yuhan Luo. (2026). Scaffolding metacognition with GenAI: Supporting task management for university students with ADHD. CHI Conference. https://arxiv.org/abs/2602.09381
+Stamatis, C., Meyerhoff, J., Zhang, R., Tieleman, O., Malgaroli, M., & Hull, T. (2026). _Beyond simulations: What 20,000 real conversations reveal about mental health AI safety._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/) 
 
-Zian Xu, Yi-Chieh Lee, Karolina Stasiak, Jim Warren, Danielle Lottridge. (2025). The digital therapeutic alliance with mental health chatbots: Diary study and thematic analysis. JMIR Mental Health. https://pubmed.ncbi.nlm.nih.gov/41072011/
+Suler, J. (2004). The online disinhibition effect. _CyberPsychology & Behavior, 7_(3), 321–326.
 
-Heinz, M. V., et al. (2025). Randomized Trial of a Generative AI Chatbot for Mental Health Treatment. https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment
+Understood.org & Harris Poll. (2024). _Gen Z and neurodiversity survey._ [https://www.understood.org/en/research-and-surveys/understood-org-genz-survey](https://www.understood.org/en/research-and-surveys/understood-org-genz-survey)
 
-Siham Mohamed, Adam Ben-Jaafar, Mabel Frimpong, Subham Roy, Vivek Sanker, Princess Afia Nkrumah-Boateng, Shahzeb Imran, Ahmed Abdul Mumeen, Suhur Mohamed, Andrew Awuah Wireko. (2025). Applying artificial intelligence in neurodevelopmental disorders management and research. https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/.
+Wang, J. (2026). _Cognitive offloading through digital tools and its relationship with critical thinking, task persistence, and learning depth._ _Frontiers in Psychology._ [https://pubmed.ncbi.nlm.nih.gov/41909580/](https://pubmed.ncbi.nlm.nih.gov/41909580/) Front Psychol. 2026 Mar 12:17:1781101. DOI: 10.3389/fpsyg.2026.1781101. eCollection 2026.
 
-Caitlin Stamatis, Jonah Meyerhoff, Richard Zhang, Olivier Tieleman, Matteo Malgaroli, Thomas Hull. (2026). Beyond simulations: What 20,000 real conversations reveal about mental health AI safety. https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/
+Xu, Z., Lee, Y.-C., Stasiak, K., Warren, J., & Lottridge, D. (2025). The digital therapeutic alliance with mental health chatbots: Diary study and thematic analysis. _JMIR Mental Health._ [https://pubmed.ncbi.nlm.nih.gov/41072011/](https://pubmed.ncbi.nlm.nih.gov/41072011/) JMIR Ment Health. 2025 Oct 10:12:e76642. DOI: 10.2196/76642.
 
-Understood.org & Harris Poll. (2024). Gen Z and neurodiversity survey. https://www.understood.org/en/research-and-surveys/understood-org-genz-survey
-
-Over Half Of Gen Z Identify As Neurodiverse. (2025). https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/
-
-Understood.org survey: Neurodiversity at work — focus on Gen Z (2024) https://www.understood.org/en/research-and-surveys/understood-org-genz-survey
+Zhu, Z., Yu, J., & Luo, Y. (2026). _Scaffolding metacognition with GenAI: Supporting task management for university students with ADHD._ Proceedings of the ACM CHI Conference on Human Factors in Computing Systems. [https://arxiv.org/abs/2602.09381](https://arxiv.org/abs/2602.09381) 
 
 ## 10. Appendices / Associated Data
 
