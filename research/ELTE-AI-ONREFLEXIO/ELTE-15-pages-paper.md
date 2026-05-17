@@ -1,4 +1,4 @@
-# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes _(WIP draft)_
+# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes _(v1.0 long)_
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
 

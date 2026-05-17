@@ -1,12 +1,6 @@
-# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes _(WIP final)_
+# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
-
-Literature review
-Research questions
-Hypotheses
-Quantitative results - Hypotheses testing
-Qualitative analysis
 
 ## 1. Abstract
 
@@ -22,7 +16,7 @@ AI-assisted self-reflection is neither a therapy substitute nor a mere productiv
 
 ### 2.1 Problem framing
 
-While the early years AI was predominantly used by technical people for professional goals, based on recent reports the trend is shifting and AI usage now started to take over for personal reasons. ([Anthropic report](https://www.anthropic.com/research/anthropic-economic-index-september-2025-report) [Tenet](https://www.wearetenet.com/blog/ai-usage-statistics)) This is a usual learning curve: after the tech-savvy early adopters, a new technology goes widespread. Anthropic in a 81 000 person sample representative global study ([Anthropic 81k study](https://www.anthropic.com/features/81k-interviews)) ([Self-disclosure to AI: People provide personal information to AI and humans equivalently](https://www.sciencedirect.com/science/article/pii/S2949882125000647#:~:text=This%20study%20examined%20how%20participants%20chose%20between,thought%20to%20be%20analyzed%20by%20an%20AI%2C)) explored what people really expects from AI. One of the leading drives was "personal transformation": mental well-being, self-discovery. Based on multiple independent studies, generative AI for companionship and therapy-substitute became the number one use case.
+While in the early years AI was predominantly used by technical people for professional goals, based on recent reports the trend is shifting and AI usage now started to take over for personal reasons. (Anthropic economic index: September 2025 report). This is a usual learning curve: after the tech-savvy early adopters, a new technology goes widespread. Anthropic in a 81 000 person sample representative global study (Anthropic, 2025) explored what people really expect from AI. One of the leading drives was "personal transformation": mental well-being, self-discovery. Based on multiple independent studies, generative AI for companionship and therapy-substitute became the number one use case.
 
 ### 2.2 Gap
 
@@ -30,7 +24,7 @@ AI adoption now divides professionals all over the world and sparks heated debat
 
 ### 2.3 Why it matters? My angle
 
-Even the most pessimist scenarios don't argue that AI is becoming a commodity in a lightning speed, just like electricity, telecommunication or the internet did. The reason why the discussions around AI are so heated and controversial is that (just as other commodities), AI could be used for several intents, thus it is a double-edged sword. Two main paradigms are emerging recently: AI as replacement for human skills (automation) versus AI as augmentation (used as a tool).
+Even the most pessimistic scenarios don't argue that AI is becoming a commodity at a lightning speed, just like electricity, telecommunication or the internet did. The reason why the discussions around AI are so heated and controversial is that (just as other commodities), AI could be used for several intents, thus it is a double-edged sword. Two main paradigms are emerging recently: AI as replacement for human skills (automation) versus AI as augmentation (used as a tool).
 
 During my exploration of the subject of AI usage, I wanted to stay away from either side of the AI-debate to avoid judgements and observe users as they are.
 
@@ -40,7 +34,7 @@ My perspective was a researcher's neutral curiosity, how AI is trusted and used 
 - neurodivergent users (as an alternative based on a distinct group, by lived experience)
 - therapists / psychology professionals (as optional extension of the dataset).
 
-The study is intentionally exploratory and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes to become visible during the data analysis and hypothesis testing.
+The study is intentionally exploratory and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes become visible during the data analysis and hypothesis testing.
 
 (For simplicity, I use usual abbreviations at some points for neurodivergents as ND, neurotypicals as NT.)
 
@@ -109,53 +103,16 @@ _Do users accurately identify the primary risks of psychological AI use, and to 
 
 ### 4.2 Hypotheses
 
-#### H1 – Self-disclosure hypothesis
-
-Individuals will report greater emotional self-disclosure toward AI than toward humans in comparable contexts.
-
-Rationale: AI comes with reduced fear of judgment, perceived anonymity and absence of social cost and provides immediate structural breakdown and feedback compared to classical human-based therapy which is expensive, harder to access and needs much slower self-reflective labour and investment.
-
-#### H2 – Neurodivergence usage emphasis hypothesis
-
-Neurodivergent individuals will report higher frequency of AI use for self-reflection and greater perceived usefulness. Neurodivergent users will also less likely to set explicit usage boundaries/rules for AI, despite reporting higher engagement.
-
-Rationale: neurodivergent individuals often face barriers to traditional therapy (cost, waitlists, communication mismatch, masking fatigue) and frequently report finding it easier to process thoughts in text. AI provides a low-judgment, always-available interface that matches common neurodivergent cognitive profiles (i.e. need for structured output, preference for asynchronous interaction).
-
-#### H3– Cognitive offloading / perspective shift hypothesis
-
-Users will describe AI as helpful with structuring thoughts, organizing emotions, perspective shifting. Neurodivergents would skew more towards structure-oriented use. Users who receive challenging or dissonant AI feedback (i.e., feedback that contradicts their self-image) are more likely to report changed self-understanding than those who only receive confirmatory feedback. H3b – as an inverse phrasing of this hypothesis: there are significant effects showing signs of narrative overfitting, confirmation bias, echo chamber, being lost in one's own bubble for certain characteristic users.
-
-Rationale: Cognitive dissonance theory and assimilation/accommodation models (Piaget, schema theory) suggest that self-concept change requires encountering contradictory information, not reinforcement.
-
-#### H4 – Therapeutic substitution hypothesis
-
-A subset of users will report using AI as therapy alternative / interim support / preparation tool for therapy.
-
-Rationale: the primary motivation for psychological AI use is accessibility, not preference - people turn to AI because professional help is unavailable or expensive, not because they perceive AI as superior. If they do prefer AI over therapy, the question is whether it is because of the potential for a direct, honest response which might consist of more direct actionable steps than a therapy or maybe because of the underlying shame (“doesn’t dare to ask the therapist”).
-
-#### H5 – AI as tool (instrumential) vs. as agent (relational) framing hypothesis
-
-Users of AI usually cluster into two profiles: 1. AI-as-tool (instrumental framing) vs 2. AI-as-agent (relational framing). These groups will differ in trust level, dependency risk and emotional reliance.
-
-Rationale: what is haven't widely discussed yet is the _role_ of AI chatbots fills in a user's life based on how / for what reason it is used. In layman's terms, AI usage can cover a wide range from being a mere tool (for developers in a data pipeline for example, or recognising plants / bird calls, asking for wifi setting support), through used as a Delphoi Oracle (asking for life advice) through used as a complete presidential consultancy team.
-
-#### H6 – Reflection amplification hypothesis
-
-Higher prior self-awareness predicts more critical (less naive) engagement with AI feedback. AI use will correlate with increased self-questioning, reframing ability, narrative coherence.
-
-Rationale: People who already have developed introspective frameworks may use AI rather as a tool and selectively integrate outputs, while people with lower baseline self-awareness may be more likely to passively accept AI responses, creating potential vulnerability.
-
-#### H7 – Heuristic trust hypothesis
-
-Trust in AI responses is primarily heuristic-based (a “gut feeling” based on structural clarity, confidence of tone) rather than content-based (accuracy, sources), across all groups.
-
-Rationale: This follows dual-process theory — users evaluate AI outputs with System 1 cues (does it look coherent, does it feel right?) rather than System 2 verification. This would replicate known patterns in how people evaluate online health information.
-
-#### H8 - Dependence hypothesis
-
-Hallucinations are more of a turn-off than dependency concern.
-
-Rationale: a descriptive hypothesis that challenges that for 2026, users become much more epistemically cautious with AI based on widespread AI fatigue and AI skepticism, however self-reinforcing confirmation bias / narrative overfitting loops create a stronge dependency and might be much more dangerous than unchecked hallucinations / invalid facts (even though model sycophancy is already recognised and flagged, see OpenAI GPT-4o scandals). This hypothesis is rahter descriptive/exploratory, falsifiability questionable.
+| #   | Hypothesis                                                                                                                                                                                                                                                                                                            | Rationale                                                                                                                                                                                                |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| H1  | Individuals report greater emotional self-disclosure toward AI than toward humans in comparable contexts.                                                                                                                                                                                                             | Reduced fear of judgment, perceived anonymity, zero social cost, and immediate feedback lower the barrier relative to professional therapy.                                                              |
+| H2  | ND individuals report higher AI use frequency, broader problem-domain engagement, and lower explicit boundary-setting despite higher engagement.                                                                                                                                                                      | ND users face compounded therapy access barriers (cost, waitlists, masking fatigue) and often prefer text-based, asynchronous, structured interaction --- a profile AI matches well.                     |
+| H3  | Users report AI as helpful for cognitive offloading; ND users skew toward structure-oriented use. Users receiving dissonant feedback report greater self-understanding change than those receiving only confirmatory feedback. Inverse: confirmation bias / narrative overfitting effects are detectable in a subset. | Cognitive dissonance theory and Piagetian accommodation models predict self-concept change requires schema-contradicting information, not reinforcement.                                                 |
+| H4  | A subset of users reports using AI as therapy alternative, interim support, or preparation tool.                                                                                                                                                                                                                      | Primary driver is accessibility, not preference --- professional help is unavailable or unaffordable. Shame as an additional barrier cannot be ruled out but is not directly testable.                   |
+| H5  | Users cluster into instrumental (AI-as-tool) vs. relational (AI-as-agent) framing profiles, differing in trust level and dependency risk.                                                                                                                                                                             | The role AI fills varies enormously by user --- from utility tool to primary sounding board --- yet this dimension is underexamined in the literature.                                                   |
+| H6  | Higher prior self-awareness predicts more critical engagement with AI feedback and greater self-regulatory boundary-setting.                                                                                                                                                                                          | Developed introspective frameworks enable selective integration of AI outputs; lower baseline awareness may increase passive acceptance and vulnerability.                                               |
+| H7  | Trust in AI responses is primarily heuristic-based (structural clarity, confident tone) rather than content-based, across all groups.                                                                                                                                                                                 | Dual-process theory predicts System 1 evaluation dominates AI output assessment, replicating known patterns in online health information consumption.                                                    |
+| H8  | Users show greater concern about hallucinations than about emotional dependency. (Descriptive/exploratory; falsifiability limited.)                                                                                                                                                                                   | Widespread AI skepticism has raised epistemic vigilance about factual errors, while dependency and narrative overfitting operate below conscious detection --- arguably the more dangerous failure mode. |
 
 ## 5. Methods
 
@@ -181,43 +138,27 @@ Beyond sampling, three limitations warrant explicit flagging:
 
 #### Preliminary: sample description
 
-##### Gender and age distribution
+| Variable              | Category                        | n   | %     |
+| --------------------- | ------------------------------- | --- | ----- |
+| **Gender** (n=123)    | Female                          | 88  | 71.5% |
+|                       | Male                            | 31  | 25.2% |
+|                       | Undisclosed                     | 4   | —     |
+| **Age**               | 18–24                           | 11  | 9%    |
+|                       | 25–34                           | 42  | 33%   |
+|                       | 35–44                           | 42  | 33%   |
+|                       | 45–54                           | 28  | 22%   |
+|                       | 55+                             | 3   | 2.3%  |
+| **ND status** (n=120) | Neurotypical                    | 42  | 33%   |
+|                       | Diagnosed neurodivergent        | 37  | 29%   |
+|                       | Suspected neurodivergent        | 32  | 25%   |
+|                       | Other diagnosed                 | 9   | 7%    |
+| **Professional**      | Mental health professional      | 8   | 6%    |
+| **AI frequency**      | Daily                           | 54  | 42%   |
+|                       | Weekly                          | 42  | 33%   |
+|                       | Occasionally or less            | 30  | 25%   |
+| **Psych AI use**      | Used AI for psychological goals | 89  | 70%   |
 
-Of 126 participants, 123 reported gender: 88 female (~71.5%), 31 male (~25.2%), 4 undisclosed. The sample skews heavily female and concentrated in the 25–44 age range, which together accounts for approximately two-thirds of participants.
-
-| Age Group       | Number of Participants | Percentage |
-| --------------- | ---------------------- | ---------- |
-| **18 - 24**     | 11                     | **~9%**    |
-| **25 - 34**     | 42                     | **~33%**   |
-| **35 - 44**     | 42                     | **~33%**   |
-| **45 - 54**     | 28                     | **~22%**   |
-| **55 - 64**     | 2                      | **~1.5%**  |
-| **65 or older** | 1                      | **~0.8%**  |
-
-##### Neurodivergence status distribution
-
-Of 120 respondents (6 skipped):
-
-| Neurodivergency Status              | Number of Participants | Percentage |
-| ----------------------------------- | ---------------------- | ---------- |
-| Neurotypical                        | 42                     | **~33%**   |
-| Diagnosed neurodivergent            | 37                     | **~29%**   |
-| Suspected neurodivergent            | 32                     | **~25%**   |
-| Diagnosed with some other condition | 9                      | **~7%**    |
-
-Combined suspected and diagnosed ND respondents represent 54% of the sample. This substantially exceeds clinical prevalence estimates (typically cited at 5–20%), but aligns with recent self-identification data: comparable rates of ~53% ND self-identification among Gen Z and Millennial cohorts have been reported by ZenBusiness, Deloitte (2023), and Understood.org / Harris Poll (2024). This pattern likely reflects recruitment through ND-adjacent communities and the known tendency toward higher self-identification rates in digitally engaged younger populations. True prevalence and its broader implications are outside the scope of this study; the ND variable here functions as a self-reported identity grouping for between-group comparison, not a clinical classification. 
-
-##### Professional status distribution
-
-8 of 126 participants (~6%) identified as mental health professionals (therapist, psychologist, coach, or social worker).
-
-##### AI usage frequency distribution
-
-54 participants (42%) admitted to use AI on a daily basis, 42 weekly (33%), 16 sometimes (12%), 5 rarely (4%), and 9 tried but almost never really using it (7%).
-
-##### Psychological AI use distribution
-
-The question "Have you ever used AI for psychological purposes — discussing personal matters, understanding your internal patterns, social situations, or as a therapy substitute?" served as a branching filter: 89 participants (70%) answered yes and continued; 37 exited early. Of the 89 who reported psychological AI use, 66 (~74%) were women.
+The sample skews female and toward the 25–44 age range (66% combined). Combined suspected and diagnosed ND respondents represent 54% of the sample — substantially exceeding clinical prevalence estimates (5–20%) but consistent with comparable self-identification rates reported in recent Gen Z and Millennial cohorts (Deloitte, 2023; Understood.org/Harris Poll, 2024), and attributable to recruitment through ND-adjacent communities. The ND variable functions as a self-reported identity grouping for between-group comparison, not a clinical classification.
 
 #### Hypothesis testing — H1
 
@@ -230,8 +171,6 @@ H1 predicted greater emotional self-disclosure toward AI than toward humans. No 
 These patterns are directionally consistent with H1 — AI is being used for emotional disclosure, and access barriers are a contributing factor — but the absence of a within-subject human-disclosure comparison means the core claim (greater disclosure to AI _than_ to humans) cannot be confirmed from this data. H1 is **partially supported** as a directional finding.
 
 #### Hypothesis testing — H2
-
-##### Hypothesis Testing — H2
 
 H2 predicted higher AI use frequency, higher psychological AI use rates, broader problem-domain engagement, and lower explicit self-regulatory boundary-setting among ND respondents compared to neurotypicals.
 
@@ -287,7 +226,7 @@ Both findings run counter to the intuitive prediction. A plausible interpretatio
 
 #### Hypothesis testing — H6
 
-H6 predicted that higher prior self-awareness would associate with more critical AI engagement, greater boundary-setting, and more nuanced self-understanding change — a reflection amplification effect.
+H6 predicted that higher prior self-awareness would be associated with more critical AI engagement, greater boundary-setting, and more nuanced self-understanding change — a reflection amplification effect.
 
 **None of the three tested associations reached significance.** Spearman correlation between prior self-awareness and self-understanding change yielded ρ=-0.135 (p=ns) — a weak negative trend suggesting marginal association with _less_ reported change, consistent with a ceiling interpretation. Correlation between prior self-awareness and critical engagement in the dissonant-feedback subgroup (n=32) yielded ρ=0.039 (p=ns), effectively zero. Chi-square analysis of awareness group against rule-setting showed a directionally consistent pattern (high-awareness: 22.2% set rules vs. low-awareness: 7.1%) but did not approach significance (χ²=3.04, df=2, p=ns), with two small expected cells.
 
@@ -319,7 +258,7 @@ H8 predicted greater user concern about AI misinformation and hallucinations tha
 
 Qualitative analysis of free-text responses (n=76 coded entries, 30 open narratives) corroborated, nuanced, and in one case extended the quantitative findings.
 
-The most frequent tag was _partner_ (n=21), substantially exceeding its quantitative counterpart. While H5's behavioral operationalization classified 23.0% of respondents as relationally-framed, qualitative language suggests relational orientation is considerably more widespread — users describe AI in partnership terms even when their behavioral patterns coded as instrumental. Relational AI engagement is likely better captured through language than behavioral proxies; H5 probably underestimates its prevalence.
+The most frequent tag was _partner_ (n=21), substantially exceeding its quantitative counterpart. While H5's behavioral operationalization classified 23.0% of respondents as relationally-framed, qualitative language suggests relational orientation is considerably more widespread — users describe AI in partnership terms even when their behavioral patterns are coded as instrumental. Relational AI engagement is likely better captured through language than behavioral proxies; H5 probably underestimates its prevalence.
 
 A high-risk subgroup emerged among respondents rating AI as better than or equal to therapy (n=8), showing the highest co-occurrence of _partner_ (87.5%), _dependence_ (75.0%), and _emotional engagement_ (50.0%).
 
@@ -367,15 +306,15 @@ The H3b finding adds something the existing literature does not clearly predict:
 
 #### Implications
 
-Two shifts are visible in the data. First, the tool-to-relational-partner transition predicted by Nielsen's third paradigm framing is already observable in naturalistic use — qualitative language reveals relational orientation even among users whose behavioral patterns coded as instrumental, suggesting the shift is occurring faster and more broadly than behavioral measures capture. Second, AI is functioning as a partial democratiser of self-reflective practice: schema-contradicting feedback, previously accessible mainly through professional therapeutic contexts, is now available at zero cost and zero social risk to anyone with internet access. Whether this is net positive depends entirely on what the AI reflects back — which returns to the provider responsibility question below.
+Two shifts are visible in the data. First, the tool-to-relational-partner transition predicted by Nielsen's third paradigm framing is already observable in naturalistic use — qualitative language reveals relational orientation even among users whose behavioral patterns are coded as instrumental, suggesting the shift is occurring faster and more broadly than behavioral measures capture. Second, AI is functioning as a partial democratiser of self-reflective practice: schema-contradicting feedback, previously accessible mainly through professional therapeutic contexts, is now available at zero cost and zero social risk to anyone with internet access. Whether this is net positive depends entirely on what the AI reflects back — which returns to the provider responsibility question below.
 
 #### How the three RQs were answered
 
-**RQ1:** Psychological AI use is widespread (70%), primarily motivated by cognitive scaffolding needs, with accessibility barriers as the critical driver of substitute framing. ND users engage across broader problem domains and skew toward self-pattern understanding — directionally consistent with the theoretical rationale even where statistical significance was not reached.
+**RQ1:** Psychological AI use is widespread (70%) and primarily scaffolding-driven. Accessibility barriers are the critical driver of substitute framing. ND users show broader problem-domain engagement and a self-pattern understanding skew — directionally consistent with the theoretical rationale.
 
-**RQ2:** Trust architecture is more sophisticated than predicted. Structural clarity functions as a primary acceptance heuristic, but content quality and perspective novelty are meaningful secondary criteria. More importantly, heuristic processing dominates _distrust_ rather than trust — users apply gut-feeling judgment to reject outputs and more deliberate evaluation to accept them. The H3b finding adds a trust-identity link: dissonant feedback is not only accepted but processed and integrated, suggesting the low-stakes AI context facilitates a genuinely productive epistemic posture in a meaningful subset of users.
+**RQ2:** Trust architecture is more sophisticated than H7 predicted — structural clarity dominates acceptance, but perspective novelty is a meaningful secondary criterion. Crucially, heuristic processing dominates _distrust_ rather than trust. H3b adds a trust-identity link: dissonant feedback is processed and integrated rather than rejected, suggesting AI's low-stakes context enables genuine epistemic openness in a meaningful user subset.
 
-**RQ3:** Users accurately identify the detectable risk (misinformation, 59.5%) while under-reporting the less visible one (dependency, 31.7%). The core dynamic is: factual errors feel wrong and trigger conscious skepticism; self-reinforcing narratives feel coherent and bypass it. Sophisticated users identified this independently through the sycophancy concept. Paradoxically, instrumental users showed higher dependency awareness than relational users — those most integrated with AI may be least positioned to recognise its risks.
+**RQ3:** Users identify the detectable risk (misinformation, 59.5%) while under-reporting the less visible one (dependency, 31.7%). Factual errors feel wrong; self-reinforcing narratives feel coherent — and bypass scrutiny. The most reflective users named sycophancy independently as the primary risk. Paradoxically, instrumental users showed higher dependency awareness than relational users: those most integrated with AI may be least positioned to recognise its risks.
 
 ### 7.3 Original observations
 
@@ -427,37 +366,37 @@ Anthropic. (2025). _What do people really want from AI? Findings from 81,000 int
 
 Au Yeung, J., Dalmasso, J., Foschini, L., Dobson, R. J. B., & Kraljevic, Z. (2025). _The psychogenic machine: Simulating AI psychosis, delusion reinforcement and harm enablement in large language models._ arXiv. [https://arxiv.org/abs/2509.10970](https://arxiv.org/abs/2509.10970)
 
-Cheng, M., Blodgett, S. L., DeVrio, A., Egede, L., & Olteanu, A. (2025). _Dehumanizing machines: Mitigating anthropomorphic behaviors in text generation systems._ ACL Anthology. [https://arxiv.org/abs/2502.14019](https://arxiv.org/abs/2502.14019) 
+Cheng, M., Blodgett, S. L., DeVrio, A., Egede, L., & Olteanu, A. (2025). _Dehumanizing machines: Mitigating anthropomorphic behaviors in text generation systems._ ACL Anthology. [https://arxiv.org/abs/2502.14019](https://arxiv.org/abs/2502.14019)
 
-Chirayath, G., Premamalini, K., & Joseph, J. (2025). _Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping._ _Frontiers in Psychology._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/) 
+Chirayath, G., Premamalini, K., & Joseph, J. (2025). _Cognitive offloading or cognitive overload? How AI alters the mental architecture of coping._ _Frontiers in Psychology._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12678390/)
 
 Clark, A., & Chalmers, D. (1998). The extended mind. _Analysis, 58_(1), 7–19.
 
 Deloitte. (2023). _Deloitte global Gen Z and millennial survey 2023._ [https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html](https://www.deloitte.com/global/en/issues/work/content/genzmillennialsurvey.html)
 
-Forbes, Maria Ross. (2025). _Over half of Gen Z identify as neurodiverse._ [https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/) 
+Forbes, Maria Ross. (2025). _Over half of Gen Z identify as neurodiverse._ [https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/](https://www.forbes.com/sites/mariaross/2025/09/24/over-half-of-gen-z-identify-as-neurodiverse/)
 
-Heinz, M. V., Mackin, D., Bhattacharya S., Trudeau B. M. (2025). _Randomized trial of a generative AI chatbot for mental health treatment._ [https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment](https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment) DOI:10.1056/AIoa2400802 
+Heinz, M. V., Mackin, D., Bhattacharya S., Trudeau B. M. (2025). _Randomized trial of a generative AI chatbot for mental health treatment._ [https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment](https://www.researchgate.net/publication/390241747_Randomized_Trial_of_a_Generative_AI_Chatbot_for_Mental_Health_Treatment) DOI:10.1056/AIoa2400802
 
-Kadambi, A., D'Elia, Y., Shah, T., Comsa, I., Lentz, A., Siri-Ngammuang, K., Buechler, T., Kaplan, J., Damasio, A., Narayanan, S., & Aziz-Zadeh, L. (2026). _Anthropomorphism and trust in human-large language model interactions._ arXiv. [https://arxiv.org/abs/2604.15316](https://arxiv.org/abs/2604.15316) 
+Kadambi, A., D'Elia, Y., Shah, T., Comsa, I., Lentz, A., Siri-Ngammuang, K., Buechler, T., Kaplan, J., Damasio, A., Narayanan, S., & Aziz-Zadeh, L. (2026). _Anthropomorphism and trust in human-large language model interactions._ arXiv. [https://arxiv.org/abs/2604.15316](https://arxiv.org/abs/2604.15316)
 
-Kleinert, T., Waldschütz, M., Blau, J., Heinrichs, M., & Schiller, B. (2026). AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human. _Communications Psychology._ [https://www.nature.com/articles/s44271-025-00391-7](https://www.nature.com/articles/s44271-025-00391-7) 
+Kleinert, T., Waldschütz, M., Blau, J., Heinrichs, M., & Schiller, B. (2026). AI outperforms humans in establishing interpersonal closeness in emotionally engaging interactions, but only when labelled as human. _Communications Psychology._ [https://www.nature.com/articles/s44271-025-00391-7](https://www.nature.com/articles/s44271-025-00391-7)
 
-Li, J., Song, T., Boonprakong, N., Zhu, Z., Yang, Y., & Lee, Y.-C. (2026). _AI-exhibited personality traits can shape human self-concept through conversations._ arXiv. [https://arxiv.org/abs/2601.12727](https://arxiv.org/abs/2601.12727) 
+Li, J., Song, T., Boonprakong, N., Zhu, Z., Yang, Y., & Lee, Y.-C. (2026). _AI-exhibited personality traits can shape human self-concept through conversations._ arXiv. [https://arxiv.org/abs/2601.12727](https://arxiv.org/abs/2601.12727)
 
-Li, J., Yang, Y., Zhang, R., Liao, Q. V., Song, T., Xu, Z., & Lee, Y.-C. (2024). _Understanding the effects of miscalibrated AI confidence on user trust._ arXiv. [https://arxiv.org/abs/2402.07632](https://arxiv.org/abs/2402.07632) ⚠️ _Same — full first names, no APA formatting._
+Li, J., Yang, Y., Zhang, R., Liao, Q. V., Song, T., Xu, Z., & Lee, Y.-C. (2024). _Understanding the effects of miscalibrated AI confidence on user trust._ arXiv. [https://arxiv.org/abs/2402.07632](https://arxiv.org/abs/2402.07632) 
 
-Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of the CASA and MASA paradigms. _Human-Computer Interaction._ [https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml](https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml) 
+Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of the CASA and MASA paradigms. _Human-Computer Interaction._ [https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml](https://www.elgaronline.com/edcollchap/book/9781803920306/book-part-9781803920306-31.xml)
 
-Merwin, E., Hagen, A. C., Keebler, J. R., & Forbes, C. (2026). _Self-disclosure to AI: People provide personal information to AI and humans equivalently._ [https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently](https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently) ⚠️ _Missing journal/venue name and DOI._
+Merwin, E., Hagen, A. C., Keebler, J. R., & Forbes, C. (2026). _Self-disclosure to AI: People provide personal information to AI and humans equivalently._ [https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently](https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently) 
 
-Mohamed, S., Ben-Jaafar, A., Frimpong, M., Roy, S., Sanker, V., Nkrumah-Boateng, P. A., Imran, S., Abdul Mumeen, A., Mohamed, S., & Awuah Wireko, A. (2025). _Applying artificial intelligence in neurodevelopmental disorders management and research._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/)  DOI:10.1016/j.chbah.2025.100180
+Mohamed, S., Ben-Jaafar, A., Frimpong, M., Roy, S., Sanker, V., Nkrumah-Boateng, P. A., Imran, S., Abdul Mumeen, A., Mohamed, S., & Awuah Wireko, A. (2025). _Applying artificial intelligence in neurodevelopmental disorders management and research._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/) DOI:10.1016/j.chbah.2025.100180
 
 Nielsen, J. (2023). _AI as the third paradigm in human-computer interaction._ Nielsen Norman Group. [https://www.nngroup.com/articles/ai-paradigm/](https://www.nngroup.com/articles/ai-paradigm/)
 
 Rubin, M., Li, J. Z., Zimmerman, F., Ong, D. C., Goldenberg, A., & Perry, A. (2024). Nature Human Behviour. _Comparing the value of perceived human versus AI-generated empathy._ [https://pubmed.ncbi.nlm.nih.gov/40588597/](https://pubmed.ncbi.nlm.nih.gov/40588597/) DOI: 10.1038/s41562-025-02247-w
 
-Stamatis, C., Meyerhoff, J., Zhang, R., Tieleman, O., Malgaroli, M., & Hull, T. (2026). _Beyond simulations: What 20,000 real conversations reveal about mental health AI safety._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/) 
+Stamatis, C., Meyerhoff, J., Zhang, R., Tieleman, O., Malgaroli, M., & Hull, T. (2026). _Beyond simulations: What 20,000 real conversations reveal about mental health AI safety._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12869570/)
 
 Suler, J. (2004). The online disinhibition effect. _CyberPsychology & Behavior, 7_(3), 321–326.
 
@@ -467,8 +406,7 @@ Wang, J. (2026). _Cognitive offloading through digital tools and its relationshi
 
 Xu, Z., Lee, Y.-C., Stasiak, K., Warren, J., & Lottridge, D. (2025). The digital therapeutic alliance with mental health chatbots: Diary study and thematic analysis. _JMIR Mental Health._ [https://pubmed.ncbi.nlm.nih.gov/41072011/](https://pubmed.ncbi.nlm.nih.gov/41072011/) JMIR Ment Health. 2025 Oct 10:12:e76642. DOI: 10.2196/76642.
 
-Zhu, Z., Yu, J., & Luo, Y. (2026). _Scaffolding metacognition with GenAI: Supporting task management for university students with ADHD._ Proceedings of the ACM CHI Conference on Human Factors in Computing Systems. [https://arxiv.org/abs/2602.09381](https://arxiv.org/abs/2602.09381) 
-
+Zhu, Z., Yu, J., & Luo, Y. (2026). _Scaffolding metacognition with GenAI: Supporting task management for university students with ADHD._ Proceedings of the ACM CHI Conference on Human Factors in Computing Systems. [https://arxiv.org/abs/2602.09381](https://arxiv.org/abs/2602.09381)
 
 ## 10. Appendices / Associated Data
 
