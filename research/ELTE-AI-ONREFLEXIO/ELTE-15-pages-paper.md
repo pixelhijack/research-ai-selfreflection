@@ -10,7 +10,7 @@ This mixed-methods cross-sectional study (n=126, Hungarian-speaking, self-select
 
 The risk picture is more complex than public discourse suggests. Users show strong epistemic vigilance about hallucination and factual error, but the data suggest the operative risks are less visible: sycophancy, narrative overfitting, and dependency dynamics that feel coherent rather than wrong. Paradoxically, the users most integrated with AI showed the least awareness of dependency risk — and self-reported mentalisation scores clustered so high as to raise questions about whether confident self-knowledge protects against or amplifies AI-mediated narrative reinforcement.
 
-AI-assisted self-reflection is neither a therapy substitute nor a mere productivity tool. It occupies a structurally distinct space — more accessible than therapy, more psychologically active than search, and more shaped by deliberate provider design choices than most users recognise. Understanding that space rigorously is a prerequisite for navigating it wisely.
+AI-assisted self-reflection is neither a therapy substitute nor a mere productivity tool. It occupies a structurally distinct space — more accessible than therapy, more psychologically active than search, and more shaped by deliberate provider design choices than most users recognise. Understanding this space rigorously — its mechanisms, its population-level variation, and its failure modes — is a prerequisite for both ethical deployment and effective regulation. The alternative, treating AI psychological use as either categorically beneficial or categorically dangerous, forecloses the empirical questions before they are asked.
 
 ## 2. Introduction
 
@@ -515,7 +515,9 @@ Zhu, Z., Yu, J., & Luo, Y. (2026). _Scaffolding metacognition with GenAI: Suppor
 
 ## 10. Appendices / Associated Data
 
-### Original survey brief
+### Original questionnaire
+
+#### _AI és önreflexió:_ Használtál már mesterséges intelligenciát saját magad megértésére, vagy személyes kérdésekre tanácsért?
 
 Ez az anonim kérdőív azt hivatott körüljárni, hogyan használunk mesterséges intelligenciát (AI) pszichológiai kérdésekre, mentális egészséggel kapcsolatos célokra, saját magunk megértésére, személyes dilemmák megoldására, vagy akár terápia alternatívájaként.
 
