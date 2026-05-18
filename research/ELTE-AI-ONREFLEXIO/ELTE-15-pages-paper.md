@@ -230,6 +230,7 @@ The sum of suspected and diagnosed neurodivergents are 54%, and while real diagn
 
 As a split variable, question "Have you ever used AI in psychology area, discussing your personal things, your internal workflows, social situations, or as a therapist?" which early terminated the questionnaire if answered "no", resulted in 89 participants, 70% of the total, out of which is 66 participants, so ~74% of those who used AI for psychological goals are women.
 
+*Due to length constraints, see answers for the survey questions in the Appendix, raw data section.*
 #### Hypothesis testing — H1
 
 56% of respondents used AI for emotional disclosure purposes. This rate was higher among diagnosed ND respondents (59%) than neurotypicals (52%), and higher among non-professionals than professionals (56.77% vs 50%). Accessibility barriers (not enough time / option to seek professional psychologist) were cited by 38% of all respondents. These patterns are consistent with H1's prediction that AI serves as a low-barrier alternative for emotional disclosure, though no direct comparison to human-disclosure contexts was available in this dataset.
