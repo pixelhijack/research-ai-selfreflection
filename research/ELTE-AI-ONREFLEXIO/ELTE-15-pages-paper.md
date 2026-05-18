@@ -1,4 +1,4 @@
-# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes _(v1.0 long)_
+# AI for self-reflection: a snowball sampling study of self-directed psychological use across neurotypes _(v1.0 long)_
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
 
@@ -6,7 +6,7 @@
 
 AI is already being used for psychological self-reflection, at scale, across demographic groups, and largely outside any clinical or regulatory framework. The question worth asking is not whether this is happening — it is — but what psychological mechanisms it activates, who uses it and how, and where its structural properties create risks that users themselves may not recognise.
 
-This mixed-methods cross-sectional study (n=126, Hungarian-speaking, self-selected) examined patterns of self-directed psychological AI use across neurotypes, combining quantitative hypothesis testing with qualitative free-text analysis. Seventy percent of participants reported using AI for psychological purposes; 56% engaged in emotional disclosure. The strongest finding — and the most theoretically significant — was that 93.7% of users who received dissonant AI feedback reported improved self-understanding, with zero ignoring it entirely, suggesting that the low-threat, non-judgmental interaction context facilitates genuine schema accommodation rather than defensive self-verification. Neurodivergent users demonstrated broader problem-domain engagement and a stronger skew toward self-pattern understanding, consistent with AI functioning as a cognitive scaffold for populations with limited access to traditional support. Therapeutic substitute framing was a minority pattern (12.5%), but concentrated among access-constrained users at a 4.3× higher rate — positioning AI less as a therapy replacement and more as a supplement of last resort.
+This snowball sampling cross-sectional study (n=126, Hungarian-speaking, self-selected) examined patterns of self-directed psychological AI use across neurotypes, combining quantitative hypothesis testing with qualitative free-text analysis. Seventy percent of participants reported using AI for psychological purposes; 56% engaged in emotional disclosure. The strongest finding — and the most theoretically significant — was that 93.7% of users who received dissonant AI feedback reported improved self-understanding, with zero ignoring it entirely, suggesting that the low-threat, non-judgmental interaction context facilitates genuine schema accommodation rather than defensive self-verification. Neurodivergent users demonstrated broader problem-domain engagement and a stronger skew toward self-pattern understanding, consistent with AI functioning as a cognitive scaffold for populations with limited access to traditional support. Therapeutic substitute framing was a minority pattern (12.5%), but concentrated among access-constrained users at a 4.3× higher rate — positioning AI less as a therapy replacement and more as a supplement of last resort.
 
 The risk picture is more complex than public discourse suggests. Users show strong epistemic vigilance about hallucination and factual error, but the data suggest the operative risks are less visible: sycophancy, narrative overfitting, and dependency dynamics that feel coherent rather than wrong. Paradoxically, the users most integrated with AI showed the least awareness of dependency risk — and self-reported mentalisation scores clustered so high as to raise questions about whether confident self-knowledge protects against or amplifies AI-mediated narrative reinforcement.
 
@@ -34,17 +34,9 @@ My perspective was a researcher's neutral curiosity, how AI is trusted and used 
 - neurodivergent users (as an alternative based on a distinct group, by lived experience)
 - therapists / psychology professionals (as optional extension of the dataset).
 
-The study is intentionally exploratory and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes to become visible during the data analysis and hypothesis testing.
+The study is intentionally exploratory in parts and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes to become visible during the data analysis and hypothesis testing.
 
 (For simplicity, I use usual abbreviations at some points for neurodivergents as ND, neurotypicals as NT.)
-
-### 2.4 Main research question
-
-As a starting point, this mixed-method study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3) later, after the literature review and identifying the research gap this study meant to cover.
-
-### 2.5 AI disclaimer
-
-To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the whole research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting; also, provide structure and guide me through to keep the study methodically valid. Frontier LLMs (Claude, Gemini, ChatGPT, Gemma) were used in survey design, literature review, hypothesis testing and synthesising the findings, progressing back and forth with the AI assistance on a line-by-line granular level. Qualitative and quantitative data processing is linked in the Appendices section.
 ## 3. Theoretical Background / Literature Review
 
 For the ease of overview on the topics AI usage for self-reflection covers, four main areas were identified for this study: human-AI interactions, self-disclosure online, cognitive offloading & the extended mind and mental health tools. Each will be discussed and summarised how they overarch the main research questions and the existing research gap.
@@ -107,6 +99,7 @@ All our four pillars of the literature show some common gaps in coverage: they a
 
 ## 4. Research questions & hypotheses
 
+As a starting point, this snowball sampling study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3).
 ### 4.1 Research questions
 
 **RQ1 — Patterns and motivations of psychological AI use**
@@ -172,7 +165,7 @@ Rationale: a descriptive hypothesis that challenges that for 2026, users become 
 
 ### 5.1 Design, participants, materials, procedure
 
-Because of the many-direction branching rich nature of the questions arised during the design of this research, it is used a mixed-method approach on a cross-sectional survey. The survey was anonymous (with optional email address field for expressing interest in potentional follow-ups), consisted of 23 questions.
+Because of the many-direction branching rich nature of the questions arised during the design of this research, it is used a snowball sampling approach on a cross-sectional survey. The survey was anonymous (with optional email address field for expressing interest in potentional follow-ups), consisted of 23 questions.
 
 The sample is not representative for the general population, it was self-selected, Hungarian-speaking, digitally engaged, likely over-representing neurodivergents. The survey is meant for showcase purposes only and should be repeated on better-fit sample for more structured and nuanced results. It was posted on multiple channels to gather data: personal Facebook wall, various Facebook groups (Adult A(u)DHD, Neurodivergency groups, AI technical news group), and Hungarian subreddit forums (r/psychology) and resulted in 126 participants filling in it during a 2 weeks period.
 
@@ -184,6 +177,9 @@ The sample is not representative for the general population, it was self-selecte
 - Lack of clinical validation: as the author has no former clinical / psychological / methodology certification but came from a technical background, the findings were not validated within a professional context.
 - Personal attitudes towards LLMs and the whole topic is highly time-sensitive and potentially become outdated extremely quick and potentially age badly as the AI world is shifting in a lightning speed. Any results tracked within this study is a direct reflection of a period while it was conducted and processed (February-May 2026) and subject of changes.
 
+### 5.3 AI disclaimer
+
+To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting. LLMs (Claude, Gemini, ChatGPT, Ollama Gemma) were used in literature review and hypothesis testing pipeline implementation. 
 ## 6. Data analysis & results
 
 ### 6.1 Quantitative results

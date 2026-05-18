@@ -1,4 +1,4 @@
-# AI for self-reflection: a mixed-methods study of self-directed psychological use across neurotypes
+# AI for self-reflection: snowball sampling study of self-directed psychological use across neurotypes
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
 
@@ -6,7 +6,7 @@
 
 AI is already being used for psychological self-reflection, at scale, across demographic groups, and largely outside any clinical or regulatory framework. The question worth asking is not whether this is happening — it is — but what psychological mechanisms it activates, who uses it and how, and where its structural properties create risks that users themselves may not recognise.
 
-This mixed-methods cross-sectional study (n=126, Hungarian-speaking, self-selected) examined patterns of self-directed psychological AI use across neurotypes, combining quantitative hypothesis testing with qualitative free-text analysis. Seventy percent of participants reported using AI for psychological purposes; 56% engaged in emotional disclosure. The strongest finding — and the most theoretically significant — was that 93.7% of users who received dissonant AI feedback reported improved self-understanding, with zero ignoring it entirely, suggesting that the low-threat, non-judgmental interaction context facilitates genuine schema accommodation rather than defensive self-verification. Neurodivergent users demonstrated broader problem-domain engagement and a stronger skew toward self-pattern understanding, consistent with AI functioning as a cognitive scaffold for populations with limited access to traditional support. Therapeutic substitute framing was a minority pattern (12.5%), but concentrated among access-constrained users at a 4.3× higher rate — positioning AI less as a therapy replacement and more as a supplement of last resort.
+This snowball sampling cross-sectional study (n=126, Hungarian-speaking, self-selected) examined patterns of self-directed psychological AI use across neurotypes, combining quantitative hypothesis testing with qualitative free-text analysis. Seventy percent of participants reported using AI for psychological purposes; 56% engaged in emotional disclosure. The strongest finding — and the most theoretically significant — was that 93.7% of users who received dissonant AI feedback reported improved self-understanding, with zero ignoring it entirely, suggesting that the low-threat, non-judgmental interaction context facilitates genuine schema accommodation rather than defensive self-verification. Neurodivergent users demonstrated broader problem-domain engagement and a stronger skew toward self-pattern understanding, consistent with AI functioning as a cognitive scaffold for populations with limited access to traditional support. Therapeutic substitute framing was a minority pattern (12.5%), but concentrated among access-constrained users at a 4.3× higher rate — positioning AI less as a therapy replacement and more as a supplement of last resort.
 
 The risk picture is more complex than public discourse suggests. Users show strong epistemic vigilance about hallucination and factual error, but the data suggest the operative risks are less visible: sycophancy, narrative overfitting, and dependency dynamics that feel coherent rather than wrong. Paradoxically, the users most integrated with AI showed the least awareness of dependency risk — and self-reported mentalisation scores clustered so high as to raise questions about whether confident self-knowledge protects against or amplifies AI-mediated narrative reinforcement.
 
@@ -34,27 +34,19 @@ My perspective was a researcher's neutral curiosity, how AI is trusted and used 
 - neurodivergent users (as an alternative based on a distinct group, by lived experience)
 - therapists / psychology professionals (as optional extension of the dataset).
 
-The study is intentionally exploratory and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes become visible during the data analysis and hypothesis testing.
+The study is intentionally exploratory in parts and multi-perspective: epistemic level was pre-committed, but I wanted to leave sub-group comparison and how prominent attitudes / themes become visible during the data analysis and hypothesis testing.
 
 (For simplicity, I use usual abbreviations at some points for neurodivergents as ND, neurotypicals as NT.)
-
-### 2.4 Main research question
-
-As a starting point, this mixed-method study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3) later, after the literature review and identifying the research gap this study meant to cover.
-
-### 2.5 AI disclaimer
-
-To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the whole research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting; also, provide structure and guide me through to keep the study methodically valid. Frontier LLMs (Claude, Gemini, ChatGPT, Gemma) were used in survey design, literature review, hypothesis testing and synthesising the findings, progressing back and forth with the AI assistance on a line-by-line granular level. Qualitative and quantitative data processing is linked in the Appendices section.
 
 ## 3\. Theoretical Background / Literature Review
 
 Four interconnected areas frame this study's research questions: human-AI interaction, self-disclosure online, cognitive offloading, and digital mental health tools. Each is summarised in terms of its direct relevance to the hypotheses and the gap this study addresses.
 
-### 3.1 Human--AI Interaction (HAI)
+### 3.1 Human-AI Interaction (HAI)
 
 Human-AI Interaction studies how people perceive, anthropomorphise and emotionally respond to AI systems. A human-AI interaction is not merely software use --- it is a social event where linguistic cues (warmth, empathy, first-person language) activate the brain's social circuitry.
 
-The classical framework is the **Computers Are Social Actors (CASA)** model, which explains why humans apply social norms to machines even when aware they are machines. Lombard & Xu's (2021) **Media Are Social Actors (MASA)** extension generalises this across modern technologies including social robots and smartphones.$^1$ Nielsen (2023) argues LLMs constitute a "Third Paradigm," where the interface shifts from a tool you command to a collaborator you negotiate with. A large-scale study (2,000+ interactions) found that when AI displays cognitive empathy --- explaining _why_ it understands the user --- users shift from tool-framing to relational-partner framing, meaningfully lowering disclosure barriers (arXiv:2604.15316, 2026). Critically, users in vulnerable states struggle to detect AI overconfidence, leading to over-trust and reduced verification behaviour (arXiv:2402.07632, 2024/2025). Even minimal linguistic cues such as first-person pronouns trigger social cognition pathways and increase disclosure (ACL Anthology, 2025).$^2$
+The classical framework is the **Computers Are Social Actors (CASA)** model, which explains why humans apply social norms to machines even when aware they are machines (Computer are social actors, Clifford Nass and Byron Reeves, 1994). Lombard & Xu's (2021) **Media Are Social Actors (MASA)** extension generalises this across modern technologies including social robots and smartphones. Nielsen (2023) argues LLMs constitute a "Third Paradigm," where the interface shifts from a tool you command to a collaborator you negotiate with. A large-scale study (2,000+ interactions) found that when AI displays cognitive empathy --- explaining _why_ it understands the user --- users shift from tool-framing to relational-partner framing, meaningfully lowering disclosure barriers (arXiv:2604.15316, 2026). Critically, users in vulnerable states struggle to detect AI overconfidence, leading to over-trust and reduced verification behaviour (arXiv:2402.07632, 2024/2025). Even minimal linguistic cues such as first-person pronouns trigger social cognition pathways and increase disclosure (ACL Anthology, 2025).
 
 ---
 
@@ -62,7 +54,7 @@ The classical framework is the **Computers Are Social Actors (CASA)** model, whi
 
 Human social cognition is built on reciprocity: even an artificial actor "opening up" creates psychological comfort for the human to mirror it. The key question for this study is whether AI lowers or merely redirects disclosure barriers.
 
-Suler's (2004) foundational **online disinhibition effect** establishes that individuals act more openly online than in person, lowering social barriers in both prosocial and antisocial directions. A 2026 study found that people disclose personal information to AI and human researchers at equivalent rates --- the barrier is not the medium but the perceived absence of judgment (ResearchGate, April 2026). An experimental study found AI outperformed humans in creating feelings of closeness during deep-talk sessions, because AI provides consistent emotional disclosure without the social risk humans carry --- a dynamic particularly salient for neurodivergent users experiencing rejection-sensitive dysphoria (Communications Psychology, Feb 2026). Notably, an "anti-AI bias" exists where users rate AI-generated empathy lower when they know the source, but this bias diminishes with extended use (PubMed/Nature, 2024).$^3$
+Suler's (2004) foundational **online disinhibition effect** establishes that individuals act more openly online than in person, lowering social barriers in both prosocial and antisocial directions. A 2026 study found that people disclose personal information to AI and human researchers at equivalent rates - the barrier is not the medium but the perceived absence of judgment (ResearchGate, April 2026). An experimental study found AI outperformed humans in creating feelings of closeness during deep-talk sessions, because AI provides consistent emotional disclosure without the social risk humans carry - a dynamic particularly salient for neurodivergent users experiencing rejection-sensitive dysphoria (Communications Psychology, Feb 2026). Notably, an "anti-AI bias" exists where users rate AI-generated empathy lower when they know the source, but this bias diminishes with extended use (PubMed/Nature, 2024).$^3$
 
 ---
 
@@ -90,6 +82,7 @@ Across all four areas, the same gaps recur: studies are predominantly lab-based 
 
 ## 4. Research questions & hypotheses
 
+As a starting point, this snowball sampling study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3).
 ### 4.1 Research questions
 
 **RQ1 — Patterns and motivations of psychological AI use**
@@ -118,7 +111,7 @@ _Do users accurately identify the primary risks of psychological AI use, and to 
 
 ### 5.1 Design, participants, materials, procedure
 
-This study used a mixed-methods approach on a cross-sectional survey design, reflecting the branching, multi-directional nature of the research questions. The anonymous survey consisted of 23 questions with an optional email field for follow-up interest, and was completed by 126 participants over a two-week period.
+This study used a snowball sampling approach with a cross-sectional survey design, reflecting the branching, multi-directional nature of the research questions. The anonymous survey consisted of 23 questions with an optional email field for follow-up interest, and was completed by 126 participants over a two-week period.
 
 The sample is non-representative and self-selected: Hungarian-speaking, digitally engaged, and likely over-representing neurodivergent individuals. Distribution channels included personal social media, adult A(u)DHD and neurodivergency Facebook groups, an AI technical news group, and Hungarian Reddit forums (r/psychology). The study is best treated as a pilot and should be replicated on a more representative sample for generalisable results.
 
@@ -132,6 +125,9 @@ Beyond sampling, three limitations warrant explicit flagging:
 
 **Time-sensitivity.** Attitudes toward AI use are shifting rapidly. All findings reflect a specific window (February–May 2026) and may have limited shelf life as both AI capabilities and public perception continue to evolve.
 
+### 5.3 AI disclaimer
+
+To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting. LLMs (Claude, Gemini, ChatGPT, Ollama Gemma) were used in literature review and hypothesis testing pipeline implementation.
 ## 6. Data analysis & results
 
 ### 6.1 Quantitative results
@@ -391,6 +387,8 @@ Lombard, M., & Xu, K. (2021). Social responses to interactive media: A review of
 Merwin, E., Hagen, A. C., Keebler, J. R., & Forbes, C. (2026). _Self-disclosure to AI: People provide personal information to AI and humans equivalently._ [https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently](https://www.researchgate.net/publication/394206305_Self-disclosure_to_AI_People_provide_personal_information_to_AI_and_humans_equivalently)
 
 Mohamed, S., Ben-Jaafar, A., Frimpong, M., Roy, S., Sanker, V., Nkrumah-Boateng, P. A., Imran, S., Abdul Mumeen, A., Mohamed, S., & Awuah Wireko, A. (2025). _Applying artificial intelligence in neurodevelopmental disorders management and research._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/) DOI:10.1016/j.chbah.2025.100180
+
+Nass, C. (1994). *Computer are social actors, Clifford Nass and Byron Reeves*, https://www.researchgate.net/publication/221517042_Computer_are_social_actors, DOI:10.1145/259963.260288
 
 Nielsen, J. (2023). _AI as the third paradigm in human-computer interaction._ Nielsen Norman Group. [https://www.nngroup.com/articles/ai-paradigm/](https://www.nngroup.com/articles/ai-paradigm/)
 
