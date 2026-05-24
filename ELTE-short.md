@@ -1,4 +1,4 @@
-# AI for self-reflection: snowball sampling study of self-directed psychological use across neurotypes
+# AI for self-reflection: snowball sampling study of metacognitive psychological use across neurotypes
 
 ## _Póth Attila research survey for ELTE Computational and Cognitive Neuroscience MSc_
 
@@ -83,6 +83,7 @@ Across all four areas, the same gaps recur: studies are predominantly lab-based 
 ## 4. Research questions & hypotheses
 
 As a starting point, this snowball sampling study investigates how individuals use AI for psychological self-reflection and whether usage patterns differ across neurotypes. The main research question was then sophisticated and split into three research questions (RQ1, RQ2, RQ3).
+
 ### 4.1 Research questions
 
 **RQ1 — Patterns and motivations of psychological AI use**
@@ -128,6 +129,7 @@ Beyond sampling, three limitations warrant explicit flagging:
 ### 5.3 AI disclaimer
 
 To flag explicitly for transparency, AI served not only the subject of this study, but also as a methodological assistant. My challenge was not to generate the study with AI (automation paradigm), but to use LLMs to support the research process (AI as augmentation paradigm). As a system prompt, I set AI to act as a rigorous thinking partner instead of a validator / generator: challenge my reasoning when it's weak, name blindspots, confirmation bias, overclaims or narrative overfitting. LLMs (Claude, Gemini, ChatGPT, Ollama Gemma) were used in literature review and hypothesis testing pipeline implementation.
+
 ## 6. Data analysis & results
 
 ### 6.1 Quantitative results
@@ -156,7 +158,8 @@ To flag explicitly for transparency, AI served not only the subject of this stud
 
 The sample skews female and toward the 25–44 age range (66% combined). Combined suspected and diagnosed ND respondents represent 54% of the sample — substantially exceeding clinical prevalence estimates (5–20%) but consistent with comparable self-identification rates reported in recent Gen Z and Millennial cohorts (Deloitte, 2023; Understood.org/Harris Poll, 2024), and attributable to recruitment through ND-adjacent communities. The ND variable functions as a self-reported identity grouping for between-group comparison, not a clinical classification.
 
-*Due to length constraints, see answers for the survey questions in the Appendix, raw data section.*
+_Due to length constraints, see answers for the survey questions in the Appendix, raw data section._
+
 #### Hypothesis testing — H1
 
 H1 predicted greater emotional self-disclosure toward AI than toward humans. No direct comparative measure was available in the dataset, so H1 is **partially testable only** via proxy variables.
@@ -389,7 +392,7 @@ Merwin, E., Hagen, A. C., Keebler, J. R., & Forbes, C. (2026). _Self-disclosure 
 
 Mohamed, S., Ben-Jaafar, A., Frimpong, M., Roy, S., Sanker, V., Nkrumah-Boateng, P. A., Imran, S., Abdul Mumeen, A., Mohamed, S., & Awuah Wireko, A. (2025). _Applying artificial intelligence in neurodevelopmental disorders management and research._ [https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12866462/) DOI:10.1016/j.chbah.2025.100180
 
-Nass, C. (1994). *Computer are social actors, Clifford Nass and Byron Reeves*, https://www.researchgate.net/publication/221517042_Computer_are_social_actors, DOI:10.1145/259963.260288
+Nass, C. (1994). _Computer are social actors, Clifford Nass and Byron Reeves_, https://www.researchgate.net/publication/221517042_Computer_are_social_actors, DOI:10.1145/259963.260288
 
 Nielsen, J. (2023). _AI as the third paradigm in human-computer interaction._ Nielsen Norman Group. [https://www.nngroup.com/articles/ai-paradigm/](https://www.nngroup.com/articles/ai-paradigm/)
 
@@ -411,7 +414,7 @@ Zhu, Z., Yu, J., & Luo, Y. (2026). _Scaffolding metacognition with GenAI: Suppor
 
 ### Original questionnaire
 
-#### _AI és önreflexió:_ Használtál már mesterséges intelligenciát saját magad megértésére, vagy személyes kérdésekre tanácsért?
+#### *AI és önreflexió:* Használtál már mesterséges intelligenciát saját magad megértésére, vagy személyes kérdésekre tanácsért?
 
 Ez az anonim kérdőív azt hivatott körüljárni, hogyan használunk mesterséges intelligenciát (AI) pszichológiai kérdésekre, mentális egészséggel kapcsolatos célokra, saját magunk megértésére, személyes dilemmák megoldására, vagy akár terápia alternatívájaként.
 
