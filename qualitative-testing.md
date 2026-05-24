@@ -1,6 +1,6 @@
 # USER QUESTION
 
-so can you guide me through operatively how to do this qualitative analysis step by step? let me know what will i need (which enriched composite / derived variables - then i will need to remap previous hypothesis testing derived datasets to the original and merge the keys, creating a full enriched dataset where all the required derived fields are there, right now i have h3Data, h4Data etc), i have the filtered qualitative-light.json also with only the id, fieldkey and qualitative answer, and i already set up my environment (a single html file, browse json file to load, extract data, loop through). I would love to continue to do any coding in the style of the previous sessions, to be unified
+guide me through operatively how to do this qualitative analysis step by step. let me know what will i need (which enriched composite / derived variables - then i will need to remap previous hypothesis testing derived datasets to the original and merge the keys, creating a full enriched dataset where all the required derived fields are there, right now i have h3Data, h4Data etc), i have the filtered qualitative-light.json also with only the id, fieldkey and qualitative answer, and i already set up my environment (a single html file, browse json file to load, extract data, loop through). I would love to continue to do any coding in the style of the previous sessions, to be unified
 
 These were the composite / derived fields we added in the previous sessions:
 

@@ -1,3 +1,18 @@
+# AI és önreflexió: Használtál már mesterséges intelligenciát saját magad megértésére, vagy személyes kérdésekre tanácsért?
+
+## INTRO
+
+Ez az anonim kérdőív azt hivatott körüljárni, hogyan használunk mesterséges intelligenciát (AI) pszichológiai kérdésekre, mentális egészséggel kapcsolatos célokra, saját magunk megértésére, személyes dilemmák megoldására, vagy akár terápia alternatívájaként.
+
+A kérdőív nem mér fel mentális egészséget, nem kér/ad diagnózist, és nem értékeli a mesterséges intelligencia által kiadott adatok helyességét, vagy az AI használatának helyes vagy helytelen voltát.
+
+Bármelyik kérdést kihagyhatod. A válaszadás anonim.
+Néhány kérdés személyes tapasztalatokat érint.
+
+Becsült kitöltési idő: ~10-12 perc (23 kérdés).
+
+## QUESTIONNAIRE
+
 Kijelentem, hogy elmúltam 18 éves, a fenti tájékoztatót elolvastam, és hozzájárulok, hogy válaszaimat kutatáshoz felhasználják.
 
 Igen, szeretnék részt venni a kutatásban

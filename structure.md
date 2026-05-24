@@ -29,7 +29,7 @@ Now i am wondering how to structure mine? I will have
 - literature covering the hypotheses
 - list of citations
 
-# CHATGPT ANSWER [link](https://chatgpt.com/g/g-p-69a84c0b02a8819196df28e557fd2cc7-survey-ai-for-personal-use/c/69a84c51-2348-8332-8f4a-5b8799235c6d?tab=chats)
+# AI ANSWER
 
 You’re close, but right now your structure is drifting toward a **documentation dump**, not a **scientific argument**.
 
@@ -428,24 +428,6 @@ That means:
 - selecting
 - compressing
 - structuring uncertainty
-
----
-
-# If You Want Next
-
-We can:
-
-- Turn your hypotheses into a **tight RQ + H section**
-- Build a **Results template you can directly fill**
-- Or design a **coding schema for your qualitative answers**
-
----
-
-## Your compressed prompt
-
-```
-What is the optimal 15-page structure for a mixed-methods research paper on AI-assisted self-reflection, including where to place hypotheses, literature, data, and limitations?
-```
 
 ---
 
