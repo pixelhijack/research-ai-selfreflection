@@ -1,6 +1,6 @@
 # AI for self-reflection: snowball sampling survey of self-directed psychological use across neurotypes
 
-## Póth Attila research study for ELTE Computational and Cognitive Neuroscience MSc - research documentation
+> This is a research study by Póth Attila for ELTE Computational and Cognitive Neuroscience MSc and its documentation. The questionnaire was designed and survey conducted February 2026, processed and written March - May 2026, available online to read at [pothattila.hu](https://pothattila.hu/kutatas/ai-onreflexio).
 
 ## RESEARCH PAPER
 
