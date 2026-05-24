@@ -16,13 +16,14 @@
 - Original raw data from Google Form export: [survey-source.csv](/src/survey-source.csv)
 - Data converted to JSON to process with JS: [survey-source.json](/src/survey-source.json)
 - Original survey keys used to decode csv: [keys.json](/src/keys.json)
-- Original survey as free text: [keys.json](/src/survey-values.json)
+- Original survey as free text: [survey-values.md](/src/survey-values.md)
 - Data after cleanup: [source-cleaned.json](/processed/source-cleaned.json)
 - Data with derived / composite variables: [source-enriched.json](/processed/source-enriched.json)
 - Qualitative answers extracted: [qualitative-texts.md](/processed/qualitative-texts.md)
 - Qualitative open-ended question answers only: [qualitative-light.json](/processed/qulitative-light.json)
 - Qualitative answers tagged: [qualitative.json](/processed/qualitative.json)
 - Quantitative derived / composite + qualitative tagging: [source-enriched-tagged.json](/processed/source-enriched-tagged.json)
+- any intermediary steps and LLM-assistance left for documentation / showcase purposes intentionally
 
 ## Quantitative analysis
 
